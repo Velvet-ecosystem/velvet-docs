@@ -9,6 +9,7 @@ Canonical architecture, doctrine, contracts, deployment guidance, and ecosystem 
 ## Start Here
 
 - [Getting Started with Velvet](docs/getting_started.md)
+- [Compatibility Ledger](docs/compatibility_ledger.md)
 
 This is the canonical public front door and living newcomer-path checkpoint for the ecosystem.
 
@@ -28,6 +29,7 @@ This is the canonical public front door and living newcomer-path checkpoint for 
 - [Decoded CAN Observation Path](docs/decoded_can_observation_path.md)
 - [Retrofit Body Registry](docs/retrofit_body_registry.md)
 - [Repository Map](docs/repository_map.md)
+- [Compatibility Ledger](docs/compatibility_ledger.md)
 
 ### Events and Collaboration
 
@@ -60,6 +62,7 @@ Repo-specific APIs, tests, commands, and implementation details remain with thei
 - The user owns the surface; Velvet provides the presence; the machine serves both.
 - Stronger hardware adds capability, not legitimacy.
 - Missing optional capability must degrade locally, not invalidate the bounded core.
+- Compatibility claims require named evidence, not intention.
 - API does not mean internet.
 - Local observation does not equal authority.
 - A receipt is evidence, not permission.

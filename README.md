@@ -6,6 +6,12 @@ Canonical architecture, doctrine, contracts, deployment guidance, and ecosystem 
 
 > **Rebellion against OEM means the system adapts to the owner, not the owner to the system.**
 
+## Start Here
+
+- [Getting Started with Velvet](docs/getting_started.md)
+
+This is the canonical public front door and living newcomer-path checkpoint for the ecosystem.
+
 ## Documentation Map
 
 ### Vision and Root Doctrine

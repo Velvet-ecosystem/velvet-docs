@@ -4,7 +4,13 @@ Canonical architecture, doctrine, contracts, deployment guidance, and ecosystem 
 
 > Brain proposes. Court authorizes. Executors act. Receipts remember.
 
+> **Rebellion against OEM means the system adapts to the owner, not the owner to the system.**
+
 ## Documentation Map
+
+### Vision and Root Doctrine
+
+- [Rebellion Against OEM](docs/rebellion_against_oem.md)
 
 ### Architecture
 
@@ -43,6 +49,8 @@ Repo-specific APIs, tests, commands, and implementation details remain with thei
 
 ## Core Laws
 
+- The system adapts to the owner, not the owner to the system.
+- The user owns the surface; Velvet provides the presence; the machine serves both.
 - API does not mean internet.
 - Local observation does not equal authority.
 - A receipt is evidence, not permission.

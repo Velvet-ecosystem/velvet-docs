@@ -17,6 +17,7 @@ This is the canonical public front door and living newcomer-path checkpoint for 
 ### Vision and Root Doctrine
 
 - [Rebellion Against OEM](docs/rebellion_against_oem.md)
+- [Hardware Access and Graceful Degradation](docs/hardware_access_and_graceful_degradation.md)
 
 ### Architecture
 
@@ -57,6 +58,8 @@ Repo-specific APIs, tests, commands, and implementation details remain with thei
 
 - The system adapts to the owner, not the owner to the system.
 - The user owns the surface; Velvet provides the presence; the machine serves both.
+- Stronger hardware adds capability, not legitimacy.
+- Missing optional capability must degrade locally, not invalidate the bounded core.
 - API does not mean internet.
 - Local observation does not equal authority.
 - A receipt is evidence, not permission.

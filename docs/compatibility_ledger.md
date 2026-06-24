@@ -34,9 +34,32 @@ No ecosystem-level Python 3.8 compatibility claim has been verified yet.
 | `velvet-continuity-spine` | identity, lineage, proof records, drift and continuity | Full baseline CI | 3.10 and 3.12 also tested | Continuity PR #3, merge `ed01c89ad74004047ad235a7f73ff9de45b044d9` | Package-wide Python 3.8 syntax guard remains in the test suite. Hash, HMAC, lineage, and authority semantics remain unchanged. |
 | `velvet-receipts` | append-only accountability and hash chains | Full baseline CI | 3.10 and 3.12 also tested | Receipts PR #2, merge `bff0e378d183a2e7828a140f1c4e8b52431d28c3` | Installable `velvet_receipts` package added while preserving root-level imports and receipt-chain behavior. |
 | `velvet-vehicle-can` | receive-only CAN observation, learning and qualification | Full baseline CI | 3.10 and 3.12 also tested | Vehicle CAN PR #5, merge `d7b667e335437c35ed5e81dea977ec4c2bd2bdab` | Installable package. Hardware observation dependency remains optional. No transmit or actuation path was added. |
+| `velvet-ai-core` | language, reasoning, personality and core proposals | Full baseline CI | 3.10 and 3.12 also tested | Core PR #9, merge `12012ba4f16a03383e3e5efb9f6ea31904a63a4b` | Package installs and imports on Python 3.8. A package-wide syntax guard is enforced. No model backend, cloud service, hardware access, or authority is required. |
 | `velvet-docs` | canonical doctrine and ecosystem contracts | Not runtime-bearing | n/a | documentation review | Owns compatibility doctrine and this ledger, but does not define a Python runtime floor. |
-| `velvet-ai-core` | language, reasoning, personality and core proposals | Unassessed | unknown | pending audit | Must not inherit a Python floor merely from the model backend. Baseline and optional model capabilities should be separated. |
 | `business_agent_ecosystem` | autonomous business-agent workflows | Unassessed | unknown | pending audit | Not part of the UP² first-wake dependency chain. |
+
+## Core capability separation
+
+`velvet-ai-core` keeps its Python 3.8 baseline independent from heavy reasoning backends.
+
+Baseline Core includes model-independent structures for proposals, identity concepts, personality configuration, memory abstractions, shared interfaces, descriptive schemas, and Runtime request formation.
+
+Language models, speech engines, embeddings, vision models, accelerators, and hosted collaborators remain optional capability providers.
+
+A backend may require newer Python or stronger hardware, but that requirement belongs to the backend adapter. It must not raise the floor of the entire Core package.
+
+Missing optional capability should report locally:
+
+```text
+Core baseline: available
+Local language model: unavailable
+Voice reasoning: unavailable
+Vision reasoning: unavailable
+Runtime request formation: available
+Physical authority: none
+```
+
+Optional reasoning backends may propose, explain, summarize, classify, or form candidate intents. They do not receive Court signing keys, executor registries, safety bypasses, or physical hardware authority.
 
 ## UP² baseline candidate
 

@@ -40,6 +40,8 @@ This is the canonical public front door and living newcomer-path checkpoint for 
 ### Contribution
 
 - [Module Lab Contribution Pathway](docs/contributing/module_lab_pathway.md)
+- [Copyable Module Candidate Request Template](docs/contributing/module_candidate_request_template.md)
+- [Module Promotion Readiness Checklist](docs/contributing/module_promotion_readiness.md)
 
 New reusable modules and substantial rewrites begin with the public Module Lab request form in this repository. Accepted requests move into private qualification before any official promotion.
 

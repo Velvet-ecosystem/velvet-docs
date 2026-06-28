@@ -10,6 +10,7 @@ Canonical architecture, doctrine, contracts, deployment guidance, and ecosystem 
 
 - [Getting Started with Velvet](docs/getting_started.md)
 - [Compatibility Ledger](docs/compatibility_ledger.md)
+- [Module Lab Contribution Pathway](docs/contributing/module_lab_pathway.md)
 
 This is the canonical public front door and living newcomer-path checkpoint for the ecosystem.
 
@@ -35,6 +36,12 @@ This is the canonical public front door and living newcomer-path checkpoint for 
 
 - [Events, Intents, and Receipts](docs/events_intents_and_receipts.md)
 - [Hosted Collaborator Boundary](docs/hosted_collaborator_boundary.md)
+
+### Contribution
+
+- [Module Lab Contribution Pathway](docs/contributing/module_lab_pathway.md)
+
+New reusable modules and substantial rewrites begin with the public Module Lab request form in this repository. Accepted requests move into private qualification before any official promotion.
 
 ### Interface and Identity
 

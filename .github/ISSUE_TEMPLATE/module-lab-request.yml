@@ -1,8 +1,6 @@
 name: Module Lab Request
 description: Request review of a reusable module, substantial rewrite, adapter, or research candidate.
 title: "[Module Lab Request] "
-labels:
-  - module-lab-request
 body:
   - type: markdown
     attributes:

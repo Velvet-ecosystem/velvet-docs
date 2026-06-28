@@ -1,0 +1,136 @@
+name: Module Lab Request
+description: Request review of a reusable module, substantial rewrite, adapter, or research candidate.
+title: "[Module Lab Request] "
+labels:
+  - module-lab-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this public form for initial triage only. Do not include credentials, private keys, personal or medical records, proprietary source, private repository contents, or security-sensitive deployment details.
+
+        A request is not approval. Acceptance means the candidate may enter private assessment. Only a completed promotion review can make it an official Velvet module.
+
+  - type: input
+    id: candidate_name
+    attributes:
+      label: Candidate name
+      description: A short stable name for the proposed module or contribution.
+      placeholder: Environmental observations adapter
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Explain the candidate's single responsibility in a few sentences.
+      placeholder: This candidate observes...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contribution_type
+    attributes:
+      label: Contribution type
+      options:
+        - New reusable module
+        - Substantial module rewrite
+        - Hardware or platform adapter
+        - Research or design proposal
+        - Fixture or test contribution
+        - Recovery or archived-code candidate
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: surfaces
+    attributes:
+      label: Intended Velvet surfaces
+      options:
+        - label: Vehicle
+        - label: Home
+        - label: Cyberdeck
+        - label: Foundry
+        - label: Mobile
+        - label: Business
+        - label: Shared or cross-surface
+        - label: Not yet known
+
+  - type: textarea
+    id: inputs_outputs
+    attributes:
+      label: Inputs and outputs
+      description: Describe what the candidate receives, produces, observes, or requests.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and hardware assumptions
+      description: List required libraries, services, operating systems, devices, sensors, or external APIs. Write none when applicable.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: authority
+    attributes:
+      label: Highest authority requested
+      description: Select the strongest capability the candidate would need.
+      options:
+        - Documentation or fixtures only
+        - Read-only observation
+        - Recommendation or request generation
+        - User-confirmed control
+        - Automated actuation or safety-relevant control
+        - Not yet known
+    validations:
+      required: true
+
+  - type: textarea
+    id: status
+    attributes:
+      label: Current implementation and test status
+      description: State what exists, what is simulated, what depends on hardware, and what remains untested.
+    validations:
+      required: true
+
+  - type: input
+    id: public_link
+    attributes:
+      label: Public link
+      description: Optional public repository, demonstration, paper, or documentation link. Do not link private material.
+      placeholder: https://github.com/...
+
+  - type: dropdown
+    id: private_followup
+    attributes:
+      label: Is private follow-up required?
+      options:
+        - "No"
+        - "Yes, private source or repository"
+        - "Yes, hardware or security details"
+        - "Yes, personal or sensitive context"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional public notes
+      description: Add only information that is safe to publish.
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I have not included credentials, private keys, personal or medical records, proprietary source, private repository contents, or security-sensitive deployment details.
+          required: true
+        - label: I understand that submitting this request does not mean the candidate is approved, production-ready, or officially promoted.
+          required: true
+        - label: I understand that maintainers retain final review, merge, and promotion authority.
+          required: true

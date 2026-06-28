@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the Module Lab Contribution Pathway
+    url: https://github.com/Velvet-ecosystem/velvet-docs/blob/main/docs/contributing/module_lab_pathway.md
+    about: Review the public pathway, safety notes, and promotion process before submitting a request.

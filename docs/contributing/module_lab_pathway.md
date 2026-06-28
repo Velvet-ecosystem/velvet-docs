@@ -4,6 +4,11 @@ The Velvet ecosystem welcomes outside ideas, research, adapters, experiments, fi
 
 New reusable modules and substantial module rewrites do not move directly into active ecosystem paths. They begin with a public request, then enter the private Velvet Module Lab only after initial review.
 
+## Quick links
+
+- [Copyable Module Candidate Request Template](module_candidate_request_template.md)
+- [Module Promotion Readiness Checklist](module_promotion_readiness.md)
+
 ## Pathway
 
 1. **Public request** — submit the Module Lab request form in `velvet-docs`.
@@ -78,4 +83,4 @@ The governing principle is:
 
 **Open contribution, controlled adoption.**
 
-Use the repository's **Module Lab Request** issue form to begin.
+Use the repository's **Module Lab Request** issue form to begin. When the form is unavailable, use the copyable request template linked above.

@@ -4,35 +4,64 @@ Status: Draft
 Applies To: Velvet v0 Official UI Pack  
 Primary Scene: Front Room / Main Living Scene  
 Target Surface: 7-inch landscape in-car display  
-Base Resolution: 1920x1080 recommended
+Base Resolution: 1920x1080 recommended  
+Reference Assets: `assets/ui/velvet-v0/`
 
 ## Purpose
 
-This document maps the first official Velvet v0 Front Room screen into buildable interaction regions.
+This document maps the official Velvet v0 Front Room screen into buildable interaction regions.
 
 The Front Room is image-led. It should feel like Velvet's room, not a dashboard app. Touch points are embedded into objects in the scene. Deeper controls live behind overlays, full themed scenes, control sheets, and the Backroom.
 
-## Image Assets
-
-Place the final images in these paths:
+## Related Documents
 
 ```text
-assets/ui/velvet-v0/front-room-main.png
-assets/ui/velvet-v0/front-room-touch-map.png
-assets/ui/velvet-v0/front-room-overlay-demo.png
-assets/ui/velvet-v0/front-room-driving-mode.png
-assets/ui/velvet-v0/front-room-warning-mode.png
+docs/ui/README.md
+docs/ui/official-ui-pack.md
+docs/ui/scene-layer-model.md
+docs/ui/velvet-v0-screen-inventory.md
+docs/ui/asset-pack-template.md
+assets/ui/velvet-v0/README.md
+```
+
+## Reference Images
+
+The current official Velvet v0 reference images live here:
+
+```text
+assets/ui/velvet-v0/
+```
+
+Relevant Front Room assets:
+
+```text
+front-room-main.png
+front-room-touch-map.png
+front-room-overlay-demo.png
+front-room-driving-mode.png
+front-room-warning-mode.png
+```
+
+Supporting layer assets:
+
+```text
+scene-layer-preview.png
+control-sheet-preview.png
+backroom-preview.png
 ```
 
 Recommended usage:
 
-- `front-room-main.png`: clean production home scene with no large labels.
-- `front-room-touch-map.png`: annotated design/reference image showing numbered touch regions.
-- `front-room-overlay-demo.png`: example showing contextual cards over the room.
+- `front-room-main.png`: clean production-style home scene with no large instructional labels.
+- `front-room-touch-map.png`: annotated builder/reference image showing touch regions.
+- `front-room-overlay-demo.png`: contextual cards over the room.
 - `front-room-driving-mode.png`: simplified driving-state preview.
-- `front-room-warning-mode.png`: warning-state preview.
+- `front-room-warning-mode.png`: warning/emergency override preview.
+- `scene-layer-preview.png`: deeper themed scene concept.
+- `control-sheet-preview.png`: practical widgets and presets.
+- `backroom-preview.png`: technical/maintenance layer.
 
-Image reference once assets are committed:
+Markdown reference:
 
 ```markdown
 ![Velvet v0 Front Room Touch Map](../../assets/ui/velvet-v0/front-room-touch-map.png)
@@ -97,10 +126,6 @@ Hold behavior:
 scene:audio_full
 ```
 
-Notes:
-
-The gramophone is the natural media metaphor. Keep the tap region generous enough for finger use.
-
 ### `climate`
 
 Visual object: Fireplace / hearth.
@@ -126,7 +151,7 @@ sheet:climate_controls
 
 Notes:
 
-The hearth is the first vertical slice candidate because it proves front scene, overlay, control sheet, and backroom depth.
+The hearth is the first vertical slice candidate because it proves front scene, overlay, control sheet, and Backroom depth.
 
 ### `archive`
 
@@ -178,10 +203,6 @@ Hold behavior:
 ```text
 sheet:lighting_controls
 ```
-
-Notes:
-
-This region can visually bridge the library and the graveyard/archive world.
 
 ### `comfort`
 
@@ -288,10 +309,6 @@ Hold behavior:
 overlay:conversation_status
 ```
 
-Notes:
-
-This region can pulse for listening and shift state for speaking or processing.
-
 ### `backroom`
 
 Visual object: right-edge seam, keyhole, maintenance hatch, or narrow gold line.
@@ -370,7 +387,7 @@ Rules:
 
 ## Draft Hotspot YAML
 
-This is a starting geometry placeholder. Coordinates must be adjusted against the final production image.
+This is starting geometry for implementation planning. Coordinates must be adjusted against the final production image and tested on the actual 7-inch display.
 
 ```yaml
 scene: front_room_main
@@ -522,7 +539,7 @@ When driving mode is active:
 
 - decorative animation should reduce
 - deep private scene entry should restrict
-- backroom entry may require parked state or confirmation
+- Backroom entry may require parked state or confirmation
 - critical safety overlays take priority
 - voice interaction should be preferred
 - overlay text should stay short
@@ -542,7 +559,7 @@ Recommended restricted while moving:
 - full archive scene
 - boudoir/private scene
 - deep control sheets
-- backroom technical tools
+- Backroom technical tools
 - dangerous vehicle actions
 
 ## Guest Mode Behavior
@@ -551,7 +568,7 @@ When guest mode is active:
 
 - private region should be hidden, locked, or replaced
 - archive may restrict owner-specific memories
-- backroom should require owner authentication
+- Backroom should require owner authentication
 - comfort can remain available in neutral form
 - emergency must remain available
 - mute/privacy state should be obvious
@@ -577,8 +594,8 @@ Not allowed:
 
 ## Next Steps
 
-1. Commit the final clean Front Room image to `assets/ui/velvet-v0/front-room-main.png`.
-2. Commit the annotated map to `assets/ui/velvet-v0/front-room-touch-map.png`.
-3. Adjust the draft YAML coordinates against the final image.
-4. Move implementation YAML into `velvet-interface` once the docs are approved.
-5. Test region sizes on the actual 7-inch display.
+1. Review the finished asset set in `assets/ui/velvet-v0/`.
+2. Adjust the draft YAML coordinates against the final `front-room-main.png` and `front-room-touch-map.png`.
+3. Move implementation YAML into `velvet-interface` once the docs are approved.
+4. Test region sizes on the actual 7-inch display.
+5. Build the first vertical slice: Front Room Home -> Climate Quick Overlay -> Climate Control Sheet -> Backroom Climate Diagnostics.

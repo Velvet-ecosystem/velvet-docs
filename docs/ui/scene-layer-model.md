@@ -2,11 +2,7 @@
 
 Status: Draft  
 Applies To: Velvet UI Packs  
-Companion Docs:
-
-- `official-ui-pack.md`
-- `custom-ui-skin-guide.md`
-- `asset-pack-template.md`
+Reference Pack: Velvet v0 Front Room
 
 ## Purpose
 
@@ -26,15 +22,43 @@ Front Scene
 
 A user does not always move through every layer. The model defines available depth, not a forced path.
 
+## Related Documents
+
+```text
+docs/ui/README.md
+docs/ui/official-ui-pack.md
+docs/ui/front-room-hotspot-map.md
+docs/ui/velvet-v0-screen-inventory.md
+docs/ui/custom-ui-skin-guide.md
+docs/ui/asset-pack-template.md
+assets/ui/velvet-v0/README.md
+```
+
+## Reference Assets
+
+The official Velvet v0 asset pack demonstrates each layer:
+
+```text
+assets/ui/velvet-v0/front-room-main.png
+assets/ui/velvet-v0/front-room-overlay-demo.png
+assets/ui/velvet-v0/scene-layer-preview.png
+assets/ui/velvet-v0/control-sheet-preview.png
+assets/ui/velvet-v0/backroom-preview.png
+assets/ui/velvet-v0/front-room-driving-mode.png
+assets/ui/velvet-v0/front-room-warning-mode.png
+```
+
+Use `velvet-v0-screen-inventory.md` for the full screen list and implementation targets.
+
 ## Layer Summary
 
-| Layer | Name | Purpose | Visual Style | Example |
+| Layer | Name | Purpose | Visual Style | Velvet v0 Asset |
 |---|---|---|---|---|
-| 1 | Front Scene | Default home and presence | Image-led, atmospheric, minimal controls | Velvet's library room |
-| 2 | Contextual Overlay | Quick interaction | Small cards over the scene | Climate card near hearth |
-| 3 | Full Themed Scene | Dedicated image-led functional world | Immersive sub-scene | Boudoir Comfort |
-| 4 | Control Sheet | Precise controls and presets | Practical themed widgets | Climate sliders and presets |
-| 5 | Backroom | Diagnostics, maintenance, truth | Technical panels and buttons | Module health dashboard |
+| 1 | Front Scene | Default home and presence | Image-led, atmospheric, minimal controls | `front-room-main.png` |
+| 2 | Contextual Overlay | Quick interaction | Small cards over the scene | `front-room-overlay-demo.png` |
+| 3 | Full Themed Scene | Dedicated image-led functional world | Immersive sub-scene | `scene-layer-preview.png` |
+| 4 | Control Sheet | Precise controls and presets | Practical themed widgets | `control-sheet-preview.png` |
+| 5 | Backroom | Diagnostics, maintenance, truth | Technical panels and buttons | `backroom-preview.png` |
 
 ## Layer 1: Front Scene
 
@@ -59,7 +83,7 @@ Required responsibilities:
 - provide primary object-based touch regions
 - show basic status
 - expose emergency access
-- expose backroom access
+- expose Backroom access
 - expose mute or silent-listening access
 - indicate offline/degraded state
 - respond to listening/speaking state
@@ -191,6 +215,21 @@ Backroom rules:
 
 The Backroom is where Velvet stops flirting with the wallpaper and shows the bolts.
 
+## Driving and Warning States
+
+Driving mode and warning mode are not separate decorative skins. They are state overlays and behavior rules that can affect any layer.
+
+Reference assets:
+
+```text
+assets/ui/velvet-v0/front-room-driving-mode.png
+assets/ui/velvet-v0/front-room-warning-mode.png
+```
+
+Driving mode reduces distraction, restricts risky navigation, and prioritizes voice, quick controls, and safety.
+
+Warning and emergency mode override the beauty layer. Critical information must become clear, readable, and immediate.
+
 ## Transition Rules
 
 Transitions should communicate depth.
@@ -213,7 +252,7 @@ Recommended input pattern:
 |---|---|
 | Tap | quick action or overlay |
 | Hold | deeper controls or full scene |
-| Swipe from edge | backroom, navigation, or drawer |
+| Swipe from edge | Backroom, navigation, or drawer |
 | Back | close overlay or return one layer |
 | Emergency tap | immediate emergency panel |
 
@@ -294,6 +333,8 @@ Front Scene: tap fireplace/hearth
 
 The user can stay shallow for quick warmth or go deeper for diagnostics.
 
+This is the first recommended vertical implementation slice for Velvet v0.
+
 ## Example: Gramophone Interaction Path
 
 ```text
@@ -330,7 +371,7 @@ A Velvet-compatible UI pack must provide at least:
 
 - one Front Scene
 - emergency access
-- backroom access
+- Backroom access
 - mute or silent-listening access
 - warning state
 - offline/degraded state

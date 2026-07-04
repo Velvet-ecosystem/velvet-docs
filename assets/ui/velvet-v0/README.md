@@ -1,17 +1,19 @@
 # Velvet v0 UI Assets
 
-Status: Draft asset folder  
+Status: Draft reference asset pack  
 Applies To: Velvet v0 Official UI Pack
 
 ## Purpose
 
 This folder holds the reference images and preview assets for the official Velvet v0 UI pack.
 
-Git does not track empty folders, so this README exists to create the asset path before the final images are uploaded.
+These images document the first Velvet v0 image-led interface direction: a gothic library / parlor / boudoir / graveyard UI language with layered interaction, object-based touch regions, practical control sheets, driving mode, warning mode, and a technical Backroom.
 
-## Expected Images
+This folder is for documentation and reference assets. Final implementation assets may later move or duplicate into `velvet-interface`.
 
-Place the final images here using these exact filenames:
+## Current Asset Set
+
+The official reference set currently includes:
 
 ```text
 front-room-main.png
@@ -24,46 +26,79 @@ front-room-driving-mode.png
 front-room-warning-mode.png
 ```
 
-## Image Mapping
+## Asset Roles
 
-Recommended source-to-target mapping:
+### `front-room-main.png`
+
+Clean production-style Front Room home scene.
+
+Use this to show the default image-led Velvet v0 home screen without large instructional labels.
+
+### `front-room-touch-map.png`
+
+Annotated builder/reference image showing major touch regions.
+
+Use this for documentation, hotspot planning, and builder explanation. This is not intended as the production home screen.
+
+### `front-room-overlay-demo.png`
+
+Contextual overlay demonstration.
+
+Use this to show how quick cards can appear over the Front Room while keeping the room visible behind the overlay.
+
+### `scene-layer-preview.png`
+
+Scene layer preview.
+
+Use this to show the deeper themed scene concept, such as Library Home, Boudoir Comfort, Graveyard Archive, or related image-led sub-scenes.
+
+### `control-sheet-preview.png`
+
+Control Sheet Layer preview.
+
+Use this to show practical widgets, sliders, presets, toggles, and readable controls while still preserving the Velvet visual language.
+
+### `backroom-preview.png`
+
+Backroom / technical layer preview.
+
+Use this to show diagnostics, maintenance, modules, receipts, vehicle status, and technical truth.
+
+### `front-room-driving-mode.png`
+
+Driving-mode Front Room preview.
+
+Use this to show how the Front Room simplifies while moving: fewer distractions, clearer voice state, quick climate/audio, read-only vehicle status, mute/silent listening, and visible emergency access.
+
+### `front-room-warning-mode.png`
+
+Warning/emergency Front Room preview.
+
+Use this to show how safety overrides beauty: the room dims, warning hierarchy becomes dominant, emergency access is unmistakable, and the Backroom/emergency path remains clear.
+
+## Related Documents
+
+Primary docs:
 
 ```text
-gothic_parlor_with_cinematic_ui.png
-→ front-room-main.png
-
-gothic_parlor_with_interactive_touch_map.png
-→ front-room-touch-map.png
-
-velvet_library_with_gothic_ui_design.png
-→ front-room-overlay-demo.png
-
-gothic_velvet_themed_ui_concept_design.png
-→ scene-layer-preview.png
-
-gothic_velvet_control_room_interface.png
-→ control-sheet-preview.png
-
-velvet_v0_maintenance_dashboard_interface.png
-→ backroom-preview.png
+docs/ui/official-ui-pack.md
+docs/ui/custom-ui-skin-guide.md
+docs/ui/scene-layer-model.md
+docs/ui/asset-pack-template.md
+docs/ui/front-room-hotspot-map.md
 ```
 
-## Images Still Needed
+The hotspot map document references several assets in this folder directly.
 
-These should be generated or designed later:
+## Implementation Notes
 
-```text
-front-room-driving-mode.png
-front-room-warning-mode.png
-```
+- These images are documentation references, not direct hardware-control logic.
+- UI scenes should request actions through approved Velvet interfaces.
+- Safety, warning, emergency, and Backroom access must remain available regardless of visual style.
+- The official Velvet v0 pack may be refined later, but this folder preserves the first complete visual direction.
 
-## Notes
+## Upload Rules
 
-- `front-room-main.png` should be the clean production-style home scene.
-- `front-room-touch-map.png` should be the annotated builder/reference image.
-- `front-room-overlay-demo.png` should show contextual UI cards over the room.
-- `scene-layer-preview.png` should show the deeper themed scene layer.
-- `control-sheet-preview.png` should show practical controls and widgets.
-- `backroom-preview.png` should show the technical/maintenance layer.
+When replacing or adding images, use exact lowercase filenames and avoid doubled extensions such as `.png.png`.
 
-Final implementation assets may later move or duplicate into `velvet-interface`; this folder is for documentation and reference assets.
+Windows users may need to disable hidden file extensions before renaming images.

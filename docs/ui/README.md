@@ -25,10 +25,13 @@ Read these in order:
 3. `front-room-hotspot-map.md`  
    Maps the official Velvet v0 Front Room into touch regions, actions, and draft hotspot YAML.
 
-4. `custom-ui-skin-guide.md`  
+4. `velvet-v0-screen-inventory.md`  
+   Lists the official v0 screens, states, reference assets, and implementation targets.
+
+5. `custom-ui-skin-guide.md`  
    Explains how other builders can create their own visual styles without breaking Velvet's bones.
 
-5. `asset-pack-template.md`  
+6. `asset-pack-template.md`  
    Defines the recommended file structure, manifests, hotspot maps, overlays, control sheets, and review materials for UI packs.
 
 ## Official Velvet v0 Asset Folder
@@ -70,6 +73,16 @@ assets/ui/velvet-v0/README.md
 | Backroom | `backroom-preview.png` | Shows diagnostics and technical layer |
 | Driving Mode | `front-room-driving-mode.png` | Shows simplified moving-state UI |
 | Warning Mode | `front-room-warning-mode.png` | Shows safety override state |
+
+## Build Inventory
+
+The official v0 build checklist lives here:
+
+```text
+velvet-v0-screen-inventory.md
+```
+
+Use it to track which screens, states, overlays, control sheets, and implementation targets belong to the first Velvet v0 UI pack.
 
 ## Core UI Doctrine
 

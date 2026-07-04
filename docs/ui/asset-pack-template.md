@@ -2,7 +2,7 @@
 
 Status: Draft  
 Applies To: Velvet UI Packs  
-Companion Docs: Official UI Pack, Custom UI Skin Guide  
+Reference Pack: Velvet v0 Front Room  
 Purpose: Define the recommended file structure, naming pattern, required metadata, and minimum documentation for a Velvet-compatible UI pack.
 
 ## Purpose
@@ -12,6 +12,41 @@ A Velvet UI pack is more than a collection of background images.
 A valid UI pack must include artwork, scene definitions, hotspot maps, state overlays, safety paths, and documentation that explains how the skin behaves.
 
 This template gives builders a standard structure so UI packs can be reviewed, tested, shared, and eventually implemented without becoming a glitter drawer full of mystery files.
+
+## Related Documents
+
+```text
+docs/ui/README.md
+docs/ui/official-ui-pack.md
+docs/ui/scene-layer-model.md
+docs/ui/velvet-v0-screen-inventory.md
+docs/ui/front-room-hotspot-map.md
+docs/ui/custom-ui-skin-guide.md
+assets/ui/velvet-v0/README.md
+```
+
+## Reference Implementation
+
+The official Velvet v0 reference pack lives here:
+
+```text
+assets/ui/velvet-v0/
+```
+
+Its current reference assets are:
+
+```text
+front-room-main.png
+front-room-touch-map.png
+front-room-overlay-demo.png
+scene-layer-preview.png
+control-sheet-preview.png
+backroom-preview.png
+front-room-driving-mode.png
+front-room-warning-mode.png
+```
+
+Use `velvet-v0-screen-inventory.md` to see how the reference assets map to screens, states, and implementation targets.
 
 ## Core Principle
 
@@ -147,7 +182,7 @@ skin-name/
       offline.png
 ```
 
-A pack without emergency, backroom, warning, and offline handling is not complete.
+A pack without emergency, Backroom, warning, and offline handling is not complete.
 
 ## Naming Rules
 
@@ -428,7 +463,7 @@ safety:
 
 ## Backroom Scene Template
 
-The backroom is allowed to be more direct and technical.
+The Backroom is allowed to be more direct and technical.
 
 Example:
 
@@ -496,7 +531,7 @@ It should include:
 This document should explain:
 
 - Where emergency access lives
-- Where backroom access lives
+- Where Backroom access lives
 - How warnings appear
 - How offline/degraded state appears
 - What changes in driving mode

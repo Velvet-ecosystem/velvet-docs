@@ -4,7 +4,8 @@ Status: Draft
 Pack Name: Velvet v0 Front Room  
 Primary Target: 2008 Hyundai Tiburon  
 Interface Mode: Image-led scene UI  
-Owner: Velvet AI Ecosystem
+Owner: Velvet AI Ecosystem  
+Reference Assets: `assets/ui/velvet-v0/`
 
 ## Purpose
 
@@ -14,11 +15,46 @@ This pack is not a generic dashboard skin. It is the reference implementation fo
 
 The official v0 interface uses a gothic library, parlor, boudoir, and graveyard visual language to represent Velvet's front-facing presence, memory, comfort, safety, and maintenance layers.
 
+## Related Documents
+
+```text
+docs/ui/README.md
+docs/ui/scene-layer-model.md
+docs/ui/front-room-hotspot-map.md
+docs/ui/velvet-v0-screen-inventory.md
+docs/ui/custom-ui-skin-guide.md
+docs/ui/asset-pack-template.md
+assets/ui/velvet-v0/README.md
+```
+
+## Reference Asset Set
+
+Official reference images live here:
+
+```text
+assets/ui/velvet-v0/
+```
+
+Current official reference assets:
+
+```text
+front-room-main.png
+front-room-touch-map.png
+front-room-overlay-demo.png
+scene-layer-preview.png
+control-sheet-preview.png
+backroom-preview.png
+front-room-driving-mode.png
+front-room-warning-mode.png
+```
+
+Use `velvet-v0-screen-inventory.md` as the build checklist for these assets and their implementation targets.
+
 ## Design Principle
 
 Velvet's main screen is a place, not a menu.
 
-The user should feel they have entered Velvet's room. Controls are discovered through objects in the environment, subtle touch points, contextual overlays, and deeper backroom layers.
+The user should feel they have entered Velvet's room. Controls are discovered through objects in the environment, subtle touch points, contextual overlays, and deeper Backroom layers.
 
 Large button grids are avoided on the front scene. Button-style controls are allowed deeper in the interface where clarity, safety, diagnostics, or precision matter.
 
@@ -38,7 +74,7 @@ Each layer has a different purpose and a different level of visual abstraction.
 
 The Front Room is Velvet's default home screen.
 
-It is image-led and nearly buttonless. It contains the main visual scene, subtle touch targets, status hints, emergency access, voice/listening state, and the backroom seam.
+It is image-led and nearly buttonless. It contains the main visual scene, subtle touch targets, status hints, emergency access, voice/listening state, and the Backroom seam.
 
 Primary visual elements:
 
@@ -231,7 +267,7 @@ Recommended typography categories:
 Typography rules:
 
 - The front scene may use decorative type sparingly.
-- Control sheets and backroom screens must prioritize readability.
+- Control sheets and Backroom screens must prioritize readability.
 - Critical warnings must not use overly decorative fonts.
 
 ## Motion and State
@@ -285,6 +321,12 @@ Driving mode may:
 
 The image-led front scene may remain visible, but interaction should become safer and simpler.
 
+Reference image:
+
+```text
+assets/ui/velvet-v0/front-room-driving-mode.png
+```
+
 ## Guest Mode
 
 When guest mode is active, the UI may remain visually similar but restrict private or owner-only areas.
@@ -293,9 +335,23 @@ Guest mode rules:
 
 - Private boudoir access may be hidden, locked, or replaced.
 - Owner-specific memory may be restricted.
-- Technical backroom access may be restricted.
+- Technical Backroom access may be restricted.
 - Personality and spoken behavior may become more reserved.
 - Safety and emergency access remain available.
+
+## Warning and Emergency Mode
+
+Warning and emergency states must override the beauty layer.
+
+The room may dim. Decoration may fall back. Safety hierarchy becomes dominant.
+
+Reference image:
+
+```text
+assets/ui/velvet-v0/front-room-warning-mode.png
+```
+
+Emergency access must remain unmistakable.
 
 ## Asset Requirements
 
@@ -317,6 +373,12 @@ Recommended base resolution:
 - 1920x1080 preferred for source assets
 - Export down to target screen as needed
 
+The official Velvet v0 reference pack is indexed in:
+
+```text
+assets/ui/velvet-v0/README.md
+```
+
 ## Implementation Direction
 
 The official UI pack should be implemented through the Velvet scene system:
@@ -327,11 +389,20 @@ The official UI pack should be implemented through the Velvet scene system:
 - Scene transitions
 - Contextual overlays
 - Control sheets
-- Technical backroom screens
+- Technical Backroom screens
 
 The UI pack should remain separate from core system logic.
 
 Visual scenes should call actions through approved events or local APIs rather than controlling hardware directly.
+
+First implementation target:
+
+```text
+Front Room Home
+  -> Hearth / Climate Quick Overlay
+    -> Climate Control Sheet
+      -> Backroom Climate Diagnostics
+```
 
 ## Non-Goals
 
@@ -348,8 +419,8 @@ It is the visual and interaction layer above Velvet's governed system.
 
 ## Core Rule
 
-The front room may be beautiful.
+The Front Room may be beautiful.
 
-The backroom must be truthful.
+The Backroom must be truthful.
 
 The emergency path must be immediate.

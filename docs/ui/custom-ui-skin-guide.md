@@ -9,25 +9,48 @@ Purpose: Help builders create their own visual styles without breaking Velvet's 
 
 The Custom UI Skin Guide explains how builders can create alternative visual styles for Velvet-based systems.
 
-The official Velvet v0 UI Pack uses a gothic library, boudoir, and graveyard visual language. That style belongs to Velvet's Tiburon build.
-
-Other builders may want different visual identities:
-
-- Cyberdeck
-- Classic car
-- Off-road expedition
-- Work truck
-- Medical mobility
-- Home console
-- Forge or workshop
-- Industrial control room
-- Minimal OEM-style retrofit
+The official Velvet v0 UI Pack uses a gothic library, parlor, boudoir, and graveyard visual language. That style belongs to Velvet's Tiburon build. Other builders may want cyberdeck, classic car, off-road expedition, work truck, medical mobility, home console, forge/workshop, industrial, or minimal OEM-style skins.
 
 Custom skins are allowed and encouraged, but they must preserve Velvet's core interaction architecture.
 
 A skin may change the room.
 
 It may not change the exits, safety doors, or nervous system.
+
+## Related Documents
+
+```text
+docs/ui/README.md
+docs/ui/official-ui-pack.md
+docs/ui/scene-layer-model.md
+docs/ui/velvet-v0-screen-inventory.md
+docs/ui/front-room-hotspot-map.md
+docs/ui/asset-pack-template.md
+assets/ui/velvet-v0/README.md
+```
+
+## Reference Implementation
+
+The official Velvet v0 reference pack lives here:
+
+```text
+assets/ui/velvet-v0/
+```
+
+Use it as an example of a complete layered UI pack:
+
+```text
+front-room-main.png
+front-room-touch-map.png
+front-room-overlay-demo.png
+scene-layer-preview.png
+control-sheet-preview.png
+backroom-preview.png
+front-room-driving-mode.png
+front-room-warning-mode.png
+```
+
+Custom skins do not need to copy Velvet's gothic style, but they should preserve the same structural promises.
 
 ## Core Rule
 
@@ -174,7 +197,7 @@ Examples by skin:
 - Tool wall: machine controls
 - Materials rack: inventory
 
-Full scenes should still avoid becoming generic app pages unless the user intentionally enters a control or backroom layer.
+Full scenes should still avoid becoming generic app pages unless the user intentionally enters a control or Backroom layer.
 
 ## Layer 4: Control Sheet
 
@@ -210,7 +233,7 @@ The Backroom is the technical layer.
 
 This layer may use traditional dashboard layouts, diagnostic cards, tables, buttons, and logs.
 
-Required backroom sections, where applicable:
+Required Backroom sections, where applicable:
 
 - System dashboard
 - Module health
@@ -237,7 +260,7 @@ Backroom rules:
 - Require confirmation or authentication where needed.
 - Do not hide faults behind theme language.
 
-The backroom is allowed to be less magical.
+The Backroom is allowed to be less magical.
 
 It must be more truthful.
 
@@ -367,6 +390,12 @@ Recommended source resolution:
 - 1920x1080 for 16:9 scenes
 - 1280x720 minimum
 - Export to target screen resolution as needed
+
+For a fuller folder and manifest template, use:
+
+```text
+docs/ui/asset-pack-template.md
+```
 
 ## Skin Manifest
 
@@ -526,7 +555,7 @@ For community or lab submission, the skin should also include:
 Before a skin is accepted, review:
 
 - Does emergency access work?
-- Does backroom access work?
+- Does Backroom access work?
 - Are warnings readable?
 - Is driving mode simplified?
 - Are touch regions usable?
@@ -575,7 +604,7 @@ A custom skin is not:
 - A direct hardware controller
 - A random wallpaper pack
 - A pile of buttons with a background image
-- A replacement for the backroom
+- A replacement for the Backroom
 - A way to hide warnings or emergency access
 
 ## Final Rule

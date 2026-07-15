@@ -9,6 +9,8 @@ Canonical architecture, doctrine, contracts, deployment guidance, and ecosystem 
 ## Start Here
 
 - [Getting Started with Velvet](docs/getting_started.md)
+- [Ghost System v0](docs/ghost_system_v0.md)
+- [Public Repository Map](docs/public_repo_map.md)
 - [Compatibility Ledger](docs/compatibility_ledger.md)
 - [Module Lab Contribution Pathway](docs/contributing/module_lab_pathway.md)
 
@@ -20,6 +22,7 @@ This is the canonical public front door and living newcomer-path checkpoint for 
 
 - [Rebellion Against OEM](docs/rebellion_against_oem.md)
 - [Hardware Access and Graceful Degradation](docs/hardware_access_and_graceful_degradation.md)
+- [Public and Private Boundary](docs/public_private_boundary.md)
 
 ### Architecture
 
@@ -28,8 +31,10 @@ This is the canonical public front door and living newcomer-path checkpoint for 
 - [Local API and Security Architecture](docs/local_api_and_security_architecture.md)
 - [Boot Identity Sequence](docs/boot_identity_sequence.md)
 - [Decoded CAN Observation Path](docs/decoded_can_observation_path.md)
+- [Ghost System v0](docs/ghost_system_v0.md)
 - [Retrofit Body Registry](docs/retrofit_body_registry.md)
 - [Repository Map](docs/repository_map.md)
+- [Public Repository Map](docs/public_repo_map.md)
 - [Compatibility Ledger](docs/compatibility_ledger.md)
 
 ### Events and Collaboration
@@ -55,6 +60,7 @@ New reusable modules and substantial rewrites begin with the public Module Lab r
 ### Deployment
 
 - [Founder Node](docs/deployment/founder_node.md)
+- [UP Squared Ghost Run](docs/deployment/up_squared_ghost_run.md)
 - [Luckfox Nodes](docs/deployment/luckfox_nodes.md)
 - [Network Topology](docs/deployment/network_topology.md)
 - [Offline-First Operation](docs/deployment/offline_first_operation.md)

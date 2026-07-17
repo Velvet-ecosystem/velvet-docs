@@ -285,4 +285,4 @@ GPLv3. Part of the Velvet ecosystem.
 
 ---
 
-**Velvet is not a single repository. She is a living local-first ecosystem. Each repository defines one part of the body. Together they form one accountable whole.**
+**Velvet is not a single repository. She is a living local-first ecosystem. Each repository owns one bounded responsibility within her architecture. Velvet remains the whole accountable body.**

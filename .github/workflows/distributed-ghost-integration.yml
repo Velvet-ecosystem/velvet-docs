@@ -1,0 +1,57 @@
+name: Distributed Ghost Integration
+
+on:
+  pull_request:
+    paths:
+      - "ghost/**"
+      - "tests/test_distributed_body_ghost_run.py"
+      - "docs/distributed_body_ghost_run.md"
+      - ".github/workflows/distributed-ghost-integration.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  distributed-ghost:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: ${{ github.workspace }}:${{ github.workspace }}/.deps/velvet-ai-core:${{ github.workspace }}/.deps/velvet-runtime:${{ github.workspace }}/.deps/velvet-event-protocol:${{ github.workspace }}/.deps/velvet-receipts
+    steps:
+      - name: Check out Velvet docs
+        uses: actions/checkout@v4
+
+      - name: Check out AI Core
+        uses: actions/checkout@v4
+        with:
+          repository: Velvet-ecosystem/velvet-ai-core
+          path: .deps/velvet-ai-core
+
+      - name: Check out Runtime
+        uses: actions/checkout@v4
+        with:
+          repository: Velvet-ecosystem/velvet-runtime
+          path: .deps/velvet-runtime
+
+      - name: Check out Event Protocol
+        uses: actions/checkout@v4
+        with:
+          repository: Velvet-ecosystem/velvet-event-protocol
+          path: .deps/velvet-event-protocol
+
+      - name: Check out Receipts
+        uses: actions/checkout@v4
+        with:
+          repository: Velvet-ecosystem/velvet-receipts
+          path: .deps/velvet-receipts
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run cross-repository guardrails
+        run: python -m unittest discover -s tests -p "test_distributed_body_ghost_run.py" -v
+
+      - name: Run the visible Ghost proof
+        run: python ghost/distributed_body_run.py

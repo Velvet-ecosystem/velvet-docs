@@ -6,6 +6,12 @@ This guide defines the first public-safe dry run for the UP Squared Founder node
 
 Do not connect vehicle CAN, relays, actuator drivers, lighting, locks, HVAC, pedals, steering, throttle, clutch, or shifter hardware. Do not add production signing keys or capability tokens. Treat the UP Squared as a bench computer carrying a jarred vehicle fixture.
 
+## Host preparation
+
+The current bench host follows the [Ubuntu Vehicle Development Host](profiles/ubuntu_vehicle_development_host.md).
+
+Before performance measurements, capture the untouched host baseline and follow the [Linux Host Audit and Cleanup Workflow](linux_host_audit_and_cleanup.md). Cleanup must remain profile-scoped, dry-run first, reversible, and separate from the Ghost safety proof.
+
 ## Public repository order
 
 ```text

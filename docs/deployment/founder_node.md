@@ -12,9 +12,19 @@ The Founder node is Velvet's primary local compute body. It hosts the main Runti
 - local language and reasoning integration
 - receipt emission and result publication
 
+## Host profile
+
+The Founder role does not require one universal operating-system image. Each installation resolves an explicit host profile for its surface, hardware, operating system, development posture, and local overrides.
+
+The current UP Squared bench uses the [Ubuntu Vehicle Development Host](profiles/ubuntu_vehicle_development_host.md). The long-term vehicle target remains Automotive Grade Linux.
+
+See [Host Profile Doctrine](host_profiles.md) and the [Deployment Index](README.md).
+
 ## Boundary
 
 The language model remains behind Runtime. It does not directly control privileged services or physical hardware.
+
+A host profile makes capabilities available. It does not grant authority to use them.
 
 ## Degraded Operation
 

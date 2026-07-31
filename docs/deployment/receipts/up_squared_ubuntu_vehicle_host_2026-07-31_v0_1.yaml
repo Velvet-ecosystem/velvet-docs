@@ -1,0 +1,104 @@
+api_version: velvet.host.receipt/v0.1
+kind: HostProfileReceipt
+metadata:
+  name: up-squared-ubuntu-vehicle-host-2026-07-31
+  title: UP Squared Ubuntu Vehicle Host Receipt
+  captured_date: "2026-07-31"
+  status: accepted-bench-validation
+  public_safe_summary: true
+
+subject:
+  host_profile: velvet-host-vehicle-development-ubuntu
+  hardware: up-squared-founder
+  os_family: ubuntu
+  os_version: "20.04.6"
+  surface: vehicle-development
+  physical_authority: none
+
+evidence:
+  raw_receipts:
+    publication: local-only
+    reason: detailed host, package, process, network, and hardware inventory
+  summary_document: up_squared_ubuntu_vehicle_host_2026-07-31.md
+
+measurements:
+  before:
+    clean_idle_used_memory_mib: 910
+    clean_idle_available_memory_gib: 2.4
+    total_boot_seconds: 36.221
+    userspace_boot_seconds: 15.305
+    root_used_gib: 9.6
+    snap_squashfs_mounts: 15
+    failed_systemd_units: 0
+  final:
+    clean_idle_used_memory_mib: 608
+    clean_idle_available_memory_gib: 2.7
+    total_boot_seconds: 32.641
+    userspace_boot_seconds: 11.704
+    root_used_gib: 8.3
+    snap_squashfs_mounts: 0
+    failed_systemd_units: 0
+    cpu_idle_observed_percent:
+      minimum_after_initial_sample: 97
+      maximum: 99
+    swap_used_bytes: 0
+  delta:
+    clean_idle_used_memory_mib: -302
+    total_boot_seconds: -3.580
+    userspace_boot_seconds: -3.601
+    root_used_gib: -1.3
+    snap_squashfs_mounts: -15
+
+validated:
+  - normal-graphical-boot
+  - single-system-runtime-instance
+  - velvet-runtime-active
+  - physical-authority-disabled
+  - apt-and-dpkg-preserved
+  - apt-security-timers-preserved
+  - native-firefox-preserved
+  - native-gnome-utilities-preserved
+  - no-failed-systemd-units
+  - staged-reboot-proof
+  - rollback-or-package-record-per-change
+
+profile_specific_changes:
+  disabled_or_suppressed:
+    - cups-printing-and-discovery
+    - modemmanager-without-declared-modem
+    - automatic-crash-submission
+    - gnome-software-background-autostart
+    - update-notifier-background-autostart
+    - packagekit-dbus-activation
+    - snap-infrastructure
+  preserved:
+    - networkmanager
+    - networkmanager-wait-online
+    - graphical-display-stack
+    - audio
+    - bluetooth
+    - storage
+    - thermal-management
+    - usb-and-device-infrastructure
+    - apt-daily-timers
+
+remaining_observations:
+  longest_systemd_blame_units:
+    - unit: plymouth-quit-wait.service
+      seconds: 8.604
+      action: preserve-pending-interface-and-boot-review
+    - unit: NetworkManager-wait-online.service
+      seconds: 6.848
+      action: preserve-pending-runtime-network-contract
+  warning: systemd blame durations may overlap and are not additive
+
+boundary:
+  applies_to:
+    - this-up-squared-founder
+    - ubuntu-vehicle-development-profile
+  does_not_prove:
+    - universal-ubuntu-package-policy
+    - home-surface-policy
+    - forge-surface-policy
+    - industrial-surface-policy
+    - automotive-grade-linux-production-readiness

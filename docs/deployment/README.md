@@ -13,6 +13,13 @@ This directory contains ecosystem-level deployment doctrine and host-role guidan
 
 Host profiles describe capabilities, measurements, and degraded behavior for a named Velvet surface. They do not act as universal package-removal lists and do not grant authority.
 
+## Evidence-backed receipts
+
+- [UP Squared Ubuntu Vehicle Host Receipt, 2026-07-31](receipts/up_squared_ubuntu_vehicle_host_2026-07-31.md)
+- [Machine-readable UP Squared Host Receipt v0.1](receipts/up_squared_ubuntu_vehicle_host_2026-07-31_v0_1.yaml)
+
+Raw host inventories remain local when they contain unnecessary machine, network, package, or process detail. Public receipt summaries preserve the measured result and authority boundary without publishing the whole machine.
+
 ## Nodes and topology
 
 - [Founder Node](founder_node.md)

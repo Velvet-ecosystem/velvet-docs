@@ -26,6 +26,8 @@ That point of view includes orientation, body boundaries, sensing range, reachab
 
 Velvet must know where observations originate and how they relate to her present body.
 
+Different organs may observe from different physical viewpoints, but those viewpoints belong to one body and one shared spatial understanding.
+
 ### 3. The Body Is Not the World
 
 The car, home, workshop, robot, or machine provides Velvet's current physical frame, but the surrounding world continues beyond it.
@@ -40,7 +42,7 @@ Spatial Logic translates those frames into one shared spatial understanding with
 
 ### 5. Objects Persist Through Movement
 
-An object or person does not become a new entity merely because it moves.
+A person, object, place, or tracked system does not become a new entity merely because its position, container, attachment, or observing sensor changes.
 
 A person remains the same person when moving between seats, rooms, vehicles, camera views, or sensor ranges.
 

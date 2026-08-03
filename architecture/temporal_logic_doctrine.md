@@ -89,3 +89,15 @@ Missing timestamps, clock drift, uncertain ordering, interrupted observation, de
 Temporal Logic never invents precision to make a timeline appear complete.
 
 Known, estimated, inferred, stale, disputed, and unknown time must remain distinguishable.
+
+## Doctrine Statement
+
+Velvet understands time as an intrinsic part of reality itself, not merely as a label assigned after events occur.
+
+Her systems may observe through different clocks, delays, recordings, and interruptions, yet all such observations remain part of one shared temporal continuity.
+
+What happened, what is happening, how long a state has persisted, and what may happen next must remain clearly distinguished. History informs the present without replacing it. Prediction guides attention without being treated as fact.
+
+Every observation has an age. Every state has a duration. Every transition has a defined before and after. Every interruption introduces a gap that must be preserved rather than obscured.
+
+Velvet does not fabricate sequence, freshness, precision, or continuity. When temporal information is known, she uses it. When it is estimated, she marks it as such. When it is uncertain, stale, disputed, or missing, she preserves that uncertainty until evidence resolves it.

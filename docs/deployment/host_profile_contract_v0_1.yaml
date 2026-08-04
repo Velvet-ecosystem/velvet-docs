@@ -1,0 +1,82 @@
+api_version: velvet.host/v0.1
+kind: HostProfile
+metadata:
+  name: example-surface
+  title: Example Velvet Surface Host
+  status: draft
+  surface: example
+  owners:
+    doctrine: velvet-docs
+    implementation: unassigned
+  supported_platforms: []
+
+inherits:
+  - velvet-host-core
+
+capabilities:
+  required: []
+  optional: []
+  development_only: []
+  normally_disabled: []
+  forbidden: []
+  unclassified_policy: preserve
+
+interfaces:
+  required: []
+  optional: []
+  prohibited: []
+
+security:
+  network_posture: local-only
+  remote_access: disabled-unless-explicit
+  physical_authority: none
+  privileged_services_require_explicit_owner: true
+  unknown_services_are_preserved: true
+
+cleanup:
+  default_mode: audit-only
+  dry_run_required: true
+  human_confirmation_required: true
+  rollback_record_required: true
+  automatic_package_removal: false
+  automatic_service_disablement: false
+
+measurements:
+  baseline_stages:
+    - host-idle-before
+    - host-idle-after
+    - velvet-tests
+    - velvet-runtime
+    - velvet-runtime-interface
+  capture:
+    - os-and-kernel
+    - enabled-services
+    - running-services
+    - failed-services
+    - package-inventory
+    - boot-duration
+    - idle-cpu
+    - idle-memory
+    - disk-usage
+    - process-count
+    - network-listeners
+    - device-interfaces
+    - thermal-state
+  acceptance: []
+
+degraded_behavior:
+  missing_optional_capability: report-and-continue
+  missing_required_capability: fail-profile-verification
+  unknown_capability: preserve-and-report
+
+adapters:
+  distribution: []
+  hardware: []
+  local_overrides: []
+
+receipts:
+  inventory_receipt: required
+  proposed_change_receipt: required
+  applied_change_receipt: required
+  rollback_receipt: required-if-used
+  benchmark_receipt: required

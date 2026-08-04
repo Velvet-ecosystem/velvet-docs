@@ -1,0 +1,153 @@
+api_version: velvet.host/v0.1
+kind: HostProfile
+metadata:
+  name: velvet-host-vehicle-development-ubuntu
+  title: Ubuntu Vehicle Development Host
+  status: foundation-draft
+  surface: vehicle
+  owners:
+    doctrine: velvet-docs
+    implementation: unassigned
+  supported_platforms:
+    - os_family: ubuntu
+      os_version: "20.04"
+      hardware: up-squared-founder
+
+inherits:
+  - velvet-host-core
+  - velvet-host-vehicle
+  - ubuntu-systemd-adapter
+  - up-squared-founder-adapter
+  - development-overlay
+
+capabilities:
+  required:
+    - service-supervision
+    - local-identity-and-permissions
+    - local-storage
+    - wired-networking
+    - git
+    - python-runtime
+    - graphical-display
+    - qt-interface-support
+    - audio-playback
+    - audio-capture
+    - usb-device-discovery
+    - serial-uart
+    - timekeeping
+    - thermal-health-visibility
+    - local-logging
+  optional:
+    - ssh-bench-administration
+    - gnss-input
+    - passive-can
+    - camera-capture
+    - bluetooth-development
+    - wifi-development
+    - containers
+    - local-model-runtime
+  development_only:
+    - compilers
+    - headers
+    - debuggers
+    - profilers
+    - interactive-diagnostics
+    - desktop-conveniences
+  normally_disabled:
+    - printing-without-declared-workflow
+    - consumer-cloud-integrations
+    - unused-desktop-indexing
+    - crash-upload-and-telemetry
+    - modem-management-without-modem
+    - bluetooth-without-active-test
+    - discovery-without-declared-consumer
+    - unused-snap-applications
+    - unrelated-consumer-applications
+  forbidden:
+    - automatic-can-write
+    - automatic-gpio-actuation
+    - unreviewed-privileged-executor
+    - automatic-package-purge
+  unclassified_policy: preserve
+
+interfaces:
+  required:
+    - ethernet
+    - display
+    - audio
+    - usb
+    - serial
+  optional:
+    - gnss
+    - passive-can
+    - camera
+    - bluetooth
+    - wifi
+  prohibited:
+    - production-actuator-control
+
+security:
+  network_posture: local-development
+  remote_access: explicit-only
+  physical_authority: none
+  privileged_services_require_explicit_owner: true
+  unknown_services_are_preserved: true
+
+cleanup:
+  default_mode: audit-only
+  dry_run_required: true
+  human_confirmation_required: true
+  rollback_record_required: true
+  automatic_package_removal: false
+  automatic_service_disablement: false
+
+measurements:
+  baseline_stages:
+    - ubuntu-idle-before
+    - ubuntu-idle-after
+    - velvet-ai-core-tests
+    - velvet-runtime
+    - velvet-runtime-interface
+    - velvet-attached-test-hardware
+    - unattended-soak
+  capture:
+    - os-and-kernel
+    - enabled-services
+    - running-services
+    - failed-services
+    - package-inventory
+    - boot-duration
+    - idle-cpu
+    - idle-memory
+    - disk-usage
+    - process-count
+    - network-listeners
+    - device-interfaces
+    - thermal-state
+    - test-duration
+    - runtime-startup-duration
+    - interface-startup-duration
+  acceptance:
+    - normal-boot
+    - wired-networking-works
+    - git-access-works
+    - native-brain-tests-pass
+    - runtime-starts
+    - interface-starts
+    - audio-available
+    - usb-and-serial-discovery-available
+    - no-unexplained-new-failed-services
+
+adapters:
+  distribution:
+    - ubuntu-systemd-adapter
+  hardware:
+    - up-squared-founder-adapter
+  local_overrides: []
+
+receipts:
+  inventory_receipt: required
+  proposed_change_receipt: required
+  applied_change_receipt: required
+  rollback_receipt: required-if-used
+  benchmark_receipt: required

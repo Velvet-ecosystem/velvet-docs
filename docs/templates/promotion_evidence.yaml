@@ -1,0 +1,27 @@
+schema: velvet.module.promotion-evidence.v1
+module_name: example-module
+module_version: 0.0.0
+owner: unassigned
+reviewer: unassigned
+requirement_links: []
+architecture_reference: ""
+interface_contract_reference: ""
+lifecycle_state_coverage: []
+health_event_coverage: []
+receipt_coverage: []
+degraded_mode_tests: []
+failure_mode_tests: []
+authority_analysis:
+  requested_ceiling: none
+  physical_authority: false
+  allowed_callers: []
+  forbidden_callers: []
+safety_assumptions: []
+unresolved_risks: []
+test_receipt_ids: []
+simulation_test_results: []
+hardware_test_results: []
+promotion_decision: rejected
+promotion_limits: []
+promotion_date: null
+review_receipt_id: ""

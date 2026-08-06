@@ -91,6 +91,31 @@ Supporting archive artifact:
 
 The artifact corroborates an early modular infotainment shape with interface, CAN, voice, APIs, message queues, Qt or Android Automotive, and iterative development. It does not by itself prove the first KITT or comma.ai discussion, which remains an archive-recovery target.
 
+### Velvet Coin and Drive-Fi
+
+Evidence posture: `FOUNDER_CONFIRMED_ORIGIN`, `CONFIRMED_ARCHIVE_REFERENCE`
+
+Current pointers:
+
+- direct founder confirmation in the active provenance review
+- `docs/research/velvet_coin_drivefi_origin_lineage.md`
+
+Public repository artifacts:
+
+- `Overlandranger/Velvet-AI-Ecosystem/README.md`
+- `Overlandranger/Velvet-AI-Ecosystem/INVESTORS.md`
+- `Overlandranger/Velvet-AI-Ecosystem/redpaper.html`
+
+Supporting archive artifact:
+
+- `VELVET_PUBLIC_RELEASE_CHECKLIST.md`
+
+The public repository confirms `$VELV`, Drive-Fi, movement, participation, distributed local hardware, and planned offline wallets. The release audit confirms that an earlier `docs/io-contracts/wallet.md` contained governance material involving Guardian, Librarian, and Court and that this material was sanitized during public-release preparation.
+
+Founder confirmation additionally records that dangerous driving and lack of attention could reduce or remove reward, that Velvet was not intended to be geofenced, that coin integration was deliberately held back while identity, safety, evidence, governance, and continuity foundations matured, and that the coin remains live outside current operational integration.
+
+The original scoring rules, thresholds, wallet governance text, and full integration-hold discussions remain archive-recovery targets. Potential value is not guaranteed value, and no current Velvet capability or authority path depends on the coin.
+
 ### Native Brain and no-LLM identity boundary
 
 Evidence posture: `CONFIRMED_ARCHIVE_REFERENCE`

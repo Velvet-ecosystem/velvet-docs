@@ -99,6 +99,25 @@ Owned primarily by:
 
 - `velvet-ai-core`
 
+## Velvet Coin and Drive-Fi
+
+Velvet Coin and Drive-Fi are acknowledged as an early economic, ownership, participation, safety, and evidence branch of the ecosystem.
+
+The coin remains live outside Velvet's present operational architecture and may retain potential future utility or value. It is not currently a Runtime dependency, authority source, safety mechanism, active reward system, or physical-control path. Potential value is not guaranteed value, and live status does not mean approved integration.
+
+Coin and wallet integration was deliberately deferred while Velvet built the identity, Court, receipts, continuity, sensor confidence, package trust, anti-replay, anti-gaming, privacy, and dispute-evidence foundations that accountable value would require.
+
+The early reward concept included reducing or removing reward for dangerous driving or lack of attention. It did not grant software permission over where the owner could travel and did not establish OEM-style geofencing.
+
+The coin is therefore:
+
+- historically foundational
+- externally live
+- architecturally dormant
+- deliberately deferred rather than abandoned
+
+See [Velvet Coin and Drive-Fi Origin Lineage](research/velvet_coin_drivefi_origin_lineage.md).
+
 ## Canonical Execution Law
 
 ```text

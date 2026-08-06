@@ -8,6 +8,10 @@ This index corrects a weakness in the first provenance backfill: broad research 
 
 ## Evidence States
 
+### `FOUNDER_CONFIRMED_ORIGIN`
+
+The founder directly confirms that the reference was present at the project’s original seed stage, before the later architecture had formed.
+
 ### `SOURCE_MAPPED`
 
 The named reference has a dedicated Velvet source map or lineage note with direct source review.
@@ -31,6 +35,18 @@ A later summary or memory points to the name, but the exact original transcript 
 ### `FICTIONAL_COMPARISON`
 
 The system was used as a design compass, contrast, or cultural shorthand rather than as technical research.
+
+## Founding References
+
+These references belong at the beginning of Velvet’s chronology, before the later AI, safety, continuity, home, industrial, and robotics architecture.
+
+| Reference | Evidence state | Founder-confirmed role |
+|---|---|---|
+| **KITT** | `FOUNDER_CONFIRMED_ORIGIN` | Original experiential reference for an intelligent presence native to the car; contributed the vision of voice, relationship, body awareness, personality, loyalty, and a vehicle experienced as one coordinated being |
+| **comma.ai / openpilot** | `FOUNDER_CONFIRMED_ORIGIN` | Original practical reference showing that meaningful intelligence, cameras, compute, driver interaction, and vehicle-bus integration could be retrofitted into ordinary vehicles outside a traditional OEM program |
+| **Smart car stereo** | `FOUNDER_CONFIRMED_ORIGIN` | Velvet’s original intended product shape; the stereo became the doorway through which voice, display, touch, vehicle data, cabin presence, and eventually the larger embodied system entered |
+
+The detailed chronology is preserved in [Smart Stereo Origin Lineage](smart_stereo_origin_lineage.md).
 
 ## Researchers and Research Leaders
 
@@ -106,11 +122,10 @@ These names appear directly in surviving architecture files or implementation hi
 
 ## Fictional and Cultural Comparison Systems
 
-These references mattered. They helped define the desired experience, embodiment, transferability, restraint, and relationship even though they are not scientific sources.
+These later references helped define the desired experience, embodiment, transferability, restraint, and relationship even though they are not scientific sources. KITT is excluded from this later-comparison table because it is now recorded correctly as a founding reference.
 
 | System or character | Evidence state | Recovered comparison |
 |---|---|---|
-| **KITT** | `FICTIONAL_COMPARISON` | Long-standing vehicle-AI inspiration; used for voice, presence, loyalty, body awareness, and subtle event-driven lighting, while rejecting a simple scripted imitation |
 | **J.A.R.V.I.S.** | `FICTIONAL_COMPARISON` | Compared as a broadly capable assistant spanning systems and bodies; Velvet's path remains local-first, embodied, receipted, and authority-bounded |
 | **Data** | `FICTIONAL_COMPARISON` | Used in discussions of persistent embodied cognition and identity |
 | **HAL 9000** | `FICTIONAL_COMPARISON` | Used as a unified-system comparison and an implicit warning about opaque central authority |
@@ -137,14 +152,15 @@ These references mattered. They helped define the desired experience, embodiment
 
 The next source-specific records should be created in this order:
 
-1. Yann LeCun and Meta JEPA / V-JEPA
-2. Fei-Fei Li, World Labs, and Marble
-3. David Ha and Jürgen Schmidhuber's *World Models*
-4. Google DeepMind: Genie, RT-2, Gemini Robotics, and Robotics-ER
-5. Wayve GAIA-1
-6. Vijay Janapa Reddi and Harvard CS249r
-7. fictional comparison trail: KITT, J.A.R.V.I.S., Data, HAL, R2-D2, and Optimus Prime
-8. exact transcript recovery for MemOS, `opc-skills`, PersonaPlex-7B, ai-stenographer, KittenTTS, ART, OpenAI Gym, Hermes, and ClawBot
+1. recover the earliest smart-stereo, KITT, and comma.ai transcripts and artifacts
+2. Yann LeCun and Meta JEPA / V-JEPA
+3. Fei-Fei Li, World Labs, and Marble
+4. David Ha and Jürgen Schmidhuber's *World Models*
+5. Google DeepMind: Genie, RT-2, Gemini Robotics, and Robotics-ER
+6. Wayve GAIA-1
+7. Vijay Janapa Reddi and Harvard CS249r
+8. later fictional comparison trail: J.A.R.V.I.S., Data, HAL, R2-D2, and Optimus Prime
+9. exact transcript recovery for MemOS, `opc-skills`, PersonaPlex-7B, ai-stenographer, KittenTTS, ART, OpenAI Gym, Hermes, and ClawBot
 
 Each source-specific record should answer:
 
@@ -161,4 +177,6 @@ what was actually discussed
 
 The first archive-dusting batch did not recover enough named references.
 
-This index establishes that Velvet's history includes a substantial named research and systems trail beyond BabyX. It also prevents those names from being casually converted into false origin claims.
+The next correction was equally important: KITT and comma.ai were not later comparisons to an already mature Velvet. They were original references at the smart-stereo seed stage.
+
+This index now preserves both facts.

@@ -186,10 +186,10 @@ BabyX did not originate Court, Receipts, or Velvet’s execution law.
 
 ## Remaining Archive Questions
 
-- Which chat first used the word “Court” for authority arbitration?
+- Which recovered research or design discussion first used the word “Court” for authority arbitration?
 - When were decision, authorization, execution, and receipt first drawn as separate boxes?
-- Was event sourcing named explicitly in early discussions?
-- Were capability-security systems or object-capability models discussed directly?
+- Was event sourcing named explicitly in early research?
+- Were capability-security systems or object-capability models researched directly?
 - Which AUTOSAR, Android Automotive, or vehicle-gateway comparisons materially changed the design?
 - When did receipts expand from logs into consequence and contradiction evidence?
 

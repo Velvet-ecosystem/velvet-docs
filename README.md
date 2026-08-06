@@ -10,8 +10,42 @@ Velvet is not a single repository or a cloud persona attached to a dashboard. Sh
 
 > **Rebellion against OEM means the system adapts to the owner, not the owner to the system.**
 
+## Where Velvet Began
+
+Velvet began as an idea for a **smart car stereo in an ordinary vehicle**.
+
+**KITT** provided the original experiential reference: an intelligent presence that felt native to the car rather than attached as a disposable app. **comma.ai / openpilot** provided practical retrofit proof that meaningful vehicle intelligence could be built outside a traditional OEM program and added to cars that already existed.
+
+```text
+KITT experiential reference
+        +
+comma.ai / openpilot retrofit proof
+        |
+        v
+smart car stereo
+        |
+        v
+voice + display + touch + vehicle data
+        |
+        v
+cabin awareness and bounded vehicle requests
+        |
+        v
+identity, safety, memory, continuity, and distributed organs
+        |
+        v
+Unified-Organ AI across vehicles, homes, workshops,
+industrial spaces, and robotic bodies
+```
+
+Velvet did not begin as a finished cognitive architecture. The architecture grew because each stereo feature exposed a deeper requirement: vehicle truth, owner identity, safe authority, consequence receipts, persistent memory, continuity across hardware, graceful failure, and eventually more than one body.
+
+Read the complete trail in [Smart Stereo Origin Lineage](docs/research/smart_stereo_origin_lineage.md), then explore the wider [Research Translation and Provenance Archive](docs/research/README.md).
+
 ## Start Here
 
+- [Velvet's Smart Stereo Origin](docs/research/smart_stereo_origin_lineage.md)
+- [Research Translation and Provenance Archive](docs/research/README.md)
 - [Getting Started with Velvet](docs/getting_started.md)
 - [Ecosystem Overview](docs/ecosystem_overview.md)
 - [Public Repository Map](docs/public_repo_map.md)
@@ -203,6 +237,8 @@ This is rebellion against OEM lock-in, not rebellion against safety.
 
 ### Vision and Root Doctrine
 
+- [Velvet's Smart Stereo Origin](docs/research/smart_stereo_origin_lineage.md)
+- [Research Translation and Provenance Archive](docs/research/README.md)
 - [Rebellion Against OEM](docs/rebellion_against_oem.md)
 - [Hardware Access and Graceful Degradation](docs/hardware_access_and_graceful_degradation.md)
 - [Public and Private Boundary](docs/public_private_boundary.md)

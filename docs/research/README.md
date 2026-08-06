@@ -34,14 +34,14 @@ The backfill begins here:
    - traces how voice, vehicle data, presence, control, continuity, organs, and multiple bodies grew from that first idea
 
 3. [Named Researchers and Systems Recovery Index](named_researchers_and_systems_recovery_index.md)
-   - preserves actual researchers, labs, projects, products, standards, and fictional comparison systems named in older conversations
-   - separates founder-confirmed origins from later references, archive references, name-only mentions, and unresolved recovery candidates
+   - preserves actual researchers, labs, projects, products, standards, and fictional comparison systems named in older research work
+   - separates founder-confirmed origins from research references, archive references, name-only mentions, and unresolved recovery candidates
    - establishes the queue for source-specific research notes beyond BabyX
 
 4. [Domain Systems Recovery Index](domain_systems_recovery_index.md)
    - preserves vehicle OEM, retrofit, home, building, industrial, forge, and robotics systems
    - records named OEM comparisons and internal home concepts
-   - separates confirmed systems from standards and products whose original transcripts still need recovery
+   - separates confirmed systems from standards and products whose original source trail still needs recovery
 
 5. [Unified-Organ AI and Native Brain Lineage](unified_organ_native_brain_lineage.md)
    - reconstructs “Body is all,” named organs, local cognition, and the LLM-as-language-organ boundary
@@ -107,7 +107,7 @@ Named-reference recovery additionally distinguishes:
 
 - `FOUNDER_CONFIRMED_ORIGIN`
 - `SOURCE_MAPPED`
-- `CONFIRMED_CHAT_REFERENCE`
+- `CONFIRMED_RESEARCH_REFERENCE`
 - `CONFIRMED_ARCHIVE_REFERENCE`
 - `NAME_MENTION_ONLY`
 - `RECOVERY_CANDIDATE`

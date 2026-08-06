@@ -4,7 +4,7 @@ Status: active archive reconstruction
 
 Purpose: preserve the actual people, laboratories, projects, products, standards, and fictional comparison systems named during Velvet's development.
 
-This index corrects a weakness in the first provenance backfill: broad research families were recorded, but many of the named references from older conversations were not.
+This index corrects a weakness in the first provenance backfill: broad research families were recorded, but many of the named references from older research discussions and archive work were not.
 
 ## Evidence States
 
@@ -30,11 +30,11 @@ The name is confirmed, but the exact useful mechanism or influence has not yet b
 
 ### `RECOVERY_CANDIDATE`
 
-A later summary or memory points to the name, but the exact original transcript or source must still be recovered before attribution.
+A later summary or memory points to the name, but the exact original discussion or source must still be recovered before attribution.
 
 ### `FICTIONAL_COMPARISON`
 
-The system was used as a design compass, contrast, or cultural shorthand rather than as technical research.
+A recovered source confirms that the fictional system was used as a design compass, contrast, or cultural shorthand rather than as technical research.
 
 ## Founding References
 
@@ -75,9 +75,9 @@ The detailed chronology is preserved in [Smart Stereo Origin Lineage](smart_ster
 | **Sora / Sora 2** | OpenAI | `CONFIRMED_RESEARCH_REFERENCE` | Used as a comparison for learned visual dynamics and generated worlds, not as a model of persistent embodied identity or vehicle authority |
 | **Harvard CS249r** | Harvard University | `CONFIRMED_RESEARCH_REFERENCE` | Engineering reference for ML systems, edge constraints, observability, reliability, optimization, and deployment discipline |
 
-## Named Memory, Skill, and Voice Systems Requiring Transcript Recovery
+## Named Memory, Skill, and Voice Systems Requiring Source Recovery
 
-The following names appear in later conversation summaries, but their original discussions have not yet been recovered strongly enough for full attribution.
+The following names appear in later summaries, but their original research discussions have not yet been recovered strongly enough for full attribution.
 
 | System | Current evidence state | Provisional remembered context |
 |---|---|---|
@@ -120,18 +120,20 @@ These names appear directly in surviving architecture files or implementation hi
 | **LM Studio** | `CONFIRMED_ARCHIVE_REFERENCE` | Local-model experimentation |
 | **Tailscale** | `CONFIRMED_ARCHIVE_REFERENCE` | Optional secure transport; explicitly not identity or authority |
 
-## Fictional and Cultural Comparison Systems
+## Fictional and Cultural Comparison Candidates
 
-These later references helped define the desired experience, embodiment, transferability, restraint, and relationship even though they are not scientific sources. KITT is excluded from this later-comparison table because it is now recorded correctly as a founding reference.
+KITT is excluded because its founder-confirmed role is already recorded at the project origin.
 
-| System or character | Evidence state | Recovered comparison |
+The following later comparison names appear in retrospective summaries, but their original source pointers have not yet been attached. They remain candidates rather than confirmed comparison records.
+
+| System or character | Evidence state | Provisional remembered comparison |
 |---|---|---|
-| **J.A.R.V.I.S.** | `FICTIONAL_COMPARISON` | Compared as a broadly capable assistant spanning systems and bodies; Velvet's path remains local-first, embodied, receipted, and authority-bounded |
-| **Data** | `FICTIONAL_COMPARISON` | Used in discussions of persistent embodied cognition and identity |
-| **HAL 9000** | `FICTIONAL_COMPARISON` | Used as a unified-system comparison and an implicit warning about opaque central authority |
-| **R2-D2** | `FICTIONAL_COMPARISON` | Used in portable, persistent intelligence comparisons across bodies and environments |
-| **Optimus Prime** | `FICTIONAL_COMPARISON` | Early inspiration for an intelligent machine with strong identity, body, and protective presence |
-| **J.A.R.V.I.S. by Driftworks Studios** | `CONFIRMED_RESEARCH_REFERENCE` | Compared as a sophisticated assistant or agentic automation stack, useful as a contrast with Velvet's deeper body, continuity, and authority architecture |
+| **J.A.R.V.I.S.** | `RECOVERY_CANDIDATE` | Broadly capable assistant spanning systems and bodies |
+| **Data** | `RECOVERY_CANDIDATE` | Persistent embodied cognition and identity |
+| **HAL 9000** | `RECOVERY_CANDIDATE` | Unified-system comparison and warning about opaque central authority |
+| **R2-D2** | `RECOVERY_CANDIDATE` | Portable, persistent intelligence across bodies and environments |
+| **Optimus Prime** | `RECOVERY_CANDIDATE` | Intelligent machine with strong identity, body, and protective presence |
+| **J.A.R.V.I.S. by Driftworks Studios** | `RECOVERY_CANDIDATE` | Possible sophisticated assistant or agentic-automation comparison; exact project identity and original discussion must be recovered |
 
 ## Research Organizations and Laboratories Named in Earlier Surveys
 
@@ -152,15 +154,15 @@ These later references helped define the desired experience, embodiment, transfe
 
 The next source-specific records should be created in this order:
 
-1. recover the earliest smart-stereo, KITT, and comma.ai transcripts and artifacts
+1. recover the earliest smart-stereo, KITT, and comma.ai discussions and artifacts
 2. Yann LeCun and Meta JEPA / V-JEPA
 3. Fei-Fei Li, World Labs, and Marble
 4. David Ha and Jürgen Schmidhuber's *World Models*
 5. Google DeepMind: Genie, RT-2, Gemini Robotics, and Robotics-ER
 6. Wayve GAIA-1
 7. Vijay Janapa Reddi and Harvard CS249r
-8. later fictional comparison trail: J.A.R.V.I.S., Data, HAL, R2-D2, and Optimus Prime
-9. exact transcript recovery for MemOS, `opc-skills`, PersonaPlex-7B, ai-stenographer, KittenTTS, ART, OpenAI Gym, Hermes, and ClawBot
+8. recover the exact fictional-comparison trail before promoting any candidate
+9. exact source recovery for MemOS, `opc-skills`, PersonaPlex-7B, ai-stenographer, KittenTTS, ART, OpenAI Gym, Hermes, and ClawBot
 
 Each source-specific record should answer:
 
@@ -179,4 +181,4 @@ The first archive-dusting batch did not recover enough named references.
 
 The next correction was equally important: KITT and comma.ai were not later comparisons to an already mature Velvet. They were original references at the smart-stereo seed stage.
 
-This index now preserves both facts.
+The final correction is evidentiary: remembered names without recovered source pointers remain candidates, no matter how neatly they fit the story.

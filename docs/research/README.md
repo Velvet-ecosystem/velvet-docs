@@ -45,7 +45,7 @@ The backfill begins here:
 
 5. [Domain Systems Recovery Index](domain_systems_recovery_index.md)
    - preserves vehicle OEM, retrofit, home, building, industrial, forge, and robotics systems
-   - records named OEM comparisons and internal home concepts
+   - records OEM research references, confirmed domain requirements, and candidate internal concept names
    - separates confirmed systems from standards and products whose original source trail still needs recovery
 
 6. [Unified-Organ AI and Native Brain Lineage](unified_organ_native_brain_lineage.md)

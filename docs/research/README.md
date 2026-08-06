@@ -46,6 +46,18 @@ The backfill begins here:
 7. [Local-First and Platform Lineage](local_first_platform_lineage.md)
    - separates internal ownership values from confirmed Linux, AGL, Yocto, SocketCAN, Qt, Vosk, and local-model foundations
 
+8. [Ghost System and Module Promotion Lineage](ghost_module_promotion_lineage.md)
+   - reconstructs deterministic public replay, recovery, Module Lab, quarantine, and promotion evidence
+
+9. [World Logic and Identity Logic Lineage](world_identity_logic_lineage.md)
+   - reconstructs one shared uncertain reality, entity identity, time, space, simulation, and recognition evidence
+
+10. [Persistent Self, No Drift, and Owner/Guest Lineage](persistent_self_owner_guest_lineage.md)
+    - reconstructs model-independent self-orientation, protected doctrine, user separation, and bounded adaptation
+
+11. [Scene and Room-Body Interface Lineage](scene_room_body_interface_lineage.md)
+    - reconstructs scene-based presence, object interaction, body binding, boot identity, and the no-direct-actuation interface law
+
 ## Provenance Rule
 
 A finished Velvet doctrine should not hide where an outside idea came from or how it was transformed.

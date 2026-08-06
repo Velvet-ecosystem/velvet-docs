@@ -8,7 +8,7 @@ Provenance state: `CONFIRMED_INTERNAL`, `CONVERGENT`
 
 This architecture did not begin as an abstract autonomous-driving exercise.
 
-Its primary recovered origin is a real family safety requirement: a driver may become unresponsive because of seizure, fainting, or another medical event, and the vehicle should support a bounded path toward a minimal-risk stop while preserving evidence and human authority.
+Its primary recovered origin is a founder-confirmed real-world safety requirement: a driver may become suddenly unresponsive because of a neurological, circulatory, or other medical event, and the vehicle should support a bounded path toward a minimal-risk stop while preserving evidence and human authority.
 
 That requirement shaped Temperance and Charlotte:
 
@@ -37,7 +37,7 @@ The early scenario included:
 - optional emergency call or message
 - explicit “resume control” confirmation
 
-The design also considered a 2000 Dodge Dakota medical test plan for the user’s son, including a three-month theory and prototyping phase rather than immediate full installation.
+A later second-vehicle research plan explored portability to an older automatic-transmission retrofit body through a theory and prototyping phase rather than immediate full installation. Personal family and medical details are intentionally excluded from the public provenance record.
 
 ## Internal Design Laws
 
@@ -129,14 +129,14 @@ Simulation must exercise the same Event Protocol, Court, execution, and receipt 
 
 The correct current statement is:
 
-> Velvet’s medical guardian and minimal-risk-stop architecture originated in a concrete family safety need and was developed internally. It is convergent with driver monitoring, minimal-risk manoeuvre, functional-safety, and medical escalation engineering, but no single external origin is currently proven.
+> Velvet’s medical guardian and minimal-risk-stop architecture originated in a founder-confirmed real-world safety need and was developed internally. It is convergent with driver monitoring, minimal-risk manoeuvre, functional-safety, and medical escalation engineering, but no single external origin is currently proven.
 
 ## Remaining Archive Questions
 
 - When were Temperance and Charlotte first named?
 - What was the earliest complete driver-unresponsive state machine?
-- Which driver-monitoring or minimal-risk-stop systems were explicitly discussed?
+- Which driver-monitoring or minimal-risk-stop systems were explicitly researched?
 - When was the two-to-three-second confirmation window introduced?
 - Which vehicle actuator research changed the emergency plan?
-- When did the Western Star become the preferred observation testbed?
-- Which safety standards or OEM systems should be added as confirmed comparisons after source review?
+- When did the heavy-truck observation testbed become part of the validation plan?
+- Which safety standards or OEM systems should be added as source-mapped comparisons after direct review?

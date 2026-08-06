@@ -33,34 +33,39 @@ The backfill begins here:
    - separates confirmed chat references from archive references, name-only mentions, and unresolved recovery candidates
    - establishes the queue for source-specific research notes beyond BabyX
 
-3. [Unified-Organ AI and Native Brain Lineage](unified_organ_native_brain_lineage.md)
+3. [Domain Systems Recovery Index](domain_systems_recovery_index.md)
+   - preserves vehicle OEM, retrofit, home, building, industrial, forge, and robotics systems
+   - records named OEM comparisons and internal home concepts
+   - separates confirmed systems from standards and products whose original transcripts still need recovery
+
+4. [Unified-Organ AI and Native Brain Lineage](unified_organ_native_brain_lineage.md)
    - reconstructs “Body is all,” named organs, local cognition, and the LLM-as-language-organ boundary
 
-4. [Event Protocol, Court, and Receipts Lineage](event_authority_receipt_lineage.md)
+5. [Event Protocol, Court, and Receipts Lineage](event_authority_receipt_lineage.md)
    - reconstructs observation, proposal, authorization, execution, and receipt separation
 
-5. [Riven and Continuity Lineage](riven_continuity_lineage.md)
+6. [Riven and Continuity Lineage](riven_continuity_lineage.md)
    - reconstructs identity through replacement, gaps, recovery, and succession
 
-6. [Silence, Distributed Reasoning, and Simulated Body Lineage](silence_distribution_simulation_lineage.md)
+7. [Silence, Distributed Reasoning, and Simulated Body Lineage](silence_distribution_simulation_lineage.md)
    - reconstructs attention arbitration, graceful load sharing, practice bodies, and sensor normalization
 
-7. [Medical Guardian and Minimal-Risk Stop Lineage](medical_minimal_risk_lineage.md)
+8. [Medical Guardian and Minimal-Risk Stop Lineage](medical_minimal_risk_lineage.md)
    - records the real family-safety origin and the separation of evidence, emergency doctrine, and physical authority
 
-8. [Local-First and Platform Lineage](local_first_platform_lineage.md)
+9. [Local-First and Platform Lineage](local_first_platform_lineage.md)
    - separates internal ownership values from confirmed Linux, AGL, Yocto, SocketCAN, Qt, Vosk, and local-model foundations
 
-9. [Ghost System and Module Promotion Lineage](ghost_module_promotion_lineage.md)
-   - reconstructs deterministic public replay, recovery, Module Lab, quarantine, and promotion evidence
+10. [Ghost System and Module Promotion Lineage](ghost_module_promotion_lineage.md)
+    - reconstructs deterministic public replay, recovery, Module Lab, quarantine, and promotion evidence
 
-10. [World Logic and Identity Logic Lineage](world_identity_logic_lineage.md)
+11. [World Logic and Identity Logic Lineage](world_identity_logic_lineage.md)
     - reconstructs one shared uncertain reality, entity identity, time, space, simulation, and recognition evidence
 
-11. [Persistent Self, No Drift, and Owner/Guest Lineage](persistent_self_owner_guest_lineage.md)
+12. [Persistent Self, No Drift, and Owner/Guest Lineage](persistent_self_owner_guest_lineage.md)
     - reconstructs model-independent self-orientation, protected doctrine, user separation, and bounded adaptation
 
-12. [Scene and Room-Body Interface Lineage](scene_room_body_interface_lineage.md)
+13. [Scene and Room-Body Interface Lineage](scene_room_body_interface_lineage.md)
     - reconstructs scene-based presence, object interaction, body binding, boot identity, and the no-direct-actuation interface law
 
 ## Provenance Rule
@@ -101,5 +106,7 @@ Named-reference recovery additionally distinguishes:
 - `NAME_MENTION_ONLY`
 - `RECOVERY_CANDIDATE`
 - `FICTIONAL_COMPARISON`
+- `INTERNAL_DOMAIN_CONCEPT`
+- `CONVERGENT_FAMILY`
 
 These labels may change when stronger archive evidence is recovered. Changes should be receipted rather than silently rewritten.

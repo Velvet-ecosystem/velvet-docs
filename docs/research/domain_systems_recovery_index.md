@@ -68,6 +68,8 @@ The later medical-mobility research trail explicitly compared or catalogued the 
 | **European eCall** | `CONFIRMED_RESEARCH_REFERENCE` | Emergency communications after a serious event |
 | **comma.ai / openpilot** | `FOUNDER_CONFIRMED_ORIGIN` | Original retrofit-intelligence reference; later also remained useful as an open-source driver-assistance and supported-vehicle comparison |
 
+These remain research references rather than source-mapped translations until individual source notes are completed.
+
 ## Recovered OEM Lessons
 
 The archive identifies reusable OEM mechanisms:
@@ -143,20 +145,26 @@ These are evidence sources, not executable modules. Direct hardware paths remain
 
 # 2. Home, Building, and Property Automation
 
-## Internal Named Home Concepts
+## Confirmed Home Domain
 
-The following names are confirmed internal Velvet concepts from the home-automation design trail:
+The home-automation domain itself is confirmed through the wider Velvet body design. Recovered requirements include room context, property presence, climate, lighting, security, energy, garage state, vehicle arrival, and continuity between home and forge.
 
-| Internal concept | Evidence state | Recovered role |
+## Candidate Internal Home Concept Names
+
+The following names appear in retrospective summaries, but their original concept document, conversation, commit, or founder confirmation has not yet been attached.
+
+They therefore remain `RECOVERY_CANDIDATE` even though the underlying home-domain requirements are confirmed.
+
+| Candidate concept name | Evidence state | Provisional remembered role |
 |---|---|---|
-| **The Castle Wakes** | `INTERNAL_DOMAIN_CONCEPT` | Whole-home transition from rest into an inhabited, ready state |
-| **The Living Floorplan** | `INTERNAL_DOMAIN_CONCEPT` | Spatially organized home state and interaction rather than a flat device list |
-| **The Quiet Command** | `INTERNAL_DOMAIN_CONCEPT` | Low-friction, restrained control that avoids constant chatter |
-| **The Threshold** | `INTERNAL_DOMAIN_CONCEPT` | Entry, identity, presence, greeting, security, and mode transition |
-| **The Night Watch** | `INTERNAL_DOMAIN_CONCEPT` | Overnight security, perimeter awareness, quiet alerting, and protective presence |
-| **The Conservatory of Quiet Things** | `INTERNAL_DOMAIN_CONCEPT` | Ambient, low-noise environmental awareness and gentle automation |
-| **The Forge Connection** | `INTERNAL_DOMAIN_CONCEPT` | Shared home-to-workshop continuity, tools, environment, and safety |
-| **The Master Surface** | `INTERNAL_DOMAIN_CONCEPT` | A unified owner-facing surface across home, vehicle, forge, and other bodies |
+| **The Castle Wakes** | `RECOVERY_CANDIDATE` | Whole-home transition from rest into an inhabited, ready state |
+| **The Living Floorplan** | `RECOVERY_CANDIDATE` | Spatially organized home state and interaction rather than a flat device list |
+| **The Quiet Command** | `RECOVERY_CANDIDATE` | Low-friction, restrained control that avoids constant chatter |
+| **The Threshold** | `RECOVERY_CANDIDATE` | Entry, identity, presence, greeting, security, and mode transition |
+| **The Night Watch** | `RECOVERY_CANDIDATE` | Overnight security, perimeter awareness, quiet alerting, and protective presence |
+| **The Conservatory of Quiet Things** | `RECOVERY_CANDIDATE` | Ambient, low-noise environmental awareness and gentle automation |
+| **The Forge Connection** | `RECOVERY_CANDIDATE` | Shared home-to-workshop continuity, tools, environment, and safety |
+| **The Master Surface** | `RECOVERY_CANDIDATE` | A unified owner-facing surface across home, vehicle, forge, and other bodies |
 
 ## Recovered Home Capabilities
 
@@ -187,9 +195,9 @@ The historical home concepts include:
 - cloud integrations may be optional tools but cannot own the home body
 - home scenes should share Event Protocol, Receipts, Riven, and World Logic with the vehicle body
 
-## Named Home Platforms and Standards Still Needing Transcript Recovery
+## Named Home Platforms and Standards Still Needing Source Recovery
 
-The current archive pass has not yet proven that any of the following were historically discussed:
+The current archive pass has not yet proven that any of the following were historically researched:
 
 - Home Assistant
 - Matter
@@ -203,7 +211,7 @@ The current archive pass has not yet proven that any of the following were histo
 - Google Home
 - Amazon Alexa smart-home APIs
 
-These belong in the search queue only. They must not be listed as Velvet influences until the original transcript or file is recovered.
+These belong in the search queue only. They must not be listed as Velvet influences until the original discussion or archive file is recovered.
 
 # 3. Industrial, Forge, and Building-Control Systems
 
@@ -254,9 +262,9 @@ Forge automation should remain a body with explicit machine boundaries, not a ge
 - receipts must preserve denied, interrupted, failed, and uncertain machine actions
 - simulated process success does not prove safe physical control
 
-## Industrial Standards and Platforms Still Needing Transcript Recovery
+## Industrial Standards and Platforms Still Needing Source Recovery
 
-The current archive evidence does not yet prove historical discussion of:
+The current archive evidence does not yet prove historical research of:
 
 - PLCs from a specific vendor
 - SCADA products
@@ -302,9 +310,9 @@ observe
   -> receipt the result
 ```
 
-## Robotics Systems Still Needing Transcript Recovery
+## Robotics Systems Still Needing Source Recovery
 
-The current archive pass has not yet proven historical discussion of:
+The current archive pass has not yet proven historical research of:
 
 - ROS or ROS 2
 - MoveIt
@@ -350,14 +358,14 @@ The same cognitive or memory mechanism may appear in every body, but each domain
 
 ## Home
 
-1. Recover the original conversations for each named home concept.
-2. Identify any named home platforms, standards, or commercial systems actually discussed.
+1. Recover the original source for each candidate home concept name.
+2. Identify any named home platforms, standards, or commercial systems actually researched.
 3. Recover the home body registry, room model, energy, security, and garage paths.
 4. Separate ambience, convenience, safety, and authority.
 
 ## Industrial and Forge
 
-1. Recover machine and forge concepts from old chats and archive files.
+1. Recover machine and forge concepts from old discussions and archive files.
 2. Identify any named PLC, SCADA, protocol, safety-standard, or industrial-HMI references.
 3. Recover resource, saturation, power, ventilation, and emergency-stop reasoning.
 4. Preserve the difference between user-interface emergency controls and hardwired safety.
@@ -374,4 +382,6 @@ The provenance archive must cover the full Velvet ecosystem.
 
 AI research is one shelf. Vehicle OEM engineering, retrofit culture, home automation, industrial control, forge safety, interface systems, and robotics are equally important shelves.
 
-The vehicle shelf now begins at the correct root: KITT and comma.ai inspired a smart stereo, and the rest of Velvet grew outward from there.
+The vehicle shelf begins at the correct root: KITT and comma.ai inspired a smart stereo, and the rest of Velvet grew outward from there.
+
+The domain shelf now also distinguishes confirmed requirements from memorable names that still need evidence.

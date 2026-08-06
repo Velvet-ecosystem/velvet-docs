@@ -16,9 +16,9 @@ The founder directly confirms that the reference was present at the project’s 
 
 The named reference has a dedicated Velvet source map or lineage note with direct source review.
 
-### `CONFIRMED_CHAT_REFERENCE`
+### `CONFIRMED_RESEARCH_REFERENCE`
 
-The historical conversation trail confirms that the name was discussed and preserves enough context to state how it was used.
+The recovered research trail confirms that the person, project, system, or source was deliberately examined or compared during Velvet's development and preserves enough context to state how it was used.
 
 ### `CONFIRMED_ARCHIVE_REFERENCE`
 
@@ -53,11 +53,11 @@ The detailed chronology is preserved in [Smart Stereo Origin Lineage](smart_ster
 | Name | Related work or organization | Evidence state | Recovered Velvet context |
 |---|---|---|---|
 | **Mark Sagar** | BabyX; Laboratory for Animate Technologies | `SOURCE_MAPPED` | BabyX mechanisms were reviewed for event-sized cognition, perception-action loops, salience, interruption, episodic consolidation, modulators, turn-taking, and bounded plasticity |
-| **Yann LeCun** | Meta; JEPA, V-JEPA, V-JEPA 2; world-model research | `CONFIRMED_CHAT_REFERENCE` | Velvet was compared with LeCun's world-model direction while distinguishing Velvet's embodied, vehicle-first, domain-bounded path from a universal learned model |
-| **Fei-Fei Li** | World Labs; spatial intelligence; Marble | `CONFIRMED_CHAT_REFERENCE` | Used when discussing the difference between memory as stored history and a world model as structured meaning, relationships, space, and interaction |
-| **David Ha** | 2018 *World Models* work | `CONFIRMED_CHAT_REFERENCE` | Named as part of the world-model research trail to inspect for compressed environment representation, imagined rollouts, and separation between model and controller |
-| **Jürgen Schmidhuber** | 2018 *World Models* work and earlier recurrent world-model research | `CONFIRMED_CHAT_REFERENCE` | Named alongside David Ha as an earlier world-model architecture reference |
-| **Vijay Janapa Reddi** | Harvard CS249r; machine-learning systems and edge deployment | `CONFIRMED_CHAT_REFERENCE` | CS249r was treated as an engineering-rigor reference for benchmarking, inference optimization, compression, reliability, monitoring, data pipelines, and constrained edge deployment |
+| **Yann LeCun** | Meta; JEPA, V-JEPA, V-JEPA 2; world-model research | `CONFIRMED_RESEARCH_REFERENCE` | Velvet was compared with LeCun's world-model direction while distinguishing Velvet's embodied, vehicle-first, domain-bounded path from a universal learned model |
+| **Fei-Fei Li** | World Labs; spatial intelligence; Marble | `CONFIRMED_RESEARCH_REFERENCE` | Used when discussing the difference between memory as stored history and a world model as structured meaning, relationships, space, and interaction |
+| **David Ha** | 2018 *World Models* work | `CONFIRMED_RESEARCH_REFERENCE` | Named as part of the world-model research trail to inspect for compressed environment representation, imagined rollouts, and separation between model and controller |
+| **Jürgen Schmidhuber** | 2018 *World Models* work and earlier recurrent world-model research | `CONFIRMED_RESEARCH_REFERENCE` | Named alongside David Ha as an earlier world-model architecture reference |
+| **Vijay Janapa Reddi** | Harvard CS249r; machine-learning systems and edge deployment | `CONFIRMED_RESEARCH_REFERENCE` | CS249r was treated as an engineering-rigor reference for benchmarking, inference optimization, compression, reliability, monitoring, data pipelines, and constrained edge deployment |
 | **Yoshua Bengio** | AI research | `NAME_MENTION_ONLY` | Included in an earlier survey of world-model and AI research directions; the specific mechanism adopted or rejected has not yet been recovered |
 
 ## Named World-Model and Embodied-AI Systems
@@ -65,15 +65,15 @@ The detailed chronology is preserved in [Smart Stereo Origin Lineage](smart_ster
 | System or project | Organization | Evidence state | Recovered Velvet use |
 |---|---|---|---|
 | **BabyX** | Mark Sagar and collaborators | `SOURCE_MAPPED` | Direct research translation and implementation trail |
-| **JEPA / V-JEPA / V-JEPA 2** | Meta | `CONFIRMED_CHAT_REFERENCE` | Compared with Velvet's effort to understand and predict a physical world through observation rather than language alone |
-| **World Labs / Marble** | World Labs | `CONFIRMED_CHAT_REFERENCE` | Compared with Velvet's spatially structured world model; useful contrast because Marble generates and reasons over 3D worlds while Velvet binds evidence to a persistent physical body |
-| **Genie 2 / Genie 3** | Google DeepMind | `CONFIRMED_CHAT_REFERENCE` | Considered in the world-model survey as interactive environment and simulation systems; relevant to practice worlds, imagined consequence, and test environments, not physical authority |
-| **Gemini Robotics** | Google DeepMind | `CONFIRMED_CHAT_REFERENCE` | Compared as embodied reasoning and action research; Velvet preserves a stricter split between interpretation, Court, capability-bound execution, and receipts |
-| **Gemini Robotics-ER** | Google DeepMind | `CONFIRMED_CHAT_REFERENCE` | Named as embodied-reasoning research relevant to spatial understanding and planning |
-| **RT-2** | Google DeepMind | `CONFIRMED_CHAT_REFERENCE` | Included in the robotics-system comparison set; detailed Adopt / Adapt / Reject analysis remains to be reconstructed |
-| **Wayve GAIA-1** | Wayve | `CONFIRMED_CHAT_REFERENCE` | Named in the world-model comparison set for autonomous-driving environment generation and prediction |
-| **Sora / Sora 2** | OpenAI | `CONFIRMED_CHAT_REFERENCE` | Used as a comparison for learned visual dynamics and generated worlds, not as a model of persistent embodied identity or vehicle authority |
-| **Harvard CS249r** | Harvard University | `CONFIRMED_CHAT_REFERENCE` | Engineering reference for ML systems, edge constraints, observability, reliability, optimization, and deployment discipline |
+| **JEPA / V-JEPA / V-JEPA 2** | Meta | `CONFIRMED_RESEARCH_REFERENCE` | Compared with Velvet's effort to understand and predict a physical world through observation rather than language alone |
+| **World Labs / Marble** | World Labs | `CONFIRMED_RESEARCH_REFERENCE` | Compared with Velvet's spatially structured world model; useful contrast because Marble generates and reasons over 3D worlds while Velvet binds evidence to a persistent physical body |
+| **Genie 2 / Genie 3** | Google DeepMind | `CONFIRMED_RESEARCH_REFERENCE` | Considered in the world-model survey as interactive environment and simulation systems; relevant to practice worlds, imagined consequence, and test environments, not physical authority |
+| **Gemini Robotics** | Google DeepMind | `CONFIRMED_RESEARCH_REFERENCE` | Compared as embodied reasoning and action research; Velvet preserves a stricter split between interpretation, Court, capability-bound execution, and receipts |
+| **Gemini Robotics-ER** | Google DeepMind | `CONFIRMED_RESEARCH_REFERENCE` | Named as embodied-reasoning research relevant to spatial understanding and planning |
+| **RT-2** | Google DeepMind | `CONFIRMED_RESEARCH_REFERENCE` | Included in the robotics-system comparison set; detailed Adopt / Adapt / Reject analysis remains to be reconstructed |
+| **Wayve GAIA-1** | Wayve | `CONFIRMED_RESEARCH_REFERENCE` | Named in the world-model comparison set for autonomous-driving environment generation and prediction |
+| **Sora / Sora 2** | OpenAI | `CONFIRMED_RESEARCH_REFERENCE` | Used as a comparison for learned visual dynamics and generated worlds, not as a model of persistent embodied identity or vehicle authority |
+| **Harvard CS249r** | Harvard University | `CONFIRMED_RESEARCH_REFERENCE` | Engineering reference for ML systems, edge constraints, observability, reliability, optimization, and deployment discipline |
 
 ## Named Memory, Skill, and Voice Systems Requiring Transcript Recovery
 
@@ -91,7 +91,7 @@ The following names appear in later conversation summaries, but their original d
 | **Hermes** | `RECOVERY_CANDIDATE` | Mentioned as a system Velvet should not simply resemble; exact project and contrast remain unresolved |
 | **ClawBot / Claw Bot** | `RECOVERY_CANDIDATE` | Mentioned as a contrast; exact spelling, project identity, and context remain unresolved |
 
-These entries must not be promoted to `CONFIRMED_CHAT_REFERENCE` until the original conversation or archived source is recovered.
+These entries must not be promoted to `CONFIRMED_RESEARCH_REFERENCE` until the original discussion or archived source is recovered.
 
 ## Named Automotive, Interface, Messaging, and Voice Foundations
 
@@ -131,18 +131,18 @@ These later references helped define the desired experience, embodiment, transfe
 | **HAL 9000** | `FICTIONAL_COMPARISON` | Used as a unified-system comparison and an implicit warning about opaque central authority |
 | **R2-D2** | `FICTIONAL_COMPARISON` | Used in portable, persistent intelligence comparisons across bodies and environments |
 | **Optimus Prime** | `FICTIONAL_COMPARISON` | Early inspiration for an intelligent machine with strong identity, body, and protective presence |
-| **J.A.R.V.I.S. by Driftworks Studios** | `CONFIRMED_CHAT_REFERENCE` | Compared as a sophisticated assistant or agentic automation stack, useful as a contrast with Velvet's deeper body, continuity, and authority architecture |
+| **J.A.R.V.I.S. by Driftworks Studios** | `CONFIRMED_RESEARCH_REFERENCE` | Compared as a sophisticated assistant or agentic automation stack, useful as a contrast with Velvet's deeper body, continuity, and authority architecture |
 
 ## Research Organizations and Laboratories Named in Earlier Surveys
 
 | Organization | Evidence state | Recovered context |
 |---|---|---|
-| **Meta AI** | `CONFIRMED_CHAT_REFERENCE` | JEPA and physical-world representation research |
-| **World Labs** | `CONFIRMED_CHAT_REFERENCE` | Spatial intelligence and 3D world models |
-| **Google DeepMind** | `CONFIRMED_CHAT_REFERENCE` | Genie, Gemini Robotics, RT-2, and embodied/world-model research |
-| **Wayve** | `CONFIRMED_CHAT_REFERENCE` | Autonomous-driving world models |
-| **OpenAI** | `CONFIRMED_CHAT_REFERENCE` | Sora as a learned-dynamics and generated-world comparison |
-| **Harvard Edge Computing Lab / CS249r** | `CONFIRMED_CHAT_REFERENCE` | ML-systems engineering, edge constraints, and deployment rigor |
+| **Meta AI** | `CONFIRMED_RESEARCH_REFERENCE` | JEPA and physical-world representation research |
+| **World Labs** | `CONFIRMED_RESEARCH_REFERENCE` | Spatial intelligence and 3D world models |
+| **Google DeepMind** | `CONFIRMED_RESEARCH_REFERENCE` | Genie, Gemini Robotics, RT-2, and embodied/world-model research |
+| **Wayve** | `CONFIRMED_RESEARCH_REFERENCE` | Autonomous-driving world models |
+| **OpenAI** | `CONFIRMED_RESEARCH_REFERENCE` | Sora as a learned-dynamics and generated-world comparison |
+| **Harvard Edge Computing Lab / CS249r** | `CONFIRMED_RESEARCH_REFERENCE` | ML-systems engineering, edge constraints, and deployment rigor |
 | **CMU** | `NAME_MENTION_ONLY` | Included in an earlier research-organization survey; exact project connection remains unrecovered |
 | **MIT** | `NAME_MENTION_ONLY` | Included in an earlier research-organization survey; exact project connection remains unrecovered |
 | **Toyota Research Institute** | `NAME_MENTION_ONLY` | Included in an earlier robotics and automotive research survey; exact comparison remains unrecovered |

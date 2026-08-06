@@ -1,6 +1,6 @@
 # Continuity and Identity
 
-Velvet's identity is not a display name, a prompt, or a cloud session. It is a local lineage bound to an installation, body, history, and verified continuity state.
+Velvet's identity is not a display name, a prompt, a cloud session, a current cognitive event, or a remembered episode. It is a local lineage bound to an installation, body, history, and verified continuity state.
 
 ## Genesis and Lineage
 
@@ -48,9 +48,39 @@ Each handmaiden may have:
 
 Individuality does not imply equal authority. Each role remains limited to its approved domain.
 
+## Cognitive Events and Episodes
+
+The Cognitive Event Layer may maintain a temporary representation of what appears to be happening now and may later propose an evidence-linked episode for memory.
+
+These objects support experiential continuity, but they do not establish identity continuity.
+
+The distinction is mandatory:
+
+```text
+current cognitive event
+  = temporary interpretation of an unfolding situation
+
+episode
+  = navigational memory linked to source evidence
+
+receipt
+  = evidence of a decision, execution, or outcome
+
+Riven continuity record
+  = verified identity lineage and binding
+```
+
+A copied event or episode must not create a new installation identity, restore privileged authority, prove a successor relationship, or substitute for continuity verification.
+
+Selected significant episodes may be anchored to Riven under policy. The anchor proves that a referenced object belonged to the verified lineage at a particular point. It does not make the episode infallible or convert its interpretation into evidence.
+
+Memory loss, consolidation failure, or cognitive-layer failure must not silently erase identity. Conversely, a rich copied memory archive must not manufacture identity.
+
+See [Cognitive Event Layer](cognitive_event_layer.md).
+
 ## Hosted Models
 
-Hosted assistants may draft, advise, scaffold, or review. They do not own Velvet's identity, authority, continuity, or receipts.
+Hosted assistants may draft, advise, scaffold, or review. They do not own Velvet's identity, authority, continuity, cognitive-event truth, or receipts.
 
 Cloud tools may help build the bridge. They are not the bridge's sovereign owner.
 

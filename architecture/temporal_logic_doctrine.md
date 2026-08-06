@@ -90,6 +90,35 @@ Temporal Logic never invents precision to make a timeline appear complete.
 
 Known, estimated, inferred, stale, disputed, and unknown time must remain distinguishable.
 
+## Relationship to the Cognitive Event Layer
+
+Temporal Logic defines how time remains truthful. The Cognitive Event Layer uses that truth to form bounded interpretations of unfolding situations.
+
+A cognitive event must preserve at least:
+
+- start time and last-update time
+- source timestamps and monotonic ordering where available
+- freshness and expiry
+- duration of states and absences
+- event-boundary evidence
+- prediction horizon and deadline
+- interruption time
+- completion, timeout, or unknown-outcome time
+- clock uncertainty and replay state
+
+The Cognitive Event Layer may propose that a sequence belongs to one event, that an event has ended, or that one event interrupted another. Those are interpretations and must retain their temporal evidence.
+
+A boundary proposal must not fabricate order, duration, or continuity. When clocks disagree, the event remains estimated, disputed, or partially ordered until evidence resolves it.
+
+Prediction errors are temporal as well as semantic. An expected state may be wrong because the state differed, because it arrived late, because observation failed, or because the clocks cannot establish whether the deadline was missed. These cases must remain distinct.
+
+Interrupted events preserve the gap. Resumption does not silently join the before and after portions unless identity, context, evidence, and timing still support one continuous event.
+
+See:
+
+- [Cognitive Event Layer](../docs/cognitive_event_layer.md)
+- [Cognitive Event Layer Integration Plan](../docs/cognitive_event_integration_plan.md)
+
 ## Doctrine Statement
 
 Velvet understands time as an intrinsic part of reality itself, not merely as a label assigned after events occur.

@@ -46,6 +46,34 @@ Owned by:
 
 - `velvet-event-protocol`
 
+### Cognitive Event Layer
+
+The Cognitive Event Layer binds related observations into a bounded representation of what appears to be happening now. It may track event boundaries, predictions, interruptions, authorized-action outcomes, and evidence-linked episode proposals.
+
+It is connective tissue inside the Unified-Organ body, not a new sovereign agent or authority source.
+
+```text
+observations
+  -> current cognitive event
+  -> bounded proposal
+  -> Runtime and Court
+  -> approved execution
+  -> observed outcome and receipts
+  -> episode consolidation
+```
+
+The layer may improve coherence. It cannot mint capabilities, authorize itself, execute hardware, retry actions, replace receipts, or treat memory as identity proof.
+
+Owned across bounded responsibilities by:
+
+- `velvet-event-protocol`
+- `velvet-ai-core`
+- `velvet-runtime`
+- `velvet-receipts`
+- `velvet-continuity-spine`
+
+See [Cognitive Event Layer](cognitive_event_layer.md).
+
 ### Vehicle Observation
 
 Vehicle CAN observation is receive-only by default. Raw evidence and decoded interpretation remain separate products.

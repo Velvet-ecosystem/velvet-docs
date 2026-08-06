@@ -8,6 +8,7 @@ This index is intentionally separate from the named-researcher index. A system m
 
 ## Evidence States
 
+- `FOUNDER_CONFIRMED_ORIGIN`
 - `CONFIRMED_CHAT_REFERENCE`
 - `CONFIRMED_ARCHIVE_REFERENCE`
 - `NAME_MENTION_ONLY`
@@ -19,9 +20,33 @@ Similarity does not establish historical influence. Unrecovered standards and pr
 
 # 1. Vehicle OEM and Retrofit Systems
 
+## Founder-Confirmed Origin
+
+Before the later OEM comparison tables, medical-mobility research, Court architecture, or Unified-Organ doctrine, Velvet began as a **smart car stereo**.
+
+Two original references were present at that seed stage:
+
+- **KITT**, as the experiential reference for an intelligent presence native to the vehicle
+- **comma.ai / openpilot**, as practical evidence that meaningful vehicle intelligence could be retrofitted into ordinary cars outside a traditional OEM program
+
+These are classified as `FOUNDER_CONFIRMED_ORIGIN`, not merely later comparisons.
+
+The corrected growth path is:
+
+```text
+KITT + comma.ai
+  -> smart car stereo
+  -> voice, display, touch, and vehicle data
+  -> cabin awareness and bounded vehicle requests
+  -> persistent embodied vehicle intelligence
+  -> multi-body Unified-Organ AI
+```
+
+See [Smart Stereo Origin Lineage](smart_stereo_origin_lineage.md) for the detailed reconstruction.
+
 ## Driver Monitoring, Emergency Assist, and Minimal-Risk Stop Comparisons
 
-The medical-mobility research trail explicitly compared or catalogued the following systems:
+The later medical-mobility research trail explicitly compared or catalogued the following systems:
 
 | OEM or system | Evidence state | Recovered Velvet use |
 |---|---|---|
@@ -41,7 +66,7 @@ The medical-mobility research trail explicitly compared or catalogued the follow
 | **Tesla Autopilot / FSD driver monitoring** | `CONFIRMED_CHAT_REFERENCE` | Driver-monitoring strengths, failure patterns, naming risk, and supervision expectations |
 | **XPeng XNGP / P7+** | `CONFIRMED_CHAT_REFERENCE` | Broader advanced-driving-system comparison |
 | **European eCall** | `CONFIRMED_CHAT_REFERENCE` | Emergency communications after a serious event |
-| **comma.ai / openpilot** | `CONFIRMED_CHAT_REFERENCE` | Open-source retrofit precedent, user-installed hardware, supported-vehicle breadth, driver responsibility, and hacker-built vehicle augmentation |
+| **comma.ai / openpilot** | `FOUNDER_CONFIRMED_ORIGIN` | Original retrofit-intelligence reference; later also remained useful as an open-source driver-assistance and supported-vehicle comparison |
 
 ## Recovered OEM Lessons
 
@@ -317,10 +342,11 @@ The same cognitive or memory mechanism may appear in every body, but each domain
 
 ## Vehicle OEM
 
-1. Recover the original OEM comparison tables and scorecards.
-2. Map each named system to direct source material.
-3. Record what Velvet adopted, adapted, rejected, or found missing.
-4. Link the findings to Temperance, Charlotte, driver monitoring, emergency communication, and retrofit-body doctrine.
+1. Recover the original smart-stereo, KITT, and comma.ai discussions and artifacts.
+2. Recover the later OEM comparison tables and scorecards.
+3. Map each named system to direct source material.
+4. Record what Velvet adopted, adapted, rejected, or found missing.
+5. Link the findings to Temperance, Charlotte, driver monitoring, emergency communication, and retrofit-body doctrine.
 
 ## Home
 
@@ -347,3 +373,5 @@ The same cognitive or memory mechanism may appear in every body, but each domain
 The provenance archive must cover the full Velvet ecosystem.
 
 AI research is one shelf. Vehicle OEM engineering, retrofit culture, home automation, industrial control, forge safety, interface systems, and robotics are equally important shelves.
+
+The vehicle shelf now begins at the correct root: KITT and comma.ai inspired a smart stereo, and the rest of Velvet grew outward from there.

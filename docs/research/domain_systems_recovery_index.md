@@ -9,7 +9,7 @@ This index is intentionally separate from the named-researcher index. A system m
 ## Evidence States
 
 - `FOUNDER_CONFIRMED_ORIGIN`
-- `CONFIRMED_CHAT_REFERENCE`
+- `CONFIRMED_RESEARCH_REFERENCE`
 - `CONFIRMED_ARCHIVE_REFERENCE`
 - `NAME_MENTION_ONLY`
 - `RECOVERY_CANDIDATE`
@@ -50,22 +50,22 @@ The later medical-mobility research trail explicitly compared or catalogued the 
 
 | OEM or system | Evidence state | Recovered Velvet use |
 |---|---|---|
-| **Volkswagen Emergency Assist** | `CONFIRMED_CHAT_REFERENCE` | Driver non-response, escalating intervention, slowing, stopping, and hazards |
-| **Mercedes-Benz Active Emergency Stop Assist** | `CONFIRMED_CHAT_REFERENCE` | Driver incapacitation response and bounded minimum-risk stopping |
-| **Mercedes-Benz Drive Pilot** | `CONFIRMED_CHAT_REFERENCE` | Operational-domain, driver-responsibility, and fallback comparison |
-| **Mercedes DISTRONIC with Steering Assist** | `CONFIRMED_CHAT_REFERENCE` | Longitudinal and lateral assistance boundaries |
-| **BMW Emergency Stop Assistant** | `CONFIRMED_CHAT_REFERENCE` | Emergency stop sequence and driver-state escalation |
-| **BMW Highway Assistant / Driving Assistant Professional** | `CONFIRMED_CHAT_REFERENCE` | Highway-domain and supervision comparison |
-| **GM Super Cruise** | `CONFIRMED_CHAT_REFERENCE` | Direct driver monitoring, mapped-road dependency, and hands-free operational domain |
-| **Ford BlueCruise** | `CONFIRMED_CHAT_REFERENCE` | Driver monitoring and mapped-road operational domain |
-| **Toyota / Lexus Teammate** | `CONFIRMED_CHAT_REFERENCE` | Driver-assistance handoff, supervision, and domain restrictions |
-| **Nissan ProPILOT** | `CONFIRMED_CHAT_REFERENCE` | Lane and speed assistance with driver responsibility |
-| **Subaru DriverFocus** | `CONFIRMED_CHAT_REFERENCE` | Camera-based attention and driver-state monitoring |
-| **Volvo Pilot Assist** | `CONFIRMED_CHAT_REFERENCE` | Bounded steering and speed assistance |
-| **Hyundai / Kia / Genesis Highway Driving Assist (HDA)** | `CONFIRMED_CHAT_REFERENCE` | OEM assistance relevant to the Tiburon-family ecosystem and modern Hyundai group behaviour |
-| **Tesla Autopilot / FSD driver monitoring** | `CONFIRMED_CHAT_REFERENCE` | Driver-monitoring strengths, failure patterns, naming risk, and supervision expectations |
-| **XPeng XNGP / P7+** | `CONFIRMED_CHAT_REFERENCE` | Broader advanced-driving-system comparison |
-| **European eCall** | `CONFIRMED_CHAT_REFERENCE` | Emergency communications after a serious event |
+| **Volkswagen Emergency Assist** | `CONFIRMED_RESEARCH_REFERENCE` | Driver non-response, escalating intervention, slowing, stopping, and hazards |
+| **Mercedes-Benz Active Emergency Stop Assist** | `CONFIRMED_RESEARCH_REFERENCE` | Driver incapacitation response and bounded minimum-risk stopping |
+| **Mercedes-Benz Drive Pilot** | `CONFIRMED_RESEARCH_REFERENCE` | Operational-domain, driver-responsibility, and fallback comparison |
+| **Mercedes DISTRONIC with Steering Assist** | `CONFIRMED_RESEARCH_REFERENCE` | Longitudinal and lateral assistance boundaries |
+| **BMW Emergency Stop Assistant** | `CONFIRMED_RESEARCH_REFERENCE` | Emergency stop sequence and driver-state escalation |
+| **BMW Highway Assistant / Driving Assistant Professional** | `CONFIRMED_RESEARCH_REFERENCE` | Highway-domain and supervision comparison |
+| **GM Super Cruise** | `CONFIRMED_RESEARCH_REFERENCE` | Direct driver monitoring, mapped-road dependency, and hands-free operational domain |
+| **Ford BlueCruise** | `CONFIRMED_RESEARCH_REFERENCE` | Driver monitoring and mapped-road operational domain |
+| **Toyota / Lexus Teammate** | `CONFIRMED_RESEARCH_REFERENCE` | Driver-assistance handoff, supervision, and domain restrictions |
+| **Nissan ProPILOT** | `CONFIRMED_RESEARCH_REFERENCE` | Lane and speed assistance with driver responsibility |
+| **Subaru DriverFocus** | `CONFIRMED_RESEARCH_REFERENCE` | Camera-based attention and driver-state monitoring |
+| **Volvo Pilot Assist** | `CONFIRMED_RESEARCH_REFERENCE` | Bounded steering and speed assistance |
+| **Hyundai / Kia / Genesis Highway Driving Assist (HDA)** | `CONFIRMED_RESEARCH_REFERENCE` | OEM assistance relevant to the Tiburon-family ecosystem and modern Hyundai group behaviour |
+| **Tesla Autopilot / FSD driver monitoring** | `CONFIRMED_RESEARCH_REFERENCE` | Driver-monitoring strengths, failure patterns, naming risk, and supervision expectations |
+| **XPeng XNGP / P7+** | `CONFIRMED_RESEARCH_REFERENCE` | Broader advanced-driving-system comparison |
+| **European eCall** | `CONFIRMED_RESEARCH_REFERENCE` | Emergency communications after a serious event |
 | **comma.ai / openpilot** | `FOUNDER_CONFIRMED_ORIGIN` | Original retrofit-intelligence reference; later also remained useful as an open-source driver-assistance and supported-vehicle comparison |
 
 ## Recovered OEM Lessons

@@ -28,44 +28,49 @@ The backfill begins here:
    - records the archive search queue
    - prevents retroactive over-attribution
 
-2. [Named Researchers and Systems Recovery Index](named_researchers_and_systems_recovery_index.md)
+2. [Smart Stereo Origin Lineage](smart_stereo_origin_lineage.md)
+   - records Velvet's founder-confirmed beginning as a smart car stereo
+   - places KITT and comma.ai / openpilot at the original seed stage
+   - traces how voice, vehicle data, presence, control, continuity, organs, and multiple bodies grew from that first idea
+
+3. [Named Researchers and Systems Recovery Index](named_researchers_and_systems_recovery_index.md)
    - preserves actual researchers, labs, projects, products, standards, and fictional comparison systems named in older conversations
-   - separates confirmed chat references from archive references, name-only mentions, and unresolved recovery candidates
+   - separates founder-confirmed origins from later references, archive references, name-only mentions, and unresolved recovery candidates
    - establishes the queue for source-specific research notes beyond BabyX
 
-3. [Domain Systems Recovery Index](domain_systems_recovery_index.md)
+4. [Domain Systems Recovery Index](domain_systems_recovery_index.md)
    - preserves vehicle OEM, retrofit, home, building, industrial, forge, and robotics systems
    - records named OEM comparisons and internal home concepts
    - separates confirmed systems from standards and products whose original transcripts still need recovery
 
-4. [Unified-Organ AI and Native Brain Lineage](unified_organ_native_brain_lineage.md)
+5. [Unified-Organ AI and Native Brain Lineage](unified_organ_native_brain_lineage.md)
    - reconstructs “Body is all,” named organs, local cognition, and the LLM-as-language-organ boundary
 
-5. [Event Protocol, Court, and Receipts Lineage](event_authority_receipt_lineage.md)
+6. [Event Protocol, Court, and Receipts Lineage](event_authority_receipt_lineage.md)
    - reconstructs observation, proposal, authorization, execution, and receipt separation
 
-6. [Riven and Continuity Lineage](riven_continuity_lineage.md)
+7. [Riven and Continuity Lineage](riven_continuity_lineage.md)
    - reconstructs identity through replacement, gaps, recovery, and succession
 
-7. [Silence, Distributed Reasoning, and Simulated Body Lineage](silence_distribution_simulation_lineage.md)
+8. [Silence, Distributed Reasoning, and Simulated Body Lineage](silence_distribution_simulation_lineage.md)
    - reconstructs attention arbitration, graceful load sharing, practice bodies, and sensor normalization
 
-8. [Medical Guardian and Minimal-Risk Stop Lineage](medical_minimal_risk_lineage.md)
+9. [Medical Guardian and Minimal-Risk Stop Lineage](medical_minimal_risk_lineage.md)
    - records the real family-safety origin and the separation of evidence, emergency doctrine, and physical authority
 
-9. [Local-First and Platform Lineage](local_first_platform_lineage.md)
-   - separates internal ownership values from confirmed Linux, AGL, Yocto, SocketCAN, Qt, Vosk, and local-model foundations
+10. [Local-First and Platform Lineage](local_first_platform_lineage.md)
+    - separates internal ownership values from confirmed Linux, AGL, Yocto, SocketCAN, Qt, Vosk, and local-model foundations
 
-10. [Ghost System and Module Promotion Lineage](ghost_module_promotion_lineage.md)
+11. [Ghost System and Module Promotion Lineage](ghost_module_promotion_lineage.md)
     - reconstructs deterministic public replay, recovery, Module Lab, quarantine, and promotion evidence
 
-11. [World Logic and Identity Logic Lineage](world_identity_logic_lineage.md)
+12. [World Logic and Identity Logic Lineage](world_identity_logic_lineage.md)
     - reconstructs one shared uncertain reality, entity identity, time, space, simulation, and recognition evidence
 
-12. [Persistent Self, No Drift, and Owner/Guest Lineage](persistent_self_owner_guest_lineage.md)
+13. [Persistent Self, No Drift, and Owner/Guest Lineage](persistent_self_owner_guest_lineage.md)
     - reconstructs model-independent self-orientation, protected doctrine, user separation, and bounded adaptation
 
-13. [Scene and Room-Body Interface Lineage](scene_room_body_interface_lineage.md)
+14. [Scene and Room-Body Interface Lineage](scene_room_body_interface_lineage.md)
     - reconstructs scene-based presence, object interaction, body binding, boot identity, and the no-direct-actuation interface law
 
 ## Provenance Rule
@@ -100,6 +105,7 @@ Backfilled records use:
 
 Named-reference recovery additionally distinguishes:
 
+- `FOUNDER_CONFIRMED_ORIGIN`
 - `SOURCE_MAPPED`
 - `CONFIRMED_CHAT_REFERENCE`
 - `CONFIRMED_ARCHIVE_REFERENCE`

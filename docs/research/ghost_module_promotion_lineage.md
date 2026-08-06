@@ -39,7 +39,7 @@ The path explicitly declared that it did not:
 
 ### Recovered Public History
 
-Important recovered commits include:
+Verified commits include:
 
 - `24fd5bccf8c94f530b4afd2a187bf8c853250ce5` in `velvet-vehicle-can` for the Ghost Car CAN demo
 - `95ab583b50c5d65cdb5b7d0ba9d6acdf31819ec4` in `velvet-ai-core` for the Ghost Car proposal layer
@@ -102,15 +102,12 @@ Reject:
 
 Module Lab is the place where a candidate organ proves why it deserves to join the body.
 
-The earliest recovered public contribution-path commits are from June 28, 2026:
+The public contribution path and private qualification concept existed before executable gates were added. The strongest current evidence is:
 
-- `37a1c7c4cd34585f77a1af38c9673f55a9265186`
-- `0d78547d6570e53d5506be0598341a3485cc43d7`
-- `228e97175ddbb81707ed6400ee5a66db6b99bf8b`
-- `eb9e6172390529ffdcc690735b985b4b50c892ff`
-- `1a5990887f14d620078192c8d29460206af4bcdc`
+- the surviving module-archaeology audit, which records unsafe automatic discovery, broken loader generations, direct-control quarantine, and the need to rebuild candidates behind modern contracts
+- AI Core commit `7dbee418f60484a704f90f0369c5cdb39b1d44fb`, which added executable promotion gates, authority-bypass tests, failure injection, and promotion evidence
 
-AI Core commit `7dbee418f60484a704f90f0369c5cdb39b1d44fb` later added executable promotion gates, authority-bypass tests, failure injection, and promotion evidence.
+Earlier contribution-path commits may be added later when their exact role and repository context are individually verified. They are not required to establish the current lineage.
 
 ### Internal Laws
 
@@ -201,7 +198,7 @@ The correct current statement is:
 - When was “Ghost System v0” named?
 - Which earlier failed CAN or private-repository paths motivated the sealed public wrapper?
 - When was the rule established that Velvet never scans storage for modules?
-- Which package-manager, plugin, or supply-chain systems were explicitly compared?
+- Which package-manager, plugin, or supply-chain systems were explicitly researched?
 - What was the earliest Module Promotion Review?
 - When did two-sided trust replace ordinary plugin loading?
 - Which promotion gates came directly from real hardware failures?

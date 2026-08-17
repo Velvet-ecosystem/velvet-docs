@@ -73,7 +73,7 @@ It is not a second canonical runtime brain. New canonical code must not import i
 
 | Historical concept | Modern destination | Audited status |
 |---|---|---|
-| Learning Mode | `velvet-ai-core` session contracts + `velvet-runtime` eligibility/lifecycle | Session supervisor and Runtime eligibility exist on feature branches; full integration still staged |
+| Learning Mode | `velvet-ai-core` session contracts + `velvet-runtime` eligibility/lifecycle | Session supervisor and Runtime eligibility are merged; broader live-session integration remains bounded work |
 | White Room | `velvet/core/cognition` cognitive workspace | Substantially implemented; Learning Mode coordinates existing workspace rather than creating another engine |
 | Dream Layer | Dream State policy + episode consolidation + memory consolidation policy | Substantial policy/machinery exists; Learning Mode/Dream integration remains bounded and proposal-only |
 | self-LM | governed plasticity + memory lifecycle + associations + optional local models | Bounded modern descendant exists; no uncontrolled self-modification |
@@ -88,7 +88,7 @@ It is not a second canonical runtime brain. New canonical code must not import i
 | Concept Graph / Memory Veins | deterministic association plane/index | Partially implemented; richer typed/multi-hop graph remains future work |
 | Confidence System | confidence + freshness + evidence history | Implemented foundation |
 | Conflict Resolver | workspace contradictions + reflection + Persona conflict indexing | Substantial modern equivalent exists |
-| Learning Journal | Event Protocol lifecycle + Receipts + reflection evidence | Learning Session event/receipt families staged on feature branches |
+| Learning Journal | Event Protocol lifecycle + Receipts + reflection evidence | Learning Session event and receipt families are merged |
 | self-LM metrics | learning evaluation/regression layer | Still a later explicit evaluation concern |
 | Speaker Reliability | provenance/evidence-quality policy | Remains bounded and should never become hidden source authority |
 | Velour / Librarian | `velours_library` + memory indexing + provenance | Modern role established |
@@ -136,7 +136,7 @@ Dream work produces proposals and evidence. It does not silently rewrite receipt
 
 ## Learning Session implementation
 
-The current AI Core feature branch defines a finite Learning Session supervisor rather than another cognition loop.
+The current AI Core implementation defines a finite Learning Session supervisor rather than another cognition loop.
 
 The session tracks bounded lifecycle states including proposed, eligibility check, open, studying, review pending, paused, degraded, completed, aborted, and insufficient evidence.
 
@@ -183,7 +183,7 @@ Runtime owns the question:
 
 > Is this actually an appropriate moment for Velvet to study?
 
-The staged Runtime eligibility contract requires explicit evidence for operational posture, power posture, background resources, higher-priority work, critical health, continuity, and freshness.
+The Runtime eligibility contract requires explicit evidence for operational posture, power posture, background resources, higher-priority work, critical health, continuity, and freshness.
 
 Unknown or stale conditions fail closed.
 
@@ -243,7 +243,7 @@ Retrieval score and trust class are evidence metadata, not truth confidence.
 
 Learning Mode lifecycle uses the shared ecosystem nervous system rather than a private event lane.
 
-A versioned Learning Session Event Protocol family is staged for:
+The versioned Learning Session Event Protocol family defines:
 
 - proposed
 - eligibility checked
@@ -260,7 +260,7 @@ The Event Protocol contract carries sparse references and lifecycle facts rather
 
 The matching Receipts family preserves durable evidence that the session and transition occurred. A Learning Receipt does **not** prove that the session's conclusion became truth or that any candidate was promoted.
 
-The first Event Protocol pull request completed its repository CI successfully before downstream integration.
+Event Protocol and Receipts completed repository CI successfully and were merged before the downstream AI Core and Runtime integrations.
 
 ## Web relationship
 
@@ -292,9 +292,9 @@ Web access is one possible source path. The developmental architecture must cont
 - Court/capability owner: hard authority boundary.
 - Continuity Spine / Riven: identity and lineage protection.
 
-## Current staged implementation
+## Current implementation
 
-At the time of this recovery update, the Learning Mode work is intentionally isolated on feature branches pending review/integration:
+The recovered Learning Mode foundation is now merged across its modern owners:
 
 - AI Core: Learning Session supervisor, transport-safe projection, Native Brain generation ownership, Library-study evidence boundary
 - Runtime: fail-closed maintenance eligibility and conservative posture-source projections
@@ -302,13 +302,13 @@ At the time of this recovery update, the Learning Mode work is intentionally iso
 - Receipts: canonical Learning Session lifecycle receipt family
 - Docs: this recovery/ownership map
 
-Implementation branches have been reduced to clean single-commit changesets before dependency-order integration. Runtime was restacked on the newer main containing automatic self-health reporting so the two efforts do not overwrite one another.
+The implementation branches were reduced to clean single-commit changesets before dependency-order integration. Runtime was restacked on the newer main containing automatic self-health reporting so the two efforts did not overwrite one another.
 
 ## What is genuinely still later work
 
 The remaining architecture is narrower than the original recovery list:
 
-1. integrate and validate the staged cross-repository Learning Mode stack in dependency order
+1. exercise the merged Learning Mode stack end-to-end in deterministic simulated and later live Founder sessions
 2. define or reuse the final whole-body owners that can positively prove maintenance `QUIET`, background-power permission, and priority `CLEAR` where those are not already supplied by later work
 3. add the reviewed read-only Runtime worker/consumer seam for real Library-backed study when execution placement is needed
 4. connect candidate outcomes to existing memory admission/promotion paths without creating duplicate stores

@@ -2,6 +2,8 @@
 
 Velvet is public where code helps people understand, test, and contribute safely. Velvet is private where disclosure would expose vehicle-control risk, medical assumptions, installation secrets, or unfinished authority paths.
 
+This repository-level public/private boundary is distinct from **owner data privacy**. Public source code does not imply public owner data, and network connectivity does not imply permission to upload owner information. See [Privacy and Connectivity](privacy_and_connectivity.md).
+
 ## Public by default
 
 Doctrine, architecture maps, non-authoritative event schemas, receipt formats, read-only observations, synthetic fixtures, mock executors, display-only panels, continuity markers, contributor templates, and safe simulation guides may be public when tested and documented.
@@ -13,6 +15,8 @@ Real actuator control, CAN transmission, emergency pull-over behavior, medical m
 ## Core rules
 
 Observation is not authority. A receipt is evidence, not permission. A surface may display state or request an intent, but it may not directly actuate hardware. Hosted collaborators may draft and review, but they do not own continuity, secrets, Court authority, or hardware control.
+
+For owner information, **connectivity is a capability, not consent**. A reachable cloud, phone, peer, gateway, or radio path does not by itself authorize tracking, telemetry export, or disclosure.
 
 ## Promotion checklist
 

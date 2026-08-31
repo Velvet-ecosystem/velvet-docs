@@ -1,15 +1,15 @@
 # Velvet Ecosystem Overview
 
-Velvet is not a single chatbot, application, or dashboard. It is a local-first ecosystem of bounded services, surfaces, handmaidens, hardware bodies, memory, policy, and receipts.
+Velvet is not a single chatbot, application, or dashboard. It is a local-first ecosystem of bounded services, surfaces, organs, hardware bodies, memory, policy, communications, knowledge, and receipts.
 
 The central architectural split is simple:
 
 ```text
-language and reasoning
-  -> propose intent
+reasoning and language
+  -> interpret, explain, and propose
 
-identity and Court
-  -> decide authority
+identity, Runtime, and Court
+  -> decide authority and policy
 
 safety gates and approved executors
   -> perform bounded action
@@ -17,6 +17,8 @@ safety gates and approved executors
 receipts and continuity
   -> preserve evidence and lineage
 ```
+
+Urgency can change scheduling. It does not erase those boundaries.
 
 ## Main Layers
 
@@ -27,24 +29,98 @@ Velvet must know which installation, body, owner context, and lineage are active
 Owned primarily by:
 
 - `velvet-continuity-spine`
-- identity and continuity services in `velvet-runtime`
+- identity, body, profile, session, and Court-context services in `velvet-runtime`
+
+Memory may inform identity. Memory alone does not prove identity.
 
 ### Runtime and Authority
 
-Runtime is the local nervous system. It hosts strict routes, policy checks, signed capability tokens, safety gates, approved executors, replay protection, and receipt emission.
+Runtime is the local authority and execution nervous system. It owns strict routes/intents, capability context, Court policy, signed bounded tokens, resource coordination, safety gates, approved executors, replay protection, and execution evidence.
 
 Owned primarily by:
 
 - `velvet-runtime`
 - `velvet-receipts`
 
-### Event Transport
+### Local Event Protocol
 
-Events carry observations, requests, decisions, outcomes, and lifecycle changes. They describe what happened or what is requested. They do not create authority.
+Event Protocol carries structured observations, requests, decisions, outcomes, and lifecycle changes **inside one governed body**. Events describe what happened or what is requested. They do not create authority.
 
 Owned by:
 
 - `velvet-event-protocol`
+
+Event Protocol does not own cross-body V2V carriage, carrier selection, relays, or off-grid routing.
+
+### Communications and Federation
+
+Communications begins at the cross-node/cross-body boundary. It carries bounded Velvet payloads between separately governed nodes or bodies without changing their meaning, trust, or authority.
+
+Owned by:
+
+- `velvet-communications`
+
+Its responsibilities include:
+
+- V2V envelopes and peer addressing;
+- carrier capability descriptions and selection;
+- bounded retries, TTL, hop limits, replay suppression, and store-and-forward;
+- degraded/off-grid carriage;
+- adapters for local IP, secure overlays, LoRa, Meshtastic, private LoRaWAN/ChirpStack, serial, cellular, and future carriers;
+- Beacon of Hope emergency-fallback contracts;
+- communications privacy/disclosure boundaries.
+
+Core laws:
+
+> **The message belongs to Velvet. The carrier is replaceable.**
+
+> **Connectivity is a capability, not consent.**
+
+Discovery is not trust. Relay is not authority. Carrier availability is not permission to transmit owner data.
+
+### Core Intelligence
+
+Reasoning, belief/context handling, canonical memory primitives, reflection, learning/plasticity boundaries, and structured proposals live in:
+
+- `velvet-ai-core`
+
+Core may interpret, remember, learn within governed boundaries, and propose. It does not authorize or execute physical action.
+
+### Language
+
+Language receives verified meaning and bounded context and turns them into truthful human expression.
+
+Owned by:
+
+- `velvet-language`
+
+Language does not own canonical truth, memory, authority, or audio hardware. Generative assistance is optional, and generative freedom decreases as consequence increases. Critical/emergency expression is deterministic or nearly deterministic.
+
+### Audio
+
+Audio Studio owns the shared local acoustic hardware/software boundary.
+
+Owned by:
+
+- `velvet-audio-studio`
+
+It coordinates microphone capture, bounded local Vosk transcription, Piper synthesis, channel leases, routing, priority/preemption, speaker delivery, and audio-output evidence. Software contracts are implemented; final Raspberry Pi + Audio Injector Octo physical acceptance remains separate evidence work.
+
+Language owns wording. Audio owns rendering. Neither gains Runtime/Court authority merely because Velvet can speak.
+
+### Knowledge and Library
+
+Velour's Library is the canonical provenance-aware local knowledge archive.
+
+Owned by:
+
+- `velours_library`
+
+It owns guarded ingestion, source preservation, provenance, source lifecycle, retrieval evidence, portable knowledge packs, quarantine, adoption, and pack lifecycle.
+
+> **Retrieval is not belief.**
+
+A retrieved passage is evidence for reasoning, not automatic world truth or execution authority.
 
 ### Cognitive Event Layer
 
@@ -61,8 +137,6 @@ observations
   -> observed outcome and receipts
   -> episode consolidation
 ```
-
-The layer may improve coherence. It cannot mint capabilities, authorize itself, execute hardware, retry actions, replace receipts, or treat memory as identity proof.
 
 Owned across bounded responsibilities by:
 
@@ -91,13 +165,58 @@ Owned by:
 
 - `velvet-interface`
 
-### Core Intelligence
+## Emergency Continuity Path
 
-Velvet's conversational identity, role logic, memory use, handmaiden coordination, and reasoning live behind the local API boundary.
+Verified emergencies can enter a life-safety lane ahead of ordinary work while preserving governance.
 
-Owned primarily by:
+```text
+verified emergency / accident / trusted manual emergency start
+  -> life-safety rank 0
+  -> responder request remains authority-free evidence
+  -> incident-action policy
+  -> canonical capability + logical target resolver
+  -> incident-scoped emergency Court identity
+  -> strict Court Intent
+  -> Court authorization
+  -> future safety / executor / physical target binding
+  -> measured execution
+  -> receipts
+```
 
-- `velvet-ai-core`
+Important boundaries:
+
+- rank 0 means **consider first**, not **approve automatically**;
+- unverified emergency claims receive no life-safety priority;
+- the emergency incident gets its own Court identity rather than borrowing the owner's active session;
+- responder voice, phone connection, or carrier remains provenance, not authority;
+- visibility and rescue-access use separate least-privilege Court policy families;
+- steering, throttle, braking, shifting, propulsion, and engine control remain outside the responder-conversation path;
+- Court authorization is not execution.
+
+The public path currently stops before a real emergency lock/light executor, hardware safety binding, and measured vehicle actuation.
+
+See Runtime's `emergency_first_action_eligibility.md`, `incident_action_policy.md`, `incident_action_resolver.md`, and `incident_court_binding.md` for the implementation contracts.
+
+## Information Boundary: Local vs Cross-Body
+
+```text
+inside one governed body
+-----------------------
+sensor/service
+  -> Event Protocol
+  -> Core / Runtime / Language / Interface / Audio
+  -> Receipts / Continuity
+
+cross-body or cross-node
+------------------------
+approved bounded payload
+  -> Communications
+  -> selected carrier
+  -> peer endpoint
+  -> receiving body's own identity / relationship / Runtime / Court checks
+```
+
+Transport never upgrades authority.
 
 ## Velvet Coin and Drive-Fi
 
@@ -107,26 +226,19 @@ The coin remains live outside Velvet's present operational architecture and may 
 
 Coin and wallet integration was deliberately deferred while Velvet built the identity, Court, receipts, continuity, sensor confidence, package trust, anti-replay, anti-gaming, privacy, and dispute-evidence foundations that accountable value would require.
 
-The early reward concept included reducing or removing reward for dangerous driving or lack of attention. It did not grant software permission over where the owner could travel and did not establish OEM-style geofencing.
-
-The coin is therefore:
-
-- historically foundational
-- externally live
-- architecturally dormant
-- deliberately deferred rather than abandoned
-
 See [Velvet Coin and Drive-Fi Origin Lineage](research/velvet_coin_drivefi_origin_lineage.md).
 
 ## Canonical Execution Law
 
 ```text
 input
-  -> identity and context check
+  -> verified identity and context
   -> strict intent schema
   -> Court authority and policy check
-  -> safety gate
+  -> bounded capability token
+  -> matching safety gate
   -> approved executor
+  -> measured outcome
   -> execution receipt
   -> result event
 ```
@@ -135,15 +247,6 @@ Any shortcut around this path is a doctrine violation.
 
 ## Observation Is Not Actuation
 
-Velvet may observe the host, vehicle, room, body, passenger state, or environment without gaining permission to control them.
+Velvet may observe the host, vehicle, room, body, passenger state, environment, carrier state, or retrieved knowledge without gaining permission to control them.
 
-Observation paths must remain explicitly marked:
-
-```text
-status: observation-only
-read_only: true
-actuation_granted: false
-actuation_performed: false
-```
-
-If an observation later motivates action, a new intent must begin at the authority boundary.
+Observation paths must remain explicitly bounded. If an observation later motivates action, a new intent begins at the authority boundary.

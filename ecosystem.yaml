@@ -1,0 +1,296 @@
+schema_version: "1.0"
+ecosystem:
+  id: velvet
+  name: Velvet AI Ecosystem
+  organization: Velvet-ecosystem
+  canonical_docs_repo: velvet-docs
+  canonical_human_map: docs/repository_map.md
+  canonical_overview: docs/ecosystem_overview.md
+  local_first: true
+  offline_capable: true
+  retrofit_friendly: true
+  architecture_model: unified-organ-ai
+  description: >-
+    Velvet is a local-first, offline-capable, retrofit-friendly AI ecosystem built as
+    one accountable body with distinct organs for reasoning, authority, execution,
+    evidence, continuity, language, audio, knowledge, communications, interface, and
+    vehicle observation.
+
+machine_reading:
+  purpose: >-
+    Provide AI systems, code assistants, search/indexing tools, and contributors with
+    a compact structured map of repository ownership, architecture boundaries,
+    dependency direction, and canonical documentation.
+  interpretation_rules:
+    - Repository responsibility is ownership, not unrestricted call access.
+    - A repository description does not grant execution authority.
+    - Canonical cross-repository doctrine lives in velvet-docs.
+    - Repository-specific implementation details remain with the owning repository.
+    - Private and experimental repositories are not implied to be public-ready.
+
+architecture_invariants:
+  - id: core-no-direct-hardware
+    statement: AI Core may reason, interpret, remember, learn, and propose, but must not directly authorize or execute hardware.
+  - id: runtime-authority-boundary
+    statement: Runtime and Court own capability policy, authorization, safety coordination, and approved execution boundaries.
+  - id: events-do-not-authorize
+    statement: Events describe and transport local governed information; publication does not create authority.
+  - id: receipts-are-evidence
+    statement: Receipts preserve evidence and accountability; a receipt is not permission.
+  - id: continuity-is-not-execution
+    statement: Continuity Spine preserves identity and lineage; continuity records do not execute actions.
+  - id: language-is-expression
+    statement: Language turns verified meaning into bounded human-facing expression; wording does not grant authority.
+  - id: audio-is-device-boundary
+    statement: Audio Studio owns acoustic capture and rendering; hearing or speaking does not grant Runtime or Court authority.
+  - id: retrieval-is-not-belief
+    statement: Velour's Library preserves provenance-aware knowledge and retrieval evidence; retrieval does not automatically become belief or authority.
+  - id: communications-is-carriage
+    statement: Communications carries bounded payloads across nodes or bodies; connectivity does not create identity, trust, consent, disclosure permission, or physical authority.
+  - id: interface-does-not-actuate
+    statement: Interface presents state and routes requests; scenes and widgets do not directly actuate hardware.
+  - id: can-observation-is-not-authority
+    statement: Vehicle CAN observation and decoding do not imply transmit or control authority.
+
+conceptual_flow:
+  local:
+    - observation_or_retrieval_or_human_input
+    - event_protocol_or_bounded_ingress
+    - reasoning_language_or_runtime_interpretation
+    - verified_identity_and_court_policy
+    - safety_and_approved_executor
+    - measured_outcome
+    - receipts
+    - continuity
+  cross_body:
+    - approved_bounded_payload
+    - communications
+    - carrier
+    - receiving_body_governed_ingress
+
+repositories:
+  - name: velvet-ai-core
+    visibility: public
+    kind: core-organ
+    owns:
+      - unified-organ reasoning
+      - belief and context handling
+      - canonical memory primitives
+      - learning and reflection boundaries
+      - structured proposals
+    does_not_own:
+      - direct hardware authorization
+      - physical execution
+    canonical_doc: docs/repository_map.md#velvet-ai-core
+
+  - name: velvet-runtime
+    visibility: public
+    kind: authority-organ
+    owns:
+      - verified body identity and session context
+      - Court authority and policy resolution
+      - capability policy
+      - emergency-first scheduling
+      - safety and resource coordination
+      - approved executor boundary
+      - replay protection
+      - measured execution outcomes
+      - execution receipts handoff
+    does_not_own:
+      - model reasoning ownership
+      - presentation ownership
+      - proof that authorization alone caused physical movement
+    canonical_doc: docs/repository_map.md#velvet-runtime
+
+  - name: velvet-event-protocol
+    visibility: public
+    kind: local-nervous-system
+    owns:
+      - versioned local event schemas
+      - source enforcement
+      - hardened local event delivery
+    does_not_own:
+      - physical authorization
+      - cross-body federation
+      - carrier selection
+    canonical_doc: docs/repository_map.md#velvet-event-protocol
+
+  - name: velvet-communications
+    visibility: public
+    kind: communications-organ
+    owns:
+      - cross-node and cross-body carriage
+      - V2V envelopes and peer addressing
+      - carrier capability selection and fallback
+      - retries TTL hop limits and replay suppression
+      - degraded and off-grid routing
+      - Beacon of Hope communication contracts
+      - communications privacy and disclosure boundaries
+    does_not_own:
+      - identity proof
+      - trust creation
+      - Court authority
+      - physical action
+    canonical_doc: docs/repository_map.md#velvet-communications
+
+  - name: velvet-language
+    visibility: public
+    kind: expression-organ
+    owns:
+      - bounded conversation acts
+      - meaning-before-speech realization
+      - truthful uncertainty and fallback language
+      - deterministic critical and emergency wording
+      - optional provider-neutral generative assistance
+    does_not_own:
+      - canonical truth
+      - canonical memory
+      - Runtime or Court authority
+      - acoustic devices
+      - physical execution
+    canonical_doc: docs/repository_map.md#velvet-language
+
+  - name: velvet-audio-studio
+    visibility: public
+    kind: acoustic-organ
+    owns:
+      - multichannel microphone capture
+      - bounded utterance capture
+      - local speech recognition boundary
+      - local speech synthesis boundary
+      - channel leases routing priority and preemption
+      - audio output evidence
+    does_not_own:
+      - wording policy
+      - Runtime or Court authority
+      - physical action
+    canonical_doc: docs/repository_map.md#velvet-audio-studio
+
+  - name: velours_library
+    visibility: public
+    kind: knowledge-organ
+    owns:
+      - guarded ingestion and staging
+      - source evidence and provenance
+      - source lifecycle and supersession
+      - retrieval evidence and locations
+      - portable knowledge packs
+      - quarantine and adoption lifecycle
+    does_not_own:
+      - automatic belief
+      - canonical reasoning
+      - Runtime or Court authority
+    canonical_doc: docs/repository_map.md#velours_library
+
+  - name: velvet-receipts
+    visibility: public
+    kind: evidence-organ
+    owns:
+      - receipt formats
+      - append-only evidence
+      - integrity and verification
+      - truth-preserving outcome records
+    does_not_own:
+      - permission
+      - execution authority
+    canonical_doc: docs/repository_map.md#velvet-receipts
+
+  - name: velvet-continuity-spine
+    visibility: public
+    kind: continuity-organ
+    owns:
+      - Riven genesis identity
+      - lineage and successor evolution
+      - continuity verification
+      - binding drift and recovery
+      - tamper-evident verified history
+    does_not_own:
+      - physical execution
+      - proof of identity from memory alone
+    canonical_doc: docs/repository_map.md#velvet-continuity-spine
+
+  - name: velvet-vehicle-can
+    visibility: public
+    kind: vehicle-observation-organ
+    owns:
+      - receive-only CAN observation
+      - vehicle fingerprints and local profiles
+      - signal definitions
+      - qualification evidence
+      - Ghost replay
+      - conservative decoding
+    does_not_own:
+      - default CAN transmission authority
+      - physical control authority
+    canonical_doc: docs/repository_map.md#velvet-vehicle-can
+
+  - name: velvet-interface
+    visibility: public
+    kind: presentation-organ
+    owns:
+      - scenes and surfaces
+      - router and widget contracts
+      - contextual presentation
+      - human request routing
+    does_not_own:
+      - direct hardware actuation
+      - Court authority
+    canonical_doc: docs/repository_map.md#velvet-interface
+
+  - name: velvet-docs
+    visibility: public
+    kind: canonical-documentation
+    owns:
+      - cross-repository architecture
+      - ecosystem doctrine
+      - responsibility maps
+      - contributor orientation
+      - public private boundaries
+      - deployment guidance spanning multiple repositories
+    does_not_own:
+      - repository-specific implementation details
+    canonical_doc: README.md
+
+  - name: .github
+    visibility: public
+    kind: organization-metadata
+    owns:
+      - organization profile
+      - shared issue and pull request templates
+      - contributor-facing defaults
+    does_not_own:
+      - canonical architecture implementation
+    canonical_doc: docs/repository_map.md#github
+
+  - name: business_agent_ecosystem
+    visibility: public
+    kind: adjacent-reference-ecosystem
+    owns:
+      - adjacent business application experiments and references
+    does_not_own:
+      - replacement authority for shared Velvet organs
+    canonical_doc: docs/repository_map.md#business_agent_ecosystem
+
+private_experimental_policy:
+  publication_status: intentionally_outside_public_responsibility_map
+  rule: >-
+    Private deployment, medical, persona-continuity, cyberdeck, retrofit, module-lab,
+    home, and showcase experiments do not become public-supported capabilities merely
+    because they exist.
+
+keywords:
+  - local-first-ai
+  - offline-ai
+  - automotive-ai
+  - retrofit-ai
+  - edge-ai
+  - distributed-ai
+  - vehicle-automation
+  - home-automation
+  - ai-governance
+  - capability-based-execution
+  - ai-continuity
+  - provenance
+  - tamper-evident-receipts
+  - local-inference
+  - open-hardware

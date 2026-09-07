@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Velvet-ecosystem/velvet-docs/blob/main/schemas/velvet-ecosystem.schema.json",
+  "title": "Velvet Ecosystem Map",
+  "description": "Schema for the canonical machine-readable Velvet ecosystem map. This validates descriptive metadata only and does not grant authority, trust, capability, or execution permission.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "ecosystem",
+    "machine_reading",
+    "architecture_invariants",
+    "conceptual_flow",
+    "repositories",
+    "private_experimental_policy",
+    "keywords"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "ecosystem": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "organization",
+        "canonical_docs_repo",
+        "canonical_human_map",
+        "canonical_overview",
+        "local_first",
+        "offline_capable",
+        "retrofit_friendly",
+        "architecture_model",
+        "description"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "organization": {"type": "string", "minLength": 1},
+        "canonical_docs_repo": {"type": "string", "minLength": 1},
+        "canonical_human_map": {"type": "string", "minLength": 1},
+        "canonical_overview": {"type": "string", "minLength": 1},
+        "local_first": {"type": "boolean"},
+        "offline_capable": {"type": "boolean"},
+        "retrofit_friendly": {"type": "boolean"},
+        "architecture_model": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "machine_reading": {
+      "type": "object",
+      "required": ["purpose", "interpretation_rules"],
+      "properties": {
+        "purpose": {"type": "string", "minLength": 1},
+        "interpretation_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        }
+      },
+      "additionalProperties": true
+    },
+    "architecture_invariants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "statement"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "statement": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": true
+      }
+    },
+    "conceptual_flow": {
+      "type": "object",
+      "required": ["local", "cross_body"],
+      "properties": {
+        "local": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "cross_body": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        }
+      },
+      "additionalProperties": true
+    },
+    "repositories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "visibility",
+          "kind",
+          "owns",
+          "does_not_own",
+          "canonical_doc"
+        ],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "visibility": {
+            "type": "string",
+            "enum": ["public", "private"]
+          },
+          "kind": {"type": "string", "minLength": 1},
+          "owns": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string", "minLength": 1}
+          },
+          "does_not_own": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string", "minLength": 1}
+          },
+          "canonical_doc": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": true
+      }
+    },
+    "private_experimental_policy": {
+      "type": "object",
+      "required": ["publication_status", "rule"],
+      "properties": {
+        "publication_status": {"type": "string", "minLength": 1},
+        "rule": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "keywords": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    }
+  },
+  "additionalProperties": true
+}

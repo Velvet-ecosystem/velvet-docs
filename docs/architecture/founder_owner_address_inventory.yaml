@@ -1,0 +1,223 @@
+schema_version: "0.1.0"
+audit_id: velvet.founder-owner-address-boundary
+status: audit_only
+created: "2026-09-08"
+rule: "Remove Founder-House personalization from public defaults without resetting established Founder-House continuity."
+authority_effect: none
+
+concepts:
+  system_identity:
+    owner: velvet-ai-core
+    authority_effect: none
+  human_principal_identity:
+    owner: runtime_or_future_identity_contract
+    authority_effect: none
+  profile:
+    owner: velvet-runtime
+    authority_effect: context_only
+  relationship_class:
+    owner: runtime_or_persona_contract
+    authority_effect: none
+  display_name:
+    owner: velvet-runtime
+    authority_effect: none
+  address_preference:
+    owner: velvet-runtime
+    authority_effect: none
+  verification_state:
+    owner: velvet-runtime
+    authority_effect: evidence_only
+  physical_presence:
+    owner: velvet-runtime
+    authority_effect: evidence_only
+  authority_profile:
+    owner: velvet-runtime
+    authority_effect: policy_selector_only
+  court_authority:
+    owner: velvet-runtime-court
+    authority_effect: governed
+
+findings:
+  - id: F-01
+    repository: Velvet-ecosystem/velvet-ai-core
+    path: velvet/core/native_brain/self_orientation.py
+    classification: production_public_default_coupling
+    facts:
+      - SelfIdentity.owner_title defaults to Mister.
+      - owner_title participates in SelfIdentity.fingerprint.
+      - owner_title is exposed by SelfOrientation.summary.
+    future_action: versioned_core_compatibility_migration
+    preserve_current_behavior_until_migration: true
+
+  - id: F-02
+    repository: Velvet-ecosystem/velvet-runtime
+    path: services/profile_binding.py
+    classification: good_existing_foundation
+    facts:
+      - ProfileBinding separates profile_id, profile_type, display_name, address_preference, and authority_profile.
+      - SessionBinding separates verification_state, physical_presence, and owner_verified.
+      - Unverified or unknown profile claims fall back to the active guest profile.
+    future_action: extend_do_not_replace
+
+  - id: F-03
+    repository: Velvet-ecosystem/velvet-runtime
+    path: config/profile_registry.example.json
+    classification: public_example_leakage
+    facts:
+      - Public example uses primary_owner.
+      - Public example uses Mister as display_name.
+      - Public example uses Mister as address_preference.
+    future_action: neutralize_after_compatibility_path_exists
+
+  - id: F-04
+    repository: Velvet-ecosystem/velvet-runtime
+    path: services/continuity_activation.py
+    classification: existing_migration_path
+    facts:
+      - Continuity context already carries profile_id and profile_type.
+      - Continuity context already carries address_preference.
+      - Continuity context already carries session verification, physical presence, and owner_verified.
+    future_action: expose_presentation_safe_context_without_new_authority
+
+  - id: F-05
+    repository: Velvet-ecosystem/velvet-runtime
+    path: services/profile_binding.py
+    classification: presentation_normalization_gap
+    facts:
+      - Required profile text is normalized to lowercase.
+      - display_name and address_preference therefore lose presentation casing in the loaded binding.
+    future_action: separate_case_preserving_presentation_from_normalized_comparison
+
+  - id: F-06
+    repository: Velvet-ecosystem/velvet-runtime
+    path: services/contactless_token_registry.py
+    classification: useful_existing_principal_reference
+    facts:
+      - Contactless evidence already uses principal_ref.
+      - Human-readable label is separate from principal_ref.
+      - role_hint is evidence only and not a Court grant.
+    future_action: evaluate_stable_principal_ref_for_profiles
+
+  - id: F-07a
+    repository: Velvet-ecosystem/velvet-interface
+    path: velvet_interface/boot_status.py
+    classification: production_presentation_coupling
+    facts:
+      - Ready state contains literal Waiting for Mister.
+    future_action: derive_from_verified_profile_or_use_neutral_fallback
+
+  - id: F-07b
+    repository: Velvet-ecosystem/velvet-interface
+    path: velvet_interface/surfaces/pyqt/written_conversation_widget.py
+    classification: production_presentation_coupling
+    facts:
+      - Written turns are labeled with literal Mister>.
+    future_action: derive_from_verified_profile_or_use_neutral_fallback
+
+  - id: F-08
+    repositories:
+      - Velvet-ecosystem/velvet-runtime
+      - Velvet-ecosystem/velvet-interface
+      - Velvet-ecosystem/velvet-ai-core
+      - Velvet-ecosystem/velvet-docs
+    classification: historical_founder_record
+    facts:
+      - Validation logs and runbooks record Waiting for Mister and other real Founder-specific events.
+    future_action: preserve_history_do_not_genericize
+
+  - id: F-09
+    repository: Velvet-ecosystem/velvet-ai-core
+    path: docs/naming_and_binding.md
+    classification: correct_existing_doctrine
+    facts:
+      - Address preference is personalization, not authority.
+      - Owner, driver, guest, passenger, technician, and emergency-helper profiles are separate concepts.
+    future_action: align_implementation_to_doctrine
+
+  - id: F-10
+    repository: Velvet-ecosystem/velvet-docs
+    path: docs/research/persistent_self_owner_guest_lineage.md
+    classification: correct_existing_continuity_doctrine
+    facts:
+      - Owner and guest boundaries affect address, disclosure, memory, interface paths, familiarity, and approval expectations.
+      - Claimed owner labels do not prove owner verification.
+    future_action: preserve_during_migration
+
+reference_classes:
+  public_production_default:
+    action: migrate_later
+  public_production_presentation:
+    action: profile_drive_later
+  public_example_config:
+    action: neutralize_later
+  tests_and_fixtures:
+    action: generalize_after_contract_change
+  founder_validation_and_runbooks:
+    action: preserve
+  founder_relationship_material:
+    action: preserve_in_founder_or_private_overlay
+  historical_approval_and_provenance:
+    action: preserve
+
+future_profile_shape_candidate:
+  principal_ref:
+    authority_effect: none
+  display_name:
+    case_preserving: true
+    authority_effect: none
+  address_preference:
+    case_preserving: true
+    authority_effect: none
+  relationship_class:
+    authority_effect: none
+  pronunciation:
+    optional: true
+    authority_effect: none
+  contextual_addresses:
+    optional: true
+    authority_effect: none
+  profile_type:
+    examples: [owner, primary_driver, secondary_driver, passenger, guest, technician, emergency_helper]
+    authority_effect: none_by_itself
+  authority_profile:
+    authority_effect: policy_selector_only
+  status:
+    examples: [active, disabled, retired]
+
+future_migration_order:
+  - freeze_compatibility_expectations
+  - add_case_preserving_human_presentation_state
+  - migrate_existing_founder_profile_in_place
+  - decouple_core_self_from_human_address
+  - profile_drive_interface_presentation
+  - neutralize_public_examples_and_new_install_defaults
+  - preserve_historical_founder_records
+
+acceptance:
+  - fresh_install_does_not_assume_mister
+  - founder_existing_profile_retains_mister
+  - no_reenrollment_only_because_public_default_changed
+  - owner_verification_not_weakened
+  - claimed_name_or_title_grants_nothing
+  - address_change_does_not_change_velvet_constitutional_identity
+  - address_change_does_not_change_court_authority
+  - guest_does_not_inherit_founder_relationship_state
+  - presentation_case_is_preserved
+  - interface_uses_verified_profile_or_neutral_fallback
+  - historical_founder_records_remain_unchanged
+  - migration_is_idempotent
+  - no_duplicate_owner_or_principal_records
+  - riven_lineage_does_not_depend_on_human_address_preference
+
+non_goals:
+  - edit_core_self_identity
+  - change_no_drift_fingerprint
+  - change_runtime_profile_schema
+  - change_founder_profile_registry
+  - change_contactless_mapping
+  - change_interface_strings
+  - reenroll_human
+  - change_riven
+  - change_court_or_capabilities
+  - touch_astra_repairs
+  - merge_to_main

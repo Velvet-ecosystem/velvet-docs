@@ -1,11 +1,15 @@
 # Current software compatibility acceptance
 
-The [2026-09-07 manifest](../compatibility/current-2026-09-07.json) fixes the exact
-public source inputs for the current bounded software proof. The
+The [preserved 2026-09-07 manifest](../compatibility/current-2026-09-07.json) fixes the exact
+public source inputs for the original pre-merge software proof. The
 [ledger](compatibility_ledger.md) distinguishes repository-level evidence,
 integration evidence, private companions and hardware acceptance.
 
-The [2026-09-09 CI evidence](../compatibility/evidence/software-integration-2026-09-09.json) records the implementation commit, actual PR test checkout, run URLs, Python patch versions and executed suite counts. All eight pinned/candidate jobs passed. The test checkout is GitHub's synthetic PR merge commit; the PR remains unmerged.
+The [2026-09-09 CI evidence](../compatibility/evidence/software-integration-2026-09-09.json) records the implementation commit, actual PR test checkout, run URLs, Python patch versions and executed suite counts. All eight pinned/candidate jobs passed. That earlier test checkout was GitHub's synthetic PR merge commit; Repair 6 PR #33 has since merged.
+
+The current [post-merge manifest](../compatibility/post-merge-2026-09-09.json) pins actual main commits with empty repair overlays. Its [evidence](../compatibility/evidence/post-merge-2026-09-09.json) verifies the merged trees and candidate results. The older manifest and evidence remain unchanged. The workflow now selects the new manifest explicitly; the preparer still accepts `--manifest` for historical replay.
+
+**Audio lease timing remains unresolved.** The real-clock lease test once returned CLAIM_LOST instead of PROCESSED ([original failed job](https://github.com/Velvet-ecosystem/velvet-docs/actions/runs/34294532999/job/102288162655)). Subsequent passing runs do not establish the cause or resolve that qualification. No Audio code, tests or lease behavior changed.
 
 ## What is exercised
 
@@ -35,7 +39,7 @@ intentional >=3.11 requirement is preserved; acoustic models and devices are
 outside this job. These suites do not imply a new cross-repository audio or
 network production integration.
 
-## Exact inputs while repairs are unmerged
+## Preserved pre-merge replay contract
 
 Each public repository entry records an exact observed main `commit`, ordered
 `repairs` with exact `base_commit`/`commit` pairs, and `expected_tree`. Base/head
@@ -59,7 +63,7 @@ Historical records remain unchanged; the previous ledger is preserved in full.
 From the Docs repository, with the selected Python interpreter:
 
 ```sh
-python acceptance/prepare_sources.py --destination "$PWD/.acceptance-deps"
+python acceptance/prepare_sources.py --manifest compatibility/post-merge-2026-09-09.json --destination "$PWD/.acceptance-deps"
 python -m pip install 'pytest==8.3.5' 'PyYAML>=6,<7' \
   -e .acceptance-deps/velvet-ai-core -e .acceptance-deps/velvet-language \
   -e .acceptance-deps/velours_library -e .acceptance-deps/velvet-receipts \
@@ -90,17 +94,17 @@ the preparer also accepts that exact override locally. Other candidate inputs
 are recorded, not treated as moving reproducible pins.
 
 Scheduled events require this workflow to be on the default branch and can be
-delayed or dropped by GitHub. Until Mister merges the PR, the scheduled trigger
-is proposed configuration, not an active monitor. PR runs exercise both code
-paths now. [GitHub workflow-event documentation](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#schedule).
+delayed or dropped by GitHub. Repair 6 PR #33 is now on the default branch, enabling its schedule. The new
+manifest selection follows the normal PR review/merge path. PR runs exercise
+both preparation modes. [GitHub workflow-event documentation](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#schedule).
 
 Each job preserves `tested-inputs.json`, the exact Docs harness commit,
 interpreter/package versions, preparation log and JUnit files. Failed
 preparation is retained too. A changed dependency may fail because a contract
 regressed or an accepted overlay no longer applies; investigate before adding
 a **new** reviewed manifest. Candidate results never rewrite the current or
-historical record. After repairs merge, a future record can pin the resulting
-main commits directly and remove redundant overlays in that new record.
+historical record. The post-merge record now pins the resulting main commits directly with no
+repair overlays. Future source changes require another reviewed record.
 
 ## Limits
 

@@ -1,12 +1,12 @@
 # Velvet Compatibility Ledger
 
-Last reviewed: 2026-09-09; source set captured 2026-09-07 and rechecked unchanged. This records bounded software evidence, not acceptance of the installed physical ecosystem.
+Last reviewed: 2026-09-09; post-merge source set captured 2026-09-09. This records bounded software evidence, not acceptance of the installed physical ecosystem.
 
-The current reproducible source set is [software-integration-2026-09-07](../compatibility/current-2026-09-07.json). Main has advanced through discovery-only metadata commits since the review. Repairs 1–5 remain open and unmerged. The manifest therefore records each observed main commit, the ordered accepted PR base/head deltas, and the exact resulting Git tree. An unmodified checkout of main does not contain those repairs.
+The current reproducible source set is [post-merge-software-integration-2026-09-09](../compatibility/post-merge-2026-09-09.json). All eleven accepted repair PRs are merged. The new record pins the actual resulting main commits with empty repair overlays. Each resulting tree matches the accepted repairs; Communications also includes its accepted README correction.
 
-[Current software acceptance](current_software_acceptance.md) defines the test commands, Python lanes, source preparation, dependency-change probes and evidence limits. GitHub run artifacts record the exact harness commit, actual source commits/trees, package versions and JUnit results. A passing candidate run does not automatically promote or rewrite this manifest.
+The [post-merge evidence](../compatibility/evidence/post-merge-2026-09-09.json) records merge commits, main CI, candidate source/tree checks and executed counts. [Current software acceptance](current_software_acceptance.md) defines the commands and limits. The [previous manifest](../compatibility/current-2026-09-07.json) and all historical records are preserved unchanged.
 
-The [executed CI evidence](../compatibility/evidence/software-integration-2026-09-09.json) records eight successful Docs jobs: 50 integration checks per pinned/candidate lane on CPython 3.8.18, 3.10.21, 3.11.16 and 3.12.14, plus the component suites. Communications PR #17 also passed its two supported lanes. This is evidence for the exact recorded implementation and source set.
+**Audio lease-timing qualification remains unresolved.** The existing real-clock heartbeat test once returned CLAIM_LOST instead of PROCESSED. [Original failed job](https://github.com/Velvet-ecosystem/velvet-docs/actions/runs/34294532999/job/102288162655). Passing post-merge suites do not resolve its unproven timing cause; Audio code and fail-closed lease rejection are unchanged.
 
 ## Current ledger
 
@@ -25,7 +25,7 @@ The [executed CI evidence](../compatibility/evidence/software-integration-2026-0
 | velvet-communications | Peer/network carriage | Full 3.8 / 3.11; additional acceptance replay on 3.12 | Separate 39-case software suite; authenticated local-IP delivery and bounded RPC already implemented. HMAC authentication is not encryption; protected-path claims require a configured confidential underlay. |
 | velours_library | Source custody, ingestion and retrieval | Full 3.8 / 3.12 | [#13](https://github.com/Velvet-ecosystem/velours_library/pull/13) adds production vault identity checks; real published-source retrieval over authenticated loopback HTTP, loss/recovery and privacy-minimal audit exercised here. |
 | velvet-vehicle-can | Receive-only observation and qualification | Full baseline 3.8; also 3.10 / 3.11 / 3.12 | Separate complete software suite replayed on 3.8/3.12. No CAN interface, transmission or physical-control acceptance. |
-| velvet-persona-continuity | Private persona recall/policy contracts | Separately validated in Repair 3 | Accepted [#4](https://github.com/Velvet-ecosystem/velvet-persona-continuity/pull/4), exact head recorded separately. Private source is neither fetched nor implied to be exercised by the public workflow. |
+| velvet-persona-continuity | Private persona recall/policy contracts | Separately validated in Repair 3 | Merged [#4](https://github.com/Velvet-ecosystem/velvet-persona-continuity/pull/4), actual main and accepted repair head recorded separately. Private source is neither fetched nor implied to be exercised by the public workflow. |
 | velvet-docs | Canonical doctrine and compatibility/integration evidence | Not production-runtime-bearing; acceptance 3.8 / 3.10 / 3.11 / 3.12 | Owns the source manifest, replay harness and ledger. This does not assign production orchestration to Docs. |
 | business_agent_ecosystem | Adjacent business workflows | Unassessed by this compatibility set | Outside the Founder/conversation acceptance chain. No stronger claim added. |
 

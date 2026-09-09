@@ -1,0 +1,381 @@
+{
+  "schema": "velvet.compatibility.software-evidence.v1",
+  "record_id": "software-integration-2026-09-07",
+  "validated_at": "2026-09-09",
+  "hardware_acceptance": false,
+  "authority": "none",
+  "docs_pr": 33,
+  "docs_head_commit": "bfac5068f64185150827dbea9f8bf3b1ca3abb52",
+  "docs_test_checkout_commit": "4c5c0f408ce771bcda1ecbebc7983b12cde65d98",
+  "docs_run_url": "https://github.com/Velvet-ecosystem/velvet-docs/actions/runs/34293914706",
+  "communications_pr": 17,
+  "communications_head_commit": "b0593d9f05615c166ad473acd00a844a976d75f4",
+  "communications_test_checkout_commit": "1232269eb6e3e79d20020b4420730f1d2c863b00",
+  "communications_run_url": "https://github.com/Velvet-ecosystem/velvet-communications/actions/runs/34293917216",
+  "interpretation": "PR checks ran GitHub synthetic merge checkouts; no PR was merged. Exact dependency SHAs, repair deltas, trees and JUnit files are retained in each Docs run artifact. Pinned jobs reject any tree mismatch. Candidate jobs record new inputs without promoting this manifest. This evidence records the implementation commit; later evidence-only commits retain these test inputs.",
+  "jobs": [
+    {
+      "repository": "velvet-docs",
+      "job_id": 102286247381,
+      "name": "candidate software / Python 3.12",
+      "python": "3.12.14",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "integration",
+          "discovered": 50,
+          "executed": 50,
+          "passed": 50,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-interface",
+          "discovered": 128,
+          "executed": 128,
+          "passed": 128,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-vehicle-can",
+          "discovered": 67,
+          "executed": 67,
+          "passed": 67,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-communications",
+          "discovered": 39,
+          "executed": 39,
+          "passed": 39,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "repository": "velvet-docs",
+      "job_id": 102286247548,
+      "name": "candidate software / Python 3.8",
+      "python": "3.8.18",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "integration",
+          "discovered": 50,
+          "executed": 50,
+          "passed": 50,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-interface",
+          "discovered": 128,
+          "executed": 128,
+          "passed": 128,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-vehicle-can",
+          "discovered": 67,
+          "executed": 67,
+          "passed": 67,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-communications",
+          "discovered": 39,
+          "executed": 39,
+          "passed": 39,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "repository": "velvet-docs",
+      "job_id": 102286247590,
+      "name": "candidate software / Python 3.11",
+      "python": "3.11.16",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "integration",
+          "discovered": 50,
+          "executed": 50,
+          "passed": 50,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-audio-studio",
+          "discovered": 240,
+          "executed": 240,
+          "passed": 240,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-communications",
+          "discovered": 39,
+          "executed": 39,
+          "passed": 39,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "repository": "velvet-docs",
+      "job_id": 102286247616,
+      "name": "pinned software / Python 3.11",
+      "python": "3.11.16",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "integration",
+          "discovered": 50,
+          "executed": 50,
+          "passed": 50,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-audio-studio",
+          "discovered": 240,
+          "executed": 240,
+          "passed": 240,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-communications",
+          "discovered": 39,
+          "executed": 39,
+          "passed": 39,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "repository": "velvet-docs",
+      "job_id": 102286247693,
+      "name": "pinned software / Python 3.10",
+      "python": "3.10.21",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "integration",
+          "discovered": 50,
+          "executed": 50,
+          "passed": 50,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "repository": "velvet-docs",
+      "job_id": 102286247730,
+      "name": "pinned software / Python 3.8",
+      "python": "3.8.18",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "integration",
+          "discovered": 50,
+          "executed": 50,
+          "passed": 50,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-interface",
+          "discovered": 128,
+          "executed": 128,
+          "passed": 128,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-vehicle-can",
+          "discovered": 67,
+          "executed": 67,
+          "passed": 67,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-communications",
+          "discovered": 39,
+          "executed": 39,
+          "passed": 39,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "repository": "velvet-docs",
+      "job_id": 102286247746,
+      "name": "candidate software / Python 3.10",
+      "python": "3.10.21",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "integration",
+          "discovered": 50,
+          "executed": 50,
+          "passed": 50,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "repository": "velvet-docs",
+      "job_id": 102286247779,
+      "name": "pinned software / Python 3.12",
+      "python": "3.12.14",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "integration",
+          "discovered": 50,
+          "executed": 50,
+          "passed": 50,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-interface",
+          "discovered": 128,
+          "executed": 128,
+          "passed": 128,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-vehicle-can",
+          "discovered": 67,
+          "executed": 67,
+          "passed": 67,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "velvet-communications",
+          "discovered": 39,
+          "executed": 39,
+          "passed": 39,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "repository": "velvet-communications",
+      "job_id": 102286254658,
+      "name": "test (3.8)",
+      "python": "3.8.18",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "velvet-communications",
+          "discovered": 39,
+          "executed": 39,
+          "passed": 39,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "repository": "velvet-communications",
+      "job_id": 102286254850,
+      "name": "test (3.11)",
+      "python": "3.11.16",
+      "conclusion": "success",
+      "results": [
+        {
+          "suite": "velvet-communications",
+          "discovered": 39,
+          "executed": 39,
+          "passed": 39,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    }
+  ],
+  "artifact_verification": {
+    "checked_at": "2026-09-09",
+    "all_eight_input_records_match_manifest": true,
+    "all_junit_counts_match_job_logs": true,
+    "artifacts": [
+      {
+        "name": "software-candidate-python-3.10",
+        "sha256": "bf674e644e693968f97bc6b0a64e5fd05db98c7296ed0d97e9a866814b9cb00b"
+      },
+      {
+        "name": "software-candidate-python-3.11",
+        "sha256": "afb4f5963e2fc57d0d0237b877ce02f2e796f29bc91165eaee2afc901c2ec958"
+      },
+      {
+        "name": "software-candidate-python-3.12",
+        "sha256": "3c722a3e070a49f5a27d49c10f1baf7d27fba5f6c5500dff8aadb9c067a7bf42"
+      },
+      {
+        "name": "software-candidate-python-3.8",
+        "sha256": "a1eb24b2ee5130dcf805c7261ad9117ed6157853a4bc189c19f16a1a091af270"
+      },
+      {
+        "name": "software-pinned-python-3.10",
+        "sha256": "09f9f2e760cec4386af82fb9bc68195a1b9a33d8494e10c9cefbd857d9b51493"
+      },
+      {
+        "name": "software-pinned-python-3.11",
+        "sha256": "686d82fc4814ec65dfbc5bea725357cb94afc13d1802896eaa00f9dbeb2cbb0e"
+      },
+      {
+        "name": "software-pinned-python-3.12",
+        "sha256": "4bfecdd5e8291c39787ab556afeac798ee7d253a8a5bdfaab044fd68ac20ca46"
+      },
+      {
+        "name": "software-pinned-python-3.8",
+        "sha256": "9aa8fdaf134ca86331ab223d03da70a6c78247bc4c4e7d8efc9b6ab619a4b95d"
+      }
+    ]
+  }
+}

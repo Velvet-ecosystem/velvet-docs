@@ -1,0 +1,116 @@
+{
+  "schema": "velvet.compatibility.software.v1",
+  "record_id": "post-merge-software-integration-2026-09-09",
+  "status": "software-acceptance-passed-audio-timing-unresolved",
+  "scope": "bounded software integration of exact merged main commits",
+  "hardware_acceptance": false,
+  "authority": "none",
+  "repositories": {
+    "velvet-runtime": {
+      "commit": "c841adcb044359233cf039c0a2383475ac92c9f1",
+      "expected_tree": "baad06ce76a37724dcf6354614b255725ae6f31f",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-ai-core": {
+      "commit": "10d3d5141b32d0501291c9db021237161915e891",
+      "expected_tree": "6769cc022ef98a1628eca8dd4b7da1a846c22a05",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-language": {
+      "commit": "d335ae3adf653488d1998c966bd5afa238806859",
+      "expected_tree": "7840f121c227061b2f074df4ee1d2c11533c25a6",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-event-protocol": {
+      "commit": "bc22e2b672a61f2ea93611fc4602f29f6b01fd78",
+      "expected_tree": "797c5fb6c54a17478dede814190ba316f4c7fde9",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-receipts": {
+      "commit": "93b0ec80449ff0546ed9d208b0eb7a1ef4ff2035",
+      "expected_tree": "c397ce679330fe0fc1aa3120e65ce898ec42f747",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-continuity-spine": {
+      "commit": "8b593bf71f427e51bb8edc43124d5a05dd5fbbc1",
+      "expected_tree": "83fcd43d675113d7fe077ec8f976d69344485aad",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-interface": {
+      "commit": "5cb9091715862baa1a88d6242a91b77298e40147",
+      "expected_tree": "95fccdb812d59824393d64cb5e1e5ddae3b47b90",
+      "coverage": "separate-component-suite",
+      "repairs": []
+    },
+    "velvet-audio-studio": {
+      "commit": "7562eb7314358cfa6548f92e02efc8ed88b4386c",
+      "expected_tree": "ba4f8e58aafbf4c36cc5fa7709ea4a5b0905d4b0",
+      "coverage": "separate-component-suite",
+      "repairs": []
+    },
+    "velvet-communications": {
+      "commit": "2475c1e32233a5273bb7285a833dbbab67d3632a",
+      "expected_tree": "217e4a371f5d0cdb1f9214730085f5c1faa05228",
+      "coverage": "separate-component-suite",
+      "repairs": []
+    },
+    "velours_library": {
+      "commit": "dd561629ee5bf8a19d7610da2aa6eebb6e127f2b",
+      "expected_tree": "e6704b3514e0a552fa021d1c6512e50987a08a43",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-vehicle-can": {
+      "commit": "cd3bf42ae1951f40c07a89e1ab4be96916ed5a4e",
+      "expected_tree": "a002c99e8e30b3f25b39e9a2cf287a9c5e502f0a",
+      "coverage": "separate-component-suite",
+      "repairs": []
+    }
+  },
+  "docs_base_commit": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+  "interpretation": "Each commit is an actual merged main source; expected_tree identifies that unmodified checkout. No repair overlays are applied. Prior current and historical manifests are preserved.",
+  "acceptance": {
+    "command": "python -m pytest acceptance tests .acceptance-deps/velvet-ai-core/acceptance -q -ra --junitxml=acceptance-results/integration.xml",
+    "discovered": 50,
+    "python_lanes": [
+      "3.8",
+      "3.10",
+      "3.11",
+      "3.12"
+    ],
+    "requires_successful_run_evidence": true,
+    "hardware_acceptance": false,
+    "ci_evidence": "evidence/post-merge-2026-09-09.json"
+  },
+  "separately_reviewed_private_companions": {
+    "velvet-persona-continuity": {
+      "commit": "8acbf9d48ef0f0b630d56897137b40057cc8af76",
+      "expected_tree": "8577a991d8461eb973c79cf86b1e06825a22318e",
+      "accepted_repair_head": "88f0b8cee99caca2e9586170813e1662a783fe9a",
+      "pr": 4,
+      "coverage": "Private main tree verified; main CI ran 155 unit cases (152 passed, three existing skips) on 3.10/3.11/3.12 and one live-Core contract against merged Core 10d3d5141b32d0501291c9db021237161915e891. Not fetched by public acceptance.",
+      "ci_run_url": "https://github.com/Velvet-ecosystem/velvet-persona-continuity/actions/runs/34317812097"
+    }
+  },
+  "validated_at": "2026-09-09",
+  "previous_record": "current-2026-09-07.json",
+  "retained_qualifications": [
+    {
+      "id": "audio-lease-timing",
+      "status": "unresolved",
+      "repository": "velvet-audio-studio",
+      "commit": "7562eb7314358cfa6548f92e02efc8ed88b4386c",
+      "test": "tests/test_runtime_dispatch_worker.py::test_slow_handler_receives_lease_heartbeats_until_completion",
+      "evidence_url": "https://github.com/Velvet-ecosystem/velvet-docs/actions/runs/34294532999/job/102288162655",
+      "observation": "Real-clock lease test expected PROCESSED but returned CLAIM_LOST; Audio had 239 passes and one failure. The test uses a 0.20-second lease, 0.04-second renewal interval and 0.11-second sleep. Inactive/expired-claim completion was rejected.",
+      "root_cause": "Unproven. Scheduling/storage timing is plausible, not established.",
+      "disposition": "Retained as unresolved evidence despite subsequent passing runs. No Audio code, test, timeout, lease policy or fail-closed boundary is changed."
+    }
+  ]
+}

@@ -1,42 +1,39 @@
 # Velvet Compatibility Ledger
 
-This ledger records the difference between claimed compatibility and mechanically verified compatibility across the Velvet ecosystem.
+Last reviewed: 2026-09-09; post-merge source set captured 2026-09-09. This records bounded software evidence, not acceptance of the installed physical ecosystem.
 
-It is not a marketing matrix. A repository enters a stronger support category only when its code, package boundary, and tests support that claim.
+The current reproducible source set is [post-merge-software-integration-2026-09-09](../compatibility/post-merge-2026-09-09.json). All eleven accepted repair PRs are merged. The new record pins the actual resulting main commits with empty repair overlays. Each resulting tree matches the accepted repairs; Communications also includes its accepted README correction.
 
-Last reviewed: 2026-06-24
+The [post-merge evidence](../compatibility/evidence/post-merge-2026-09-09.json) records merge commits, main CI, candidate source/tree checks and executed counts. [Current software acceptance](current_software_acceptance.md) defines the commands and limits. The [previous manifest](../compatibility/current-2026-09-07.json) and all historical records are preserved unchanged.
 
-## Evidence levels
-
-### Full baseline CI
-
-The repository installs and runs its relevant test suite on Python 3.8 in CI.
-
-### Baseline contract CI
-
-Python 3.8 validates the bounded compatibility contract and syntax-sensitive tooling, while the repository's full suite remains on newer preferred interpreters.
-
-### Syntax guarded
-
-Declared Python 3.8-facing files are parsed against Python 3.8 grammar, but the full package is not yet exercised on Python 3.8 CI.
-
-### Unassessed
-
-No ecosystem-level Python 3.8 compatibility claim has been verified yet.
+**Audio lease-timing qualification remains unresolved.** The existing real-clock heartbeat test once returned CLAIM_LOST instead of PROCESSED. [Original failed job](https://github.com/Velvet-ecosystem/velvet-docs/actions/runs/34294532999/job/102288162655). Passing post-merge suites do not resolve its unproven timing cause; Audio code and fail-closed lease rejection are unchanged.
 
 ## Current ledger
 
-| Repository | Role | Python 3.8 status | Preferred lane | Evidence | Notes |
-|---|---|---:|---:|---|---|
-| `velvet-runtime` | boot, identity, Court, gates, executors, local gateway | Baseline contract CI | 3.10–3.12 full suite | Runtime PR #42, merge `ebdf4b357b0bb8463664a8787704a779f57adeee` | Python 3.8 validates the baseline dependency contract and compatibility tools. Physical UP² validation is still pending. |
-| `velvet-interface` | bounded visible surfaces and boot status | Syntax guarded | current development lane | commit `94bd9ad2439fb65cf4f137891953d3259fb1566a` | Boot window syntax was restored to Python 3.8-compatible typing. Full Python 3.8 install-and-test CI is not yet recorded. |
-| `velvet-event-protocol` | internal event transport and receipt-aware enforcement | Full baseline CI | 3.10 and 3.12 also tested | Event Protocol PR #3, merge `735dfbfe047987f4d94a31678e03ee61c9cfccf1` | Real installable package. Runtime-compatible `EventBus` and `EventEnforcer`. ACTUATION remains fail-closed. |
-| `velvet-continuity-spine` | identity, lineage, proof records, drift and continuity | Full baseline CI | 3.10 and 3.12 also tested | Continuity PR #3, merge `ed01c89ad74004047ad235a7f73ff9de45b044d9` | Package-wide Python 3.8 syntax guard remains in the test suite. Hash, HMAC, lineage, and authority semantics remain unchanged. |
-| `velvet-receipts` | append-only accountability and hash chains | Full baseline CI | 3.10 and 3.12 also tested | Receipts PR #2, merge `bff0e378d183a2e7828a140f1c4e8b52431d28c3` | Installable `velvet_receipts` package added while preserving root-level imports and receipt-chain behavior. |
-| `velvet-vehicle-can` | receive-only CAN observation, learning and qualification | Full baseline CI | 3.10 and 3.12 also tested | Vehicle CAN PR #5, merge `d7b667e335437c35ed5e81dea977ec4c2bd2bdab` | Installable package. Hardware observation dependency remains optional. No transmit or actuation path was added. |
-| `velvet-ai-core` | language, reasoning, personality and core proposals | Full baseline CI | 3.10 and 3.12 also tested | Core PR #9, merge `12012ba4f16a03383e3e5efb9f6ea31904a63a4b` | Package installs and imports on Python 3.8. A package-wide syntax guard is enforced. No model backend, cloud service, hardware access, or authority is required. |
-| `velvet-docs` | canonical doctrine and ecosystem contracts | Not runtime-bearing | n/a | documentation review | Owns compatibility doctrine and this ledger, but does not define a Python runtime floor. |
-| `business_agent_ecosystem` | autonomous business-agent workflows | Unassessed | unknown | pending audit | Not part of the UP² first-wake dependency chain. |
+“Full baseline CI” means the relevant repository suite runs on Python 3.8. “Baseline contract CI” means focused Founder gates run on 3.8 while the full Runtime suite runs on newer interpreters. Component CI and bounded cross-repository acceptance are separate claims.
+
+| Repository | Responsibility | Python baseline and supported CI | Current evidence scope |
+|---|---|---|---|
+| velvet-runtime | Boot composition, Court/capability and execution governance | 3.8 baseline contract; full 3.10–3.12 | Repairs [#137](https://github.com/Velvet-ecosystem/velvet-runtime/pull/137), [#141](https://github.com/Velvet-ecosystem/velvet-runtime/pull/141), [#142](https://github.com/Velvet-ecosystem/velvet-runtime/pull/142); real startup loaders, conversation and Ghost acceptance. Observation-only posture retained. |
+| velvet-ai-core | Reasoning, interpretation, memory and proposals | Full 3.8 / 3.10 / 3.12 | Repairs [#76](https://github.com/Velvet-ecosystem/velvet-ai-core/pull/76), [#77](https://github.com/Velvet-ecosystem/velvet-ai-core/pull/77); 28 evidence-agreement acceptance cases replayed alongside current real Library integration. |
+| velvet-event-protocol | Local event schemas, delivery and enforcement | Full 3.8 / 3.10 / 3.12 | [#18](https://github.com/Velvet-ecosystem/velvet-event-protocol/pull/18) fixes complete discovery; real Ghost lifecycle validation. Events grant no authority. |
+| velvet-receipts | Outcome/decision evidence and hash chains | Full 3.8 / 3.10 / 3.12 | Real canonical Ghost receipt construction, persistence and chain verification. Retrieval audit remains distinct from canonical receipts. |
+| velvet-continuity-spine | Riven identity and lineage | Full 3.8 / 3.10 / 3.12 | Real disposable development genesis feeds startup-policy acceptance. No production identity or permanent lineage is created. |
+| velvet-interface | Presentation and requests | Full baseline 3.8 / 3.10 / 3.12 | [#41](https://github.com/Velvet-ecosystem/velvet-interface/pull/41) includes the previously omitted compatibility case; complete headless suite replayed on 3.8/3.12. Qt/device acceptance remains separate. |
+| velvet-language | Bounded human-facing wording | Full 3.8 / 3.10 / 3.11 / 3.12 | Real ConversationGateway and realizer used for typed body facts, Library evidence, unavailable and restored retrieval. No acoustic device claim. |
+| velvet-audio-studio | Acoustic/device boundary | Intentional minimum **3.11**; full suite on 3.11 | Separate 240-case software suite; no speech-model, Pi/Octo, kernel or multichannel hardware acceptance in this pass. Never installed in the Founder 3.8 lane. |
+| velvet-communications | Peer/network carriage | Full 3.8 / 3.11; additional acceptance replay on 3.12 | Separate 39-case software suite; authenticated local-IP delivery and bounded RPC already implemented. HMAC authentication is not encryption; protected-path claims require a configured confidential underlay. |
+| velours_library | Source custody, ingestion and retrieval | Full 3.8 / 3.12 | [#13](https://github.com/Velvet-ecosystem/velours_library/pull/13) adds production vault identity checks; real published-source retrieval over authenticated loopback HTTP, loss/recovery and privacy-minimal audit exercised here. |
+| velvet-vehicle-can | Receive-only observation and qualification | Full baseline 3.8; also 3.10 / 3.11 / 3.12 | Separate complete software suite replayed on 3.8/3.12. No CAN interface, transmission or physical-control acceptance. |
+| velvet-persona-continuity | Private persona recall/policy contracts | Separately validated in Repair 3 | Merged [#4](https://github.com/Velvet-ecosystem/velvet-persona-continuity/pull/4), actual main and accepted repair head recorded separately. Private source is neither fetched nor implied to be exercised by the public workflow. |
+| velvet-docs | Canonical doctrine and compatibility/integration evidence | Not production-runtime-bearing; acceptance 3.8 / 3.10 / 3.11 / 3.12 | Owns the source manifest, replay harness and ledger. This does not assign production orchestration to Docs. |
+| business_agent_ecosystem | Adjacent business workflows | Unassessed by this compatibility set | Outside the Founder/conversation acceptance chain. No stronger claim added. |
+
+## Preserved historical checkpoint
+
+The complete previous ledger is preserved byte-for-byte at [compatibility-ledger-2026-06-24.md](../compatibility/history/compatibility-ledger-2026-06-24.md), including its original evidence links and exact frozen sources for `up2-python38-baseline-2026-06-24`.
+
+That historical candidate remains `candidate-pending-hardware-validation`. The new software manifest does not replace its contents or convert it into a hardware-accepted record. Existing deployment receipts and frozen Runtime dependency manifests are unchanged.
 
 ## Core capability separation
 
@@ -60,38 +57,6 @@ Physical authority: none
 ```
 
 Optional reasoning backends may propose, explain, summarize, classify, or form candidate intents. They do not receive Court signing keys, executor registries, safety bypasses, or physical hardware authority.
-
-## UP² baseline candidate
-
-The current constrained-hardware software checkpoint is:
-
-```text
-up2-python38-baseline-2026-06-24
-```
-
-Frozen sources:
-
-```text
-velvet-runtime
-  ebdf4b357b0bb8463664a8787704a779f57adeee
-
-velvet-interface
-  94bd9ad2439fb65cf4f137891953d3259fb1566a
-
-velvet-event-protocol
-  735dfbfe047987f4d94a31678e03ee61c9cfccf1
-
-velvet-continuity-spine
-  ed01c89ad74004047ad235a7f73ff9de45b044d9
-```
-
-The candidate remains:
-
-```text
-candidate-pending-hardware-validation
-```
-
-CI proves the software contracts. Only the physical UP² can prove the hardware wake-up.
 
 ## Compatibility laws
 

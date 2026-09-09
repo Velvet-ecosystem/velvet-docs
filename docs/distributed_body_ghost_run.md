@@ -81,7 +81,12 @@ python -m unittest tests/test_distributed_body_ghost_run.py -v
 python ghost/distributed_body_run.py
 ```
 
-GitHub Actions performs those checkouts automatically in `Distributed Ghost Integration`.
+GitHub Actions performs exact manifest-based checkouts in `Distributed Ghost Integration`.
+The workflow now runs these four existing tests alongside the current startup,
+typed conversation, real Library retrieval/loss/recovery and receipt checks.
+See [Current software acceptance](current_software_acceptance.md) for pinned
+commands, dependency-change probes and the distinction between accepted PR
+overlays and unmodified main commits.
 
 ## What this proves
 

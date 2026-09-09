@@ -1,0 +1,770 @@
+{
+  "schema": "velvet.compatibility.post-merge-evidence.v1",
+  "record_id": "post-merge-software-integration-2026-09-09",
+  "hardware_acceptance": false,
+  "authority": "none",
+  "docs_main_commit": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+  "merges": [
+    {
+      "head": "4e38d039922a32d3bd703eb3e096b0346df689f6",
+      "merge_commit": "a248f6cae75593acba4636451dd901a1fd7bb7b5",
+      "merged": true,
+      "pr": 137,
+      "repo": "velvet-runtime",
+      "state": "closed"
+    },
+    {
+      "head": "2ec45905e4643b5cac050ebc73a1680a2b6a191f",
+      "merge_commit": "bc55a0c3bca8cce447cafb7d617d8773f8991ce8",
+      "merged": true,
+      "pr": 76,
+      "repo": "velvet-ai-core",
+      "state": "closed"
+    },
+    {
+      "head": "f09014b3e40523aa0cd23dd6015d7f2e9d184b6e",
+      "merge_commit": "18af573ada53248cce376aaebb86907b091e551e",
+      "merged": true,
+      "pr": 141,
+      "repo": "velvet-runtime",
+      "state": "closed"
+    },
+    {
+      "head": "a8dae8ce0e6eb41bfda5eb1bf047129dd4bb9a8b",
+      "merge_commit": "bc22e2b672a61f2ea93611fc4602f29f6b01fd78",
+      "merged": true,
+      "pr": 18,
+      "repo": "velvet-event-protocol",
+      "state": "closed"
+    },
+    {
+      "head": "a728f23a022500f91a3af85477db8c1bb45b9612",
+      "merge_commit": "5cb9091715862baa1a88d6242a91b77298e40147",
+      "merged": true,
+      "pr": 41,
+      "repo": "velvet-interface",
+      "state": "closed"
+    },
+    {
+      "head": "88f0b8cee99caca2e9586170813e1662a783fe9a",
+      "merge_commit": "8acbf9d48ef0f0b630d56897137b40057cc8af76",
+      "merged": true,
+      "pr": 4,
+      "repo": "velvet-persona-continuity",
+      "state": "closed"
+    },
+    {
+      "head": "898df0ae6c28537f9c4d5f8860d999e91dd33840",
+      "merge_commit": "10d3d5141b32d0501291c9db021237161915e891",
+      "merged": true,
+      "pr": 77,
+      "repo": "velvet-ai-core",
+      "state": "closed"
+    },
+    {
+      "head": "1d43db5329074a088f9acd3c9b63f47dd21289d5",
+      "merge_commit": "c841adcb044359233cf039c0a2383475ac92c9f1",
+      "merged": true,
+      "pr": 142,
+      "repo": "velvet-runtime",
+      "state": "closed"
+    },
+    {
+      "head": "97ffa7b6ccd5110cf14d8d3102ed37f84ea77fda",
+      "merge_commit": "dd561629ee5bf8a19d7610da2aa6eebb6e127f2b",
+      "merged": true,
+      "pr": 13,
+      "repo": "velours_library",
+      "state": "closed"
+    },
+    {
+      "head": "b0593d9f05615c166ad473acd00a844a976d75f4",
+      "merge_commit": "2475c1e32233a5273bb7285a833dbbab67d3632a",
+      "merged": true,
+      "pr": 17,
+      "repo": "velvet-communications",
+      "state": "closed"
+    },
+    {
+      "head": "2cf0d963d38a3aaf162aca59b940ef77a77483b5",
+      "merge_commit": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "merged": true,
+      "pr": 33,
+      "repo": "velvet-docs",
+      "state": "closed"
+    }
+  ],
+  "main_tree_verification": [
+    {
+      "repo": "velours_library",
+      "sha": "dd561629ee5bf8a19d7610da2aa6eebb6e127f2b",
+      "tree": "e6704b3514e0a552fa021d1c6512e50987a08a43",
+      "expected_tree": "e6704b3514e0a552fa021d1c6512e50987a08a43",
+      "matches": true
+    },
+    {
+      "repo": "velvet-ai-core",
+      "sha": "10d3d5141b32d0501291c9db021237161915e891",
+      "tree": "6769cc022ef98a1628eca8dd4b7da1a846c22a05",
+      "expected_tree": "6769cc022ef98a1628eca8dd4b7da1a846c22a05",
+      "matches": true
+    },
+    {
+      "repo": "velvet-audio-studio",
+      "sha": "7562eb7314358cfa6548f92e02efc8ed88b4386c",
+      "tree": "ba4f8e58aafbf4c36cc5fa7709ea4a5b0905d4b0",
+      "expected_tree": "ba4f8e58aafbf4c36cc5fa7709ea4a5b0905d4b0",
+      "matches": true
+    },
+    {
+      "repo": "velvet-communications",
+      "sha": "2475c1e32233a5273bb7285a833dbbab67d3632a",
+      "tree": "217e4a371f5d0cdb1f9214730085f5c1faa05228",
+      "expected_tree": "217e4a371f5d0cdb1f9214730085f5c1faa05228",
+      "matches": true
+    },
+    {
+      "repo": "velvet-continuity-spine",
+      "sha": "8b593bf71f427e51bb8edc43124d5a05dd5fbbc1",
+      "tree": "83fcd43d675113d7fe077ec8f976d69344485aad",
+      "expected_tree": "83fcd43d675113d7fe077ec8f976d69344485aad",
+      "matches": true
+    },
+    {
+      "repo": "velvet-event-protocol",
+      "sha": "bc22e2b672a61f2ea93611fc4602f29f6b01fd78",
+      "tree": "797c5fb6c54a17478dede814190ba316f4c7fde9",
+      "expected_tree": "797c5fb6c54a17478dede814190ba316f4c7fde9",
+      "matches": true
+    },
+    {
+      "repo": "velvet-interface",
+      "sha": "5cb9091715862baa1a88d6242a91b77298e40147",
+      "tree": "95fccdb812d59824393d64cb5e1e5ddae3b47b90",
+      "expected_tree": "95fccdb812d59824393d64cb5e1e5ddae3b47b90",
+      "matches": true
+    },
+    {
+      "repo": "velvet-language",
+      "sha": "d335ae3adf653488d1998c966bd5afa238806859",
+      "tree": "7840f121c227061b2f074df4ee1d2c11533c25a6",
+      "expected_tree": "7840f121c227061b2f074df4ee1d2c11533c25a6",
+      "matches": true
+    },
+    {
+      "repo": "velvet-receipts",
+      "sha": "93b0ec80449ff0546ed9d208b0eb7a1ef4ff2035",
+      "tree": "c397ce679330fe0fc1aa3120e65ce898ec42f747",
+      "expected_tree": "c397ce679330fe0fc1aa3120e65ce898ec42f747",
+      "matches": true
+    },
+    {
+      "repo": "velvet-runtime",
+      "sha": "c841adcb044359233cf039c0a2383475ac92c9f1",
+      "tree": "baad06ce76a37724dcf6354614b255725ae6f31f",
+      "expected_tree": "baad06ce76a37724dcf6354614b255725ae6f31f",
+      "matches": true
+    },
+    {
+      "repo": "velvet-vehicle-can",
+      "sha": "cd3bf42ae1951f40c07a89e1ab4be96916ed5a4e",
+      "tree": "a002c99e8e30b3f25b39e9a2cf287a9c5e502f0a",
+      "expected_tree": "a002c99e8e30b3f25b39e9a2cf287a9c5e502f0a",
+      "matches": true
+    },
+    {
+      "repo": "velvet-docs",
+      "sha": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "tree": "e2f42b399a9439c4df623f621562bb731d23ac9a",
+      "expected_tree": "e2f42b399a9439c4df623f621562bb731d23ac9a",
+      "matches": true
+    },
+    {
+      "repo": "velvet-persona-continuity",
+      "sha": "8acbf9d48ef0f0b630d56897137b40057cc8af76",
+      "tree": "8577a991d8461eb973c79cf86b1e06825a22318e",
+      "expected_tree": "8577a991d8461eb973c79cf86b1e06825a22318e",
+      "matches": true
+    }
+  ],
+  "merge_sequence_note": "Mister merged the ten public PRs in the documented public order. Persona #4 remained open; the assistant completed its normal merge after checking the accepted head, identical tested tree, four successful checks and unprotected main. Its resulting tree and main CI were then verified. Intermediate public main runs passed; the final trees contain the accepted deltas.",
+  "candidate_run_url": "https://github.com/Velvet-ecosystem/velvet-docs/actions/runs/34300427673",
+  "candidate_run_timing": "The initial main run executed all eight lanes after the public merges. After the remaining private Persona merge, candidate Python 3.10 was explicitly rerun successfully. Other lanes retain their earlier timestamps; the new manifest PR also runs the full matrix. Private Persona is separately tested and is not imported by public acceptance.",
+  "docs_main_jobs": [
+    {
+      "checkout": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "conclusion": "success",
+      "id": 102357952226,
+      "name": "pinned software / Python 3.8",
+      "passed": [
+        50,
+        128,
+        67,
+        39
+      ],
+      "python": "3.8.18",
+      "first_log_timestamp": "2026-09-09T01:44:55.1732169Z"
+    },
+    {
+      "checkout": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "conclusion": "success",
+      "id": 102357952259,
+      "name": "candidate software / Python 3.10",
+      "passed": [
+        50
+      ],
+      "python": "3.10.21",
+      "first_log_timestamp": "2026-09-09T06:10:40.6612157Z"
+    },
+    {
+      "checkout": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "conclusion": "success",
+      "id": 102357952470,
+      "name": "pinned software / Python 3.11",
+      "passed": [
+        50,
+        240,
+        39
+      ],
+      "python": "3.11.16",
+      "first_log_timestamp": "2026-09-09T01:44:54.4059719Z"
+    },
+    {
+      "checkout": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "conclusion": "success",
+      "id": 102357952641,
+      "name": "candidate software / Python 3.8",
+      "passed": [
+        50,
+        128,
+        67,
+        39
+      ],
+      "python": "3.8.18",
+      "first_log_timestamp": "2026-09-09T01:44:55.3503612Z"
+    },
+    {
+      "checkout": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "conclusion": "success",
+      "id": 102357952949,
+      "name": "pinned software / Python 3.12",
+      "passed": [
+        50,
+        128,
+        67,
+        39
+      ],
+      "python": "3.12.14",
+      "first_log_timestamp": "2026-09-09T01:44:55.1160303Z"
+    },
+    {
+      "checkout": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "conclusion": "success",
+      "id": 102357952956,
+      "name": "candidate software / Python 3.12",
+      "passed": [
+        50,
+        128,
+        67,
+        39
+      ],
+      "python": "3.12.14",
+      "first_log_timestamp": "2026-09-09T01:44:54.6733582Z"
+    },
+    {
+      "checkout": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "conclusion": "success",
+      "id": 102357952993,
+      "name": "candidate software / Python 3.11",
+      "passed": [
+        50,
+        240,
+        39
+      ],
+      "python": "3.11.16",
+      "first_log_timestamp": "2026-09-09T01:44:54.6069793Z"
+    },
+    {
+      "checkout": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "conclusion": "success",
+      "id": 102357953124,
+      "name": "pinned software / Python 3.10",
+      "passed": [
+        50
+      ],
+      "python": "3.10.21",
+      "first_log_timestamp": "2026-09-09T01:44:54.3644614Z"
+    }
+  ],
+  "candidate_artifact_verification": [
+    {
+      "artifact": "software-candidate-python-3.10",
+      "zip_sha256": "bab3d1139d84c46972cec61ab6e5c900b1c1754345316d02393cb62f4907e0c6",
+      "inputs_match_resulting_main": true,
+      "repair_overlays_already_present": true,
+      "python": "Python 3.10.21",
+      "harness": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "suites": [
+        {
+          "name": "integration",
+          "tests": 50,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "artifact": "software-candidate-python-3.11",
+      "zip_sha256": "2b4b18cac9988386abd645f30d413cccd3639ff9dd18235718a3d9fa27ba4c58",
+      "inputs_match_resulting_main": true,
+      "repair_overlays_already_present": true,
+      "python": "Python 3.11.16",
+      "harness": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "suites": [
+        {
+          "name": "integration",
+          "tests": 50,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "velvet-audio-studio",
+          "tests": 240,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "velvet-communications",
+          "tests": 39,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "artifact": "software-candidate-python-3.12",
+      "zip_sha256": "ebcbe2738daa0f953ad2ca83002a031d07c9b8569d932a71a6507a195eeed2b0",
+      "inputs_match_resulting_main": true,
+      "repair_overlays_already_present": true,
+      "python": "Python 3.12.14",
+      "harness": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "suites": [
+        {
+          "name": "integration",
+          "tests": 50,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "velvet-communications",
+          "tests": 39,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "velvet-interface",
+          "tests": 128,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "velvet-vehicle-can",
+          "tests": 67,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "artifact": "software-candidate-python-3.8",
+      "zip_sha256": "c32b31ccf48a05523d3fe906025de395599c3b2cf3905f04a7fc1f74fa0454f8",
+      "inputs_match_resulting_main": true,
+      "repair_overlays_already_present": true,
+      "python": "Python 3.8.18",
+      "harness": "14088f85f7a0253a2c7b902ceca612c6f4ec11e6",
+      "suites": [
+        {
+          "name": "integration",
+          "tests": 50,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "velvet-communications",
+          "tests": 39,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "velvet-interface",
+          "tests": 128,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "velvet-vehicle-can",
+          "tests": 67,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    }
+  ],
+  "component_main_jobs": [
+    {
+      "repo": "velvet-persona-continuity",
+      "run": 34317812097,
+      "job_id": 102357628315,
+      "name": "unit-tests (3.10)",
+      "conclusion": "success",
+      "python": "3.10.21",
+      "lines": [
+        "2026-09-09T06:09:22.5831116Z Ran 155 tests in 0.146s",
+        "2026-09-09T06:09:22.5831837Z OK (skipped=3)"
+      ]
+    },
+    {
+      "repo": "velvet-persona-continuity",
+      "run": 34317812097,
+      "job_id": 102357628569,
+      "name": "unit-tests (3.11)",
+      "conclusion": "success",
+      "python": "3.11.16",
+      "lines": [
+        "2026-09-09T06:09:24.5086476Z Ran 155 tests in 0.118s",
+        "2026-09-09T06:09:24.5086912Z OK (skipped=3)"
+      ]
+    },
+    {
+      "repo": "velvet-persona-continuity",
+      "run": 34317812097,
+      "job_id": 102357628577,
+      "name": "unit-tests (3.12)",
+      "conclusion": "success",
+      "python": "3.12.14",
+      "lines": [
+        "2026-09-09T06:09:24.8114831Z Ran 155 tests in 0.130s",
+        "2026-09-09T06:09:24.8115499Z OK (skipped=3)"
+      ]
+    },
+    {
+      "repo": "velvet-persona-continuity",
+      "run": 34317812097,
+      "job_id": 102357628677,
+      "name": "live-core-contract",
+      "conclusion": "success",
+      "python": "3.12.14",
+      "lines": [
+        "2026-09-09T06:09:22.1752264Z   Resolved https://github.com/Velvet-ecosystem/velvet-ai-core.git to commit 10d3d5141b32d0501291c9db021237161915e891",
+        "2026-09-09T06:09:24.7142836Z Ran 1 test in 0.044s",
+        "2026-09-09T06:09:24.7182456Z OK"
+      ]
+    },
+    {
+      "repo": "velvet-runtime",
+      "run": 34300000577,
+      "job_id": 102304680185,
+      "name": "Python 3.8 baseline contract",
+      "conclusion": "success",
+      "python": "3.8.18",
+      "lines": [
+        "2026-09-09T01:38:32.2190596Z Ran 1 test in 0.285s",
+        "2026-09-09T01:38:32.2190903Z OK",
+        "2026-09-09T01:38:32.3779828Z Ran 8 tests in 0.005s",
+        "2026-09-09T01:38:32.3780072Z OK"
+      ]
+    },
+    {
+      "repo": "velvet-runtime",
+      "run": 34300000577,
+      "job_id": 102304680295,
+      "name": "Python 3.11",
+      "conclusion": "success",
+      "python": "3.11.16",
+      "lines": [
+        "2026-09-09T01:38:32.8895044Z 893 passed, 4 skipped in 5.35s"
+      ]
+    },
+    {
+      "repo": "velvet-runtime",
+      "run": 34300000577,
+      "job_id": 102304680321,
+      "name": "Python 3.12",
+      "conclusion": "success",
+      "python": "3.12.14",
+      "lines": [
+        "2026-09-09T01:38:31.3318826Z 893 passed, 4 skipped in 5.29s"
+      ]
+    },
+    {
+      "repo": "velvet-runtime",
+      "run": 34300000577,
+      "job_id": 102304680488,
+      "name": "Python 3.10",
+      "conclusion": "success",
+      "python": "3.10.21",
+      "lines": [
+        "2026-09-09T01:38:42.6619732Z 893 passed, 4 skipped in 6.77s"
+      ]
+    },
+    {
+      "repo": "velvet-runtime",
+      "run": 34300000634,
+      "job_id": 102304680568,
+      "name": "acceptance (3.12)",
+      "conclusion": "success",
+      "python": "3.12.14",
+      "lines": [
+        "2026-09-09T01:38:33.6767253Z 893 passed, 4 skipped in 5.89s"
+      ]
+    },
+    {
+      "repo": "velvet-runtime",
+      "run": 34300000634,
+      "job_id": 102304680682,
+      "name": "acceptance (3.8)",
+      "conclusion": "success",
+      "python": "3.8.18",
+      "lines": [
+        "2026-09-09T01:38:33.8764856Z 52 passed in 0.68s"
+      ]
+    },
+    {
+      "repo": "velvet-runtime",
+      "run": 34300000634,
+      "job_id": 102304680699,
+      "name": "acceptance (3.11)",
+      "conclusion": "success",
+      "python": "3.11.16",
+      "lines": [
+        "2026-09-09T01:38:29.0517229Z 893 passed, 4 skipped in 4.91s"
+      ]
+    },
+    {
+      "repo": "velvet-runtime",
+      "run": 34300000634,
+      "job_id": 102304680708,
+      "name": "acceptance (3.10)",
+      "conclusion": "success",
+      "python": "3.10.21",
+      "lines": [
+        "2026-09-09T01:38:32.3564716Z 893 passed, 4 skipped in 5.86s"
+      ]
+    },
+    {
+      "repo": "velvet-ai-core",
+      "run": 34299894539,
+      "job_id": 102304367157,
+      "name": "Python 3.8",
+      "conclusion": "success",
+      "python": "3.8.18",
+      "lines": [
+        "2026-09-09T01:37:02.6026626Z 587 passed in 1.33s"
+      ]
+    },
+    {
+      "repo": "velvet-ai-core",
+      "run": 34299894539,
+      "job_id": 102304367258,
+      "name": "Python 3.10",
+      "conclusion": "success",
+      "python": "3.10.21",
+      "lines": [
+        "2026-09-09T01:36:53.2160622Z 587 passed in 1.58s"
+      ]
+    },
+    {
+      "repo": "velvet-ai-core",
+      "run": 34299894539,
+      "job_id": 102304367260,
+      "name": "Python 3.12",
+      "conclusion": "success",
+      "python": "3.12.14",
+      "lines": [
+        "2026-09-09T01:36:51.1608163Z 587 passed in 1.52s"
+      ]
+    },
+    {
+      "repo": "velvet-ai-core",
+      "run": 34299894531,
+      "job_id": 102304366842,
+      "name": "Library evidence Python 3.12",
+      "conclusion": "success",
+      "python": "3.12.14",
+      "lines": [
+        "2026-09-09T01:36:55.8059822Z 615 passed in 1.50s"
+      ]
+    },
+    {
+      "repo": "velvet-ai-core",
+      "run": 34299894531,
+      "job_id": 102304367147,
+      "name": "Library evidence Python 3.10",
+      "conclusion": "success",
+      "python": "3.10.21",
+      "lines": [
+        "2026-09-09T01:37:03.7738016Z 615 passed in 1.77s"
+      ]
+    },
+    {
+      "repo": "velvet-ai-core",
+      "run": 34299894531,
+      "job_id": 102304367151,
+      "name": "Library evidence Python 3.8",
+      "conclusion": "success",
+      "python": "3.8.18",
+      "lines": [
+        "2026-09-09T01:37:01.2404717Z 615 passed in 1.08s"
+      ]
+    },
+    {
+      "repo": "velvet-event-protocol",
+      "run": 34299718322,
+      "job_id": 102303847607,
+      "name": "Python 3.12",
+      "conclusion": "success",
+      "python": "3.12.14",
+      "lines": [
+        "2026-09-09T01:34:13.9035315Z 94 passed in 0.37s"
+      ]
+    },
+    {
+      "repo": "velvet-event-protocol",
+      "run": 34299718322,
+      "job_id": 102303847679,
+      "name": "Python 3.8",
+      "conclusion": "success",
+      "python": "3.8.18",
+      "lines": [
+        "2026-09-09T01:34:23.0017991Z 94 passed in 0.23s"
+      ]
+    },
+    {
+      "repo": "velvet-event-protocol",
+      "run": 34299718322,
+      "job_id": 102303847774,
+      "name": "Python 3.10",
+      "conclusion": "success",
+      "python": "3.10.21",
+      "lines": [
+        "2026-09-09T01:34:21.5860254Z 94 passed in 0.33s"
+      ]
+    },
+    {
+      "repo": "velvet-interface",
+      "run": 34299808191,
+      "job_id": 102304105292,
+      "name": "Python 3.8",
+      "conclusion": "success",
+      "python": "3.8.18",
+      "lines": [
+        "2026-09-09T01:35:43.1816534Z Ran 128 tests in 0.132s",
+        "2026-09-09T01:35:43.1816757Z OK"
+      ]
+    },
+    {
+      "repo": "velvet-interface",
+      "run": 34299808191,
+      "job_id": 102304105474,
+      "name": "Python 3.12",
+      "conclusion": "success",
+      "python": "3.12.14",
+      "lines": [
+        "2026-09-09T01:35:32.2996864Z Ran 128 tests in 0.112s",
+        "2026-09-09T01:35:32.2997102Z OK"
+      ]
+    },
+    {
+      "repo": "velvet-interface",
+      "run": 34299808191,
+      "job_id": 102304105567,
+      "name": "Python 3.10",
+      "conclusion": "success",
+      "python": "3.10.21",
+      "lines": [
+        "2026-09-09T01:35:32.0808000Z Ran 128 tests in 0.110s",
+        "2026-09-09T01:35:32.0808346Z OK"
+      ]
+    },
+    {
+      "repo": "velours_library",
+      "run": 34300092315,
+      "job_id": 102304963789,
+      "name": "test (3.8)",
+      "conclusion": "success",
+      "python": "3.8.18",
+      "lines": [
+        "2026-09-09T01:40:07.5173108Z 215 passed in 6.19s"
+      ]
+    },
+    {
+      "repo": "velours_library",
+      "run": 34300092315,
+      "job_id": 102304963908,
+      "name": "test (3.12)",
+      "conclusion": "success",
+      "python": "3.12.14",
+      "lines": [
+        "2026-09-09T01:40:02.1877382Z 215 passed in 6.40s"
+      ]
+    },
+    {
+      "repo": "velvet-communications",
+      "run": 34300180548,
+      "job_id": 102305229309,
+      "name": "test (3.11)",
+      "conclusion": "success",
+      "python": "3.11.16",
+      "lines": [
+        "2026-09-09T01:41:15.3999280Z 39 passed in 0.13s"
+      ]
+    },
+    {
+      "repo": "velvet-communications",
+      "run": 34300180548,
+      "job_id": 102305229597,
+      "name": "test (3.8)",
+      "conclusion": "success",
+      "python": "3.8.18",
+      "lines": [
+        "2026-09-09T01:41:23.0486209Z 39 passed in 0.14s"
+      ]
+    }
+  ],
+  "retained_qualifications": [
+    {
+      "id": "audio-lease-timing",
+      "status": "unresolved",
+      "repository": "velvet-audio-studio",
+      "commit": "7562eb7314358cfa6548f92e02efc8ed88b4386c",
+      "test": "tests/test_runtime_dispatch_worker.py::test_slow_handler_receives_lease_heartbeats_until_completion",
+      "evidence_url": "https://github.com/Velvet-ecosystem/velvet-docs/actions/runs/34294532999/job/102288162655",
+      "observation": "Real-clock lease test expected PROCESSED but returned CLAIM_LOST; Audio had 239 passes and one failure. The test uses a 0.20-second lease, 0.04-second renewal interval and 0.11-second sleep. Inactive/expired-claim completion was rejected.",
+      "root_cause": "Unproven. Scheduling/storage timing is plausible, not established.",
+      "disposition": "Retained as unresolved evidence despite subsequent passing runs. No Audio code, test, timeout, lease policy or fail-closed boundary is changed."
+    }
+  ],
+  "local_validation": {
+    "python": "3.11.15",
+    "discovered": 50,
+    "executed": 50,
+    "passed": 50,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "source_preparation": "New manifest replayed into eleven clean detached main checkouts using the verified local candidate repositories; no repair overlays or index changes.",
+    "command": "VELVET_ACCEPTANCE_DEPS=/workspace/scratch/f061d03da91a/postmerge-pinned PYTHONDONTWRITEBYTECODE=1 /workspace/scratch/f061d03da91a/repair6-env-3.11/bin/python -m pytest -p no:cacheprovider acceptance tests /workspace/scratch/f061d03da91a/postmerge-pinned/velvet-ai-core/acceptance -q -ra --junitxml=/workspace/scratch/f061d03da91a/postmerge-local-integration.xml"
+  }
+}

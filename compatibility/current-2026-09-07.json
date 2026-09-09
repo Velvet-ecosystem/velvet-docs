@@ -1,7 +1,7 @@
 {
   "schema": "velvet.compatibility.software.v1",
   "record_id": "software-integration-2026-09-07",
-  "status": "software-acceptance-passed-locally-ci-pending",
+  "status": "software-acceptance-passed",
   "scope": "bounded software integration; accepted repair overlays remain unmerged",
   "hardware_acceptance": false,
   "authority": "none",
@@ -130,7 +130,8 @@
       "3.12"
     ],
     "requires_successful_run_evidence": true,
-    "hardware_acceptance": false
+    "hardware_acceptance": false,
+    "ci_evidence": "evidence/software-integration-2026-09-09.json"
   },
   "separately_reviewed_private_companions": {
     "velvet-persona-continuity": {

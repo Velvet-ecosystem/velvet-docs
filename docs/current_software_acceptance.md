@@ -5,6 +5,8 @@ public source inputs for the current bounded software proof. The
 [ledger](compatibility_ledger.md) distinguishes repository-level evidence,
 integration evidence, private companions and hardware acceptance.
 
+The [2026-09-09 CI evidence](../compatibility/evidence/software-integration-2026-09-09.json) records the implementation commit, actual PR test checkout, run URLs, Python patch versions and executed suite counts. All eight pinned/candidate jobs passed. The test checkout is GitHub's synthetic PR merge commit; the PR remains unmerged.
+
 ## What is exercised
 
 The primary command discovers 50 tests: eight new current integration checks,

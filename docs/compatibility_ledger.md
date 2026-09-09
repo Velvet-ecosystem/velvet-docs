@@ -6,6 +6,8 @@ The current reproducible source set is [software-integration-2026-09-07](../comp
 
 [Current software acceptance](current_software_acceptance.md) defines the test commands, Python lanes, source preparation, dependency-change probes and evidence limits. GitHub run artifacts record the exact harness commit, actual source commits/trees, package versions and JUnit results. A passing candidate run does not automatically promote or rewrite this manifest.
 
+The [executed CI evidence](../compatibility/evidence/software-integration-2026-09-09.json) records eight successful Docs jobs: 50 integration checks per pinned/candidate lane on CPython 3.8.18, 3.10.21, 3.11.16 and 3.12.14, plus the component suites. Communications PR #17 also passed its two supported lanes. This is evidence for the exact recorded implementation and source set.
+
 ## Current ledger
 
 “Full baseline CI” means the relevant repository suite runs on Python 3.8. “Baseline contract CI” means focused Founder gates run on 3.8 while the full Runtime suite runs on newer interpreters. Component CI and bounded cross-repository acceptance are separate claims.

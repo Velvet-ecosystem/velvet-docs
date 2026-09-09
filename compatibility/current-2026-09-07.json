@@ -1,0 +1,144 @@
+{
+  "schema": "velvet.compatibility.software.v1",
+  "record_id": "software-integration-2026-09-07",
+  "status": "software-acceptance-passed",
+  "scope": "bounded software integration; accepted repair overlays remain unmerged",
+  "hardware_acceptance": false,
+  "authority": "none",
+  "repositories": {
+    "velvet-runtime": {
+      "commit": "22baca0d2a77103e451e2a02c7d6e471853fc281",
+      "expected_tree": "baad06ce76a37724dcf6354614b255725ae6f31f",
+      "coverage": "conversation-and-ghost",
+      "repairs": [
+        {
+          "commit": "4e38d039922a32d3bd703eb3e096b0346df689f6",
+          "base_commit": "98fb4bc11449f84292d0d86bfe1b3bfee4da16b3",
+          "pr": 137
+        },
+        {
+          "commit": "f09014b3e40523aa0cd23dd6015d7f2e9d184b6e",
+          "base_commit": "32117e7e6f58c2b5a8c01d952a4cbcd9f43877ec",
+          "pr": 141
+        },
+        {
+          "commit": "1d43db5329074a088f9acd3c9b63f47dd21289d5",
+          "base_commit": "32117e7e6f58c2b5a8c01d952a4cbcd9f43877ec",
+          "pr": 142
+        }
+      ]
+    },
+    "velvet-ai-core": {
+      "commit": "2895277829b5644aa07db846ebf3bfcb969931d9",
+      "expected_tree": "6769cc022ef98a1628eca8dd4b7da1a846c22a05",
+      "coverage": "conversation-and-ghost",
+      "repairs": [
+        {
+          "commit": "2ec45905e4643b5cac050ebc73a1680a2b6a191f",
+          "base_commit": "655d94091cf33bce293885be19f771608a2bb9cb",
+          "pr": 76
+        },
+        {
+          "commit": "898df0ae6c28537f9c4d5f8860d999e91dd33840",
+          "base_commit": "655d94091cf33bce293885be19f771608a2bb9cb",
+          "pr": 77
+        }
+      ]
+    },
+    "velvet-language": {
+      "commit": "d335ae3adf653488d1998c966bd5afa238806859",
+      "expected_tree": "7840f121c227061b2f074df4ee1d2c11533c25a6",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-event-protocol": {
+      "commit": "9b76d3fbe6e741547928bf440dc6aa93ba01dffb",
+      "expected_tree": "797c5fb6c54a17478dede814190ba316f4c7fde9",
+      "coverage": "conversation-and-ghost",
+      "repairs": [
+        {
+          "commit": "a8dae8ce0e6eb41bfda5eb1bf047129dd4bb9a8b",
+          "base_commit": "3541f2c920197131aa6dbe20287e723ee1eab7f1",
+          "pr": 18
+        }
+      ]
+    },
+    "velvet-receipts": {
+      "commit": "93b0ec80449ff0546ed9d208b0eb7a1ef4ff2035",
+      "expected_tree": "c397ce679330fe0fc1aa3120e65ce898ec42f747",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-continuity-spine": {
+      "commit": "8b593bf71f427e51bb8edc43124d5a05dd5fbbc1",
+      "expected_tree": "83fcd43d675113d7fe077ec8f976d69344485aad",
+      "coverage": "conversation-and-ghost",
+      "repairs": []
+    },
+    "velvet-interface": {
+      "commit": "3c22568a8373580a3088c43b082218e2fc092f11",
+      "expected_tree": "95fccdb812d59824393d64cb5e1e5ddae3b47b90",
+      "coverage": "separate-component-suite",
+      "repairs": [
+        {
+          "commit": "a728f23a022500f91a3af85477db8c1bb45b9612",
+          "base_commit": "cc6ff264652785ee5ea4f1ceda7a7c35d330d8b7",
+          "pr": 41
+        }
+      ]
+    },
+    "velvet-audio-studio": {
+      "commit": "7562eb7314358cfa6548f92e02efc8ed88b4386c",
+      "expected_tree": "ba4f8e58aafbf4c36cc5fa7709ea4a5b0905d4b0",
+      "coverage": "separate-component-suite",
+      "repairs": []
+    },
+    "velvet-communications": {
+      "commit": "c1d9ea2e8f2775f6ce2a625ee1b1ca12c1c4a919",
+      "expected_tree": "e7c46305c3a41a0a3b8e11114230337ffee7ae7a",
+      "coverage": "separate-component-suite",
+      "repairs": []
+    },
+    "velours_library": {
+      "commit": "d6496baa144953a0b4c163baa5dbe873db71d746",
+      "expected_tree": "e6704b3514e0a552fa021d1c6512e50987a08a43",
+      "coverage": "conversation-and-ghost",
+      "repairs": [
+        {
+          "commit": "97ffa7b6ccd5110cf14d8d3102ed37f84ea77fda",
+          "base_commit": "39d19be6e522028c265d83cb9bb034c27788436e",
+          "pr": 13
+        }
+      ]
+    },
+    "velvet-vehicle-can": {
+      "commit": "cd3bf42ae1951f40c07a89e1ab4be96916ed5a4e",
+      "expected_tree": "a002c99e8e30b3f25b39e9a2cf287a9c5e502f0a",
+      "coverage": "separate-component-suite",
+      "repairs": []
+    }
+  },
+  "docs_base_commit": "9f404060b7430bc553095bf89df65eb479476f4e",
+  "interpretation": "commit is the observed main source; ordered repairs are exact PR base/head deltas; expected_tree identifies the tested composition, not an unmodified main checkout",
+  "acceptance": {
+    "command": "python -m pytest acceptance tests .acceptance-deps/velvet-ai-core/acceptance -q -ra --junitxml=acceptance-results/integration.xml",
+    "discovered": 50,
+    "python_lanes": [
+      "3.8",
+      "3.10",
+      "3.11",
+      "3.12"
+    ],
+    "requires_successful_run_evidence": true,
+    "hardware_acceptance": false,
+    "ci_evidence": "evidence/software-integration-2026-09-09.json"
+  },
+  "separately_reviewed_private_companions": {
+    "velvet-persona-continuity": {
+      "commit": "88f0b8cee99caca2e9586170813e1662a783fe9a",
+      "pr": 4,
+      "coverage": "Repair 3 separately validated; not fetched or exercised by public acceptance"
+    }
+  },
+  "validated_at": "2026-09-09"
+}

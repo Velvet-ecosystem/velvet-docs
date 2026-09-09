@@ -48,6 +48,12 @@ Owns transport-neutral cross-node and cross-body carriage:
 - communication-delivery truth and degradation evidence;
 - communications privacy/disclosure boundaries.
 
+Authenticated local-IP TCP delivery and bounded request/reply RPC are already
+implemented. They provide authentication, integrity and replay handling, not
+payload encryption. A protected-path advertisement requires an explicitly
+configured confidential underlay. Radio adapter contracts and physical
+LAN/LoRa/Meshtastic acceptance remain distinct from that software implementation.
+
 Core laws:
 
 **The message belongs to Velvet. The carrier is replaceable.**

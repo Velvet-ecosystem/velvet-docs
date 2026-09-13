@@ -45,10 +45,12 @@ architecture_invariants:
     statement: Audio Studio owns acoustic capture and rendering; hearing or speaking does not grant Runtime or Court authority.
   - id: retrieval-is-not-belief
     statement: Velour's Library preserves provenance-aware knowledge and retrieval evidence; retrieval does not automatically become belief or authority.
+  - id: derived-library-material-is-not-source
+    statement: Extracted text, indexes, and previews are derived search or presentation material and do not replace the canonical retained source payload and provenance.
   - id: communications-is-carriage
     statement: Communications carries bounded payloads across nodes or bodies; connectivity does not create identity, trust, consent, disclosure permission, or physical authority.
   - id: interface-does-not-actuate
-    statement: Interface presents state and routes requests; scenes and widgets do not directly actuate hardware.
+    statement: Interface presents state and routes requests; scenes, readers, and workspaces do not directly actuate hardware or create Court authority.
   - id: can-observation-is-not-authority
     statement: Vehicle CAN observation and decoding do not imply transmit or control authority.
 
@@ -180,6 +182,7 @@ repositories:
       - automatic belief
       - canonical reasoning
       - Runtime or Court authority
+      - human presentation ownership
     canonical_doc: docs/repository_map.md#velours_library
 
   - name: velvet-receipts
@@ -232,9 +235,14 @@ repositories:
       - router and widget contracts
       - contextual presentation
       - human request routing
+      - catalog-backed read-only knowledge presentation
+      - trusted owner or maintenance workspace presentation
     does_not_own:
       - direct hardware actuation
       - Court authority
+      - canonical knowledge provenance
+      - capability grants
+      - automatic merge or deployment authority
     canonical_doc: docs/repository_map.md#velvet-interface
 
   - name: velvet-docs
@@ -274,9 +282,9 @@ repositories:
 private_experimental_policy:
   publication_status: intentionally_outside_public_responsibility_map
   rule: >-
-    Private deployment, medical, persona-continuity, cyberdeck, retrofit, module-lab,
-    home, and showcase experiments do not become public-supported capabilities merely
-    because they exist.
+    Private deployment, medical, persona-continuity, cyberdeck, navigation, retrofit,
+    module-lab, home, and showcase experiments do not become public-supported
+    capabilities merely because they exist.
 
 keywords:
   - local-first-ai

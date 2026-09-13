@@ -2,7 +2,7 @@
 
 This page maps the current public Velvet ecosystem and the boundaries between its repositories.
 
-The public surface now extends beyond the original Ghost System v0 chain. Ghost remains a useful synthetic proof path, but the public ecosystem also includes Language, Audio Studio, Communications, and Velour's Library.
+The public surface now extends beyond the original Ghost System v0 chain. Ghost remains a useful synthetic proof path, but the public ecosystem also includes Language, Audio Studio, Communications, Velour's Library, trusted workspace surfaces, and read-only local knowledge presentation.
 
 ## Current Public Body Map
 
@@ -31,8 +31,9 @@ approved cross-body payload
 
 provenance-aware knowledge
   -> Velour's Library
-  -> retrieval evidence
-  -> reasoning without automatic belief
+  -> canonical catalog / retrieval evidence
+  -> read-only Interface presentation or Core reasoning
+  -> never automatic belief or authority
 ```
 
 ## Repository Responsibilities
@@ -45,9 +46,9 @@ provenance-aware knowledge
 | `velvet-communications` | V2V/cross-body envelopes, carrier selection/fallback, relay, degraded/off-grid delivery, Beacon of Hope, privacy/disclosure contracts | carrier/reachability does not create identity, trust, consent, or authority |
 | `velvet-language` | meaning-before-speech expression, bounded conversation, deterministic critical/emergency wording | expression does not create truth or authority |
 | `velvet-audio-studio` | local capture, Vosk, Piper, audio leases/routing, priority/preemption, output evidence | audio devices do not create command authority; final Octo hardware acceptance remains pending |
-| `velours_library` | guarded knowledge ingestion, provenance, lifecycle, retrieval evidence, portable packs/quarantine/adoption | retrieval is not belief or authority |
+| `velours_library` | guarded knowledge ingestion, provenance, lifecycle, retrieval evidence, portable packs/quarantine/adoption | retrieval is not belief or authority; public Library ownership is not replaced by private deployment tooling |
 | `velvet-vehicle-can` | passive CAN observation, decoding, fingerprints, vehicle profiles, qualification evidence, Ghost replay | no public CAN transmit/actuation authority |
-| `velvet-interface` | scenes, surfaces, widgets, presentation, intent routing | no direct hardware control |
+| `velvet-interface` | scenes, surfaces, widgets, read-only catalog-backed Library Reader, trusted workspace presentation, intent routing | no direct hardware control; presentation cannot grant trust, capability, merge/deploy rights, or Court authority |
 | `velvet-receipts` | append-only evidence, integrity, verification, truth-preserving outcome records | receipt is evidence, not permission |
 | `velvet-continuity-spine` | Riven identity lineage, successor evolution, drift, recovery, verified history | memory alone does not prove identity |
 | `velvet-docs` | canonical cross-repo doctrine, maps, newcomer and deployment guidance | documentation does not replace implementation evidence |
@@ -133,11 +134,27 @@ Velour's Library provides a separate knowledge path:
 source
   -> guarded acquisition / staging
   -> provenance + lifecycle
-  -> retrieval evidence
-  -> Core reasoning
+  -> canonical catalog / retrieval evidence
+  -> Core reasoning or read-only Interface presentation
 ```
 
 Library retrieval never silently becomes belief, identity proof, or authority.
+
+The public Interface now includes a Scroll-backed Library Reader that can consume canonical catalog metadata, present inert local HTML, display derived PDF/EPUB text when available, and recognize ZIM as a local-reader handoff. It rejects paths that escape the configured library root and does not mutate the canonical source/catalog.
+
+Private Cyberdeck deployment tooling currently supplies local format adapters, scan-first batch shelving, website-mirror integrity, and local Kiwix planning. That private implementation support does not change public repository ownership.
+
+See [Library, Vault, and Reader Path](library_vault_and_reader_path.md).
+
+## Trusted Workspace Surfaces
+
+The public Interface also contains the Character Foundry workspace.
+
+The Foundry surface is registered as a trusted built-in Founder scene and remains a thin client over its canonical backend. It cannot grant capability, mint Court tokens, certify lineage, write canonical memory, merge/deploy a candidate, or actuate hardware.
+
+Permanent Forge-room hotspot placement remains an on-device UI task.
+
+For the Library Reader, the scene and reusable registration helper are merged, while the final main Founder-launcher registration call and Archive-room hotspot remain follow-on work.
 
 ## Ghost System v0
 
@@ -174,6 +191,8 @@ In scope now:
 - transport-neutral V2V and emergency communications contracts;
 - privacy/disclosure doctrine;
 - provenance-aware local knowledge/retrieval contracts;
+- catalog-backed read-only Library presentation;
+- trusted authority-free workspace presentation such as Character Foundry;
 - receipts, continuity, and public interface foundations.
 
 Still out of public physical scope:
@@ -186,6 +205,19 @@ Still out of public physical scope:
 - private medical deployment logic;
 - deployment credentials, secrets, owner data, private peer maps, or installation wiring.
 
+Also not yet claimed as complete deployment evidence:
+
+- real Founder vault binding and removable-storage recovery;
+- real on-device Kiwix/PDF-helper acceptance;
+- final Library Reader Founder-launcher registration and Archive hotspot placement;
+- Luckfox first-wake commissioning on target nodes.
+
+## Compatibility Evidence Boundary
+
+The September 2026 post-merge compatibility record remains a frozen exact-source proof record. Newer Library Reader, Character Foundry Interface, and private Cyberdeck library-tooling changes post-date that composition.
+
+Individual green CI does not retroactively expand the older manifest. A newer ecosystem-wide compatibility claim requires a new reviewed source manifest and acceptance run.
+
 ## Maintenance Rule
 
 The organization profile (`.github/profile/README.md`) and the canonical `velvet-docs` front door/maps should be updated in the same documentation pass whenever:
@@ -194,6 +226,7 @@ The organization profile (`.github/profile/README.md`) and the canonical `velvet
 - repository ownership boundaries materially change;
 - a new canonical public organ appears;
 - the authority path gains or removes a major governed stage;
-- privacy/communications doctrine changes in a way newcomers should see immediately.
+- privacy/communications doctrine changes in a way newcomers should see immediately;
+- a major public presentation or deployment boundary changes enough that the front door would otherwise teach a stale implementation state.
 
 The front door should never lag far enough behind implementation that a newcomer learns an architecture Velvet no longer uses.

@@ -49,6 +49,7 @@ Read the complete trail in [Smart Stereo Origin Lineage](docs/research/smart_ste
 - [Ecosystem Overview](docs/ecosystem_overview.md)
 - [Repository Map](docs/repository_map.md)
 - [Public Repository Map](docs/public_repo_map.md)
+- [Library, Vault, and Reader Path](docs/library_vault_and_reader_path.md)
 - [Machine-Readable Ecosystem Map](ecosystem.yaml)
 - [Machine-Readable Ecosystem Guide](docs/machine_readable_ecosystem.md)
 - [Ecosystem JSON Schema](schemas/velvet-ecosystem.schema.json)
@@ -60,6 +61,8 @@ Read the complete trail in [Smart Stereo Origin Lineage](docs/research/smart_ste
 - [Research Translation and Provenance Archive](docs/research/README.md)
 
 This repository is the canonical public front door and living newcomer-path checkpoint for the ecosystem.
+
+The September 2026 compatibility record remains a frozen exact-source proof record. Newer Character Foundry Interface, Library Reader, and private Cyberdeck library-tooling changes post-date that composition and are not retroactively covered by it.
 
 ## What Velvet Is
 
@@ -107,7 +110,8 @@ approved cross-body payload
 
 provenance-aware knowledge
         -> Velour's Library
-        -> retrieval evidence for reasoning
+        -> canonical catalog / retrieval evidence
+        -> read-only Interface presentation or Core reasoning
         -> never automatic belief or authority
 ```
 
@@ -119,7 +123,7 @@ The diagram shows responsibility, not unrestricted call access. Every repository
 |---|---|
 | `velvet-ai-core` | Unified-Organ doctrine, reasoning, memory primitives, belief/context handling, learning/reflection boundaries, and structured proposals |
 | `velvet-runtime` | verified body/identity context, Court, capability policy, emergency-first scheduling, incident Court binding, execution contracts, safety, replay protection, executors, and execution receipts |
-| `velvet-interface` | living spaces, ambient presence, image-first scenes, contextual controls, and human-facing presentation |
+| `velvet-interface` | living spaces, ambient presence, image-first scenes, contextual controls, trusted workspace presentation, and read-only catalog-backed Library presentation |
 | `velvet-event-protocol` | versioned local event schemas and hardened message delivery inside one governed body |
 | `velvet-communications` | transport-neutral cross-node/cross-body carriage, V2V federation, carrier selection/fallback, relays, degraded/off-grid delivery, Beacon of Hope, and communications privacy boundaries |
 | `velvet-language` | meaning-before-speech language, bounded conversation, truthful expression, deterministic critical/emergency wording, and optional generative assistance |
@@ -132,7 +136,7 @@ The diagram shows responsibility, not unrestricted call access. Every repository
 | `.github` | organization profile and public contributor-facing defaults |
 | `business_agent_ecosystem` | public adjacent application/reference ecosystem; not a replacement for the shared authority or body organs |
 
-The private experimental/deployment repositories remain intentionally outside this public responsibility map until their own publication gates are met.
+The private experimental/deployment repositories remain intentionally outside this public responsibility map until their own publication gates are met. Current private examples include Persona Continuity, Cyberdeck, Navigation, Home, Medical Mobility, Retrofit Architecture, and Module Lab.
 
 ## The Unified Body
 
@@ -250,7 +254,31 @@ Language owns wording. Audio owns acoustic rendering. Neither gains Runtime/Cour
 
 > **Retrieval is not belief.**
 
+> **Derived text is not the canonical source payload.**
+
 A source can be found, cited, moved, superseded, or adopted without silently becoming trusted world truth or execution authority. Reasoning remains responsible for what it concludes from the shelves.
+
+Current implementation support is deliberately split by responsibility:
+
+```text
+Velour's canonical Library
+  -> provenance + catalog + retrieval evidence
+
+private Cyberdeck deployment tooling
+  -> bounded local adapters
+  -> PDF / EPUB / HTML / ZIM handling
+  -> scan-first batch shelving
+  -> website mirror integrity
+  -> local Kiwix planning
+
+public Interface
+  -> Scroll-backed read-only Library Reader
+  -> catalog-first search / metadata / preview
+```
+
+Private deployment tooling does not become a second Library organ. The Interface does not mutate the canonical source/catalog or turn a rendered page into trusted truth.
+
+See [Library, Vault, and Reader Path](docs/library_vault_and_reader_path.md).
 
 ## Evidence and Continuity
 
@@ -266,7 +294,14 @@ Velvet's interface is a house, not a dashboard.
 
 Scenes are living spaces with purposes rather than permanent grids of controls. The Interface presents state and routes intent. It does not control hardware.
 
-See [Scene Doctrine](docs/scene_doctrine.md) and [Scene and Surface Model](docs/scene_and_surface_model.md).
+The current public Interface also includes trusted full-screen workspaces:
+
+- **Character Foundry** is registered in the Founder launcher as a fail-closed client over its canonical backend. Permanent Forge-room hotspot placement remains on-device work.
+- **Library Reader** is a read-only Scroll-backed catalog browser/reader. Its scene, catalog-aware provider, and reusable registration helper are merged; the final main Founder-launcher registration call and Archive-room hotspot remain follow-on work.
+
+A visible workspace is not authority. Character Foundry cannot grant capabilities or merge/deploy a candidate, and Library Reader content cannot grant trust or physical permission.
+
+See [Scene Doctrine](docs/scene_doctrine.md), [Scene and Surface Model](docs/scene_and_surface_model.md), and [Library, Vault, and Reader Path](docs/library_vault_and_reader_path.md).
 
 ## Pluggable Modules
 
@@ -302,6 +337,7 @@ This is rebellion against OEM lock-in, not rebellion against safety.
 - [Ecosystem Overview](docs/ecosystem_overview.md)
 - [Repository Map](docs/repository_map.md)
 - [Public Repository Map](docs/public_repo_map.md)
+- [Library, Vault, and Reader Path](docs/library_vault_and_reader_path.md)
 - [Authority and Execution Path](docs/authority_and_execution_path.md)
 - [Local API and Security Architecture](docs/local_api_and_security_architecture.md)
 - [Boot Identity Sequence](docs/boot_identity_sequence.md)
@@ -355,6 +391,7 @@ This repository owns canonical ecosystem-level documentation shared across multi
 - API does not mean internet.
 - Local observation does not equal authority.
 - Retrieval does not equal belief.
+- Derived text does not equal the canonical source payload.
 - Memory does not equal identity proof.
 - A receipt is evidence, not permission.
 - Request origin is evidence, not authority.
@@ -369,6 +406,8 @@ This repository owns canonical ecosystem-level documentation shared across multi
 Current public physical authority: **none**.
 
 Public repositories now contain local event, reasoning, language, audio, communications, knowledge, continuity, receipt, interface, CAN-observation, and Runtime/Court foundations. Runtime can make bounded logical Court decisions, including incident-scoped emergency authorization, but the public ecosystem does not claim production vehicle actuation.
+
+Public Interface code can now present a registered Character Foundry workspace and a catalog-backed Library Reader implementation. Those surfaces remain authority-free. The Library Reader's final main Founder-launcher registration call and permanent Archive hotspot are not yet claimed complete, and the public docs do not claim completed on-device Luckfox commissioning.
 
 Physical deployment requires separate local provisioning, hardware qualification, policy review, executor binding, explicit safety validation, and measured physical feedback.
 

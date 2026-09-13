@@ -28,6 +28,14 @@ Raw host inventories remain local when they contain unnecessary machine, network
 - [Network Topology](network_topology.md)
 - [Offline-First Operation](offline_first_operation.md)
 
+## Storage and knowledge presentation
+
+- [Library, Vault, and Reader Path](../library_vault_and_reader_path.md)
+
+The service-facing library root, physical storage mount, canonical catalog, and derived indexes/previews are separate deployment concepts. A host may use a local removable vault without mounting that device directly at the Interface's default service path.
+
+The Library Reader remains read-only presentation. Storage availability does not grant trust or authority, and derived text does not replace the original source payload.
+
 ## Boundary
 
 Deployment makes capabilities available. Runtime verifies and coordinates. Court authorizes. Executors act only after authorization. Receipts preserve what happened.

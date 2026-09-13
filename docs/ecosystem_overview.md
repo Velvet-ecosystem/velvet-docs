@@ -120,7 +120,28 @@ It owns guarded ingestion, source preservation, provenance, source lifecycle, re
 
 > **Retrieval is not belief.**
 
-A retrieved passage is evidence for reasoning, not automatic world truth or execution authority.
+> **Derived text is not the canonical source payload.**
+
+A retrieved passage is evidence for reasoning, not automatic world truth or execution authority. Extracted/indexed text may support search and presentation without replacing the original retained source.
+
+Current supporting implementation now spans three deliberately different boundaries:
+
+```text
+canonical source + provenance
+  -> velours_library catalog / retrieval evidence
+
+local deployment/operator preparation
+  -> private Cyberdeck tools
+  -> format adapters / batch shelving / website integrity / local Kiwix planning
+
+human presentation
+  -> velvet-interface Library Reader
+  -> Scroll workspace + neutral document viewport
+```
+
+The private tooling does not become a second Library organ, and the Interface does not become a knowledge authority.
+
+See [Library, Vault, and Reader Path](library_vault_and_reader_path.md).
 
 ### Cognitive Event Layer
 
@@ -164,6 +185,15 @@ Scenes and widgets render context and route intent. They do not actuate hardware
 Owned by:
 
 - `velvet-interface`
+
+Current public Interface work includes:
+
+- image-first living-space surfaces;
+- the trusted Character Foundry workspace, registered in the Founder launcher but still waiting for permanent Forge-room hotspot placement;
+- the read-only Scroll-backed Library Reader with catalog-aware search/preview;
+- a reusable Library Reader registration helper, while the final main Founder-launcher call and Archive-room hotspot remain follow-on work.
+
+The Character Foundry's canonical candidate semantics remain behind the separate private Persona Continuity boundary. Interface presentation cannot grant capability, mint Court tokens, certify lineage, merge/deploy candidates, write canonical memory, or actuate hardware.
 
 ## Emergency Continuity Path
 
@@ -218,6 +248,16 @@ approved bounded payload
 
 Transport never upgrades authority.
 
+## Current Low-Power Node Bring-Up Boundary
+
+Luckfox-class subordinate nodes remain role-bounded components rather than miniature independent authorities.
+
+Current deployment doctrine is to capture shipped state first, bring up one node at a time, keep the node role-neutral during bootstrap, and stop before Runtime installation or authority assignment.
+
+A Runtime first-wake bootstrap candidate exists under review, but it is not merged into Runtime main as of this documentation sync. The public docs therefore do not claim completed on-device Luckfox commissioning.
+
+See [Luckfox Nodes](deployment/luckfox_nodes.md).
+
 ## Velvet Coin and Drive-Fi
 
 Velvet Coin and Drive-Fi are acknowledged as an early economic, ownership, participation, safety, and evidence branch of the ecosystem.
@@ -250,3 +290,9 @@ Any shortcut around this path is a doctrine violation.
 Velvet may observe the host, vehicle, room, body, passenger state, environment, carrier state, or retrieved knowledge without gaining permission to control them.
 
 Observation paths must remain explicitly bounded. If an observation later motivates action, a new intent begins at the authority boundary.
+
+## Compatibility Evidence Boundary
+
+The post-merge compatibility record in this repository is a frozen evidence record for the exact source composition it names.
+
+Later Character Foundry Interface, Library Reader, and private Cyberdeck library-tooling changes must not be retroactively described as covered by that older manifest. Their individual tests and CI are useful evidence, but a newer ecosystem-wide compatibility claim requires a new reviewed source manifest and acceptance run.

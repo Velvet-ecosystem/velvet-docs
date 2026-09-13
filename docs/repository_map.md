@@ -104,7 +104,11 @@ Owns Velour's canonical local-first, provenance-aware knowledge archive:
 - deterministic portable knowledge packs;
 - quarantine, adoption, and pack lifecycle.
 
+`velours_library` owns the knowledge/provenance contract. It does not own every deployment helper or the human presentation surface. Current private Cyberdeck tools may prepare local files, and `velvet-interface` may render catalog entries, without creating a second canonical Library.
+
 Retrieval is not belief. Library evidence grants no Runtime/Court authority.
+
+See [Library, Vault, and Reader Path](library_vault_and_reader_path.md).
 
 ## `velvet-vehicle-can`
 
@@ -114,9 +118,18 @@ Transmit-capable work must remain isolated from default observation paths. Curre
 
 ## `velvet-interface`
 
-Owns scene, surface, router, and widget contracts for multi-surface presentation and intent routing.
+Owns scene, surface, router, widget, and trusted full-screen workspace presentation contracts.
 
-Scenes and widgets do not actuate hardware directly.
+Current public Interface capabilities include:
+
+- image-first rooms and contextual touch surfaces;
+- the registered Character Foundry workspace, which remains a thin fail-closed client over its canonical backend;
+- the read-only Scroll-backed Library Reader and canonical-catalog preview provider;
+- a reusable Library Reader registration helper for Founder integration.
+
+The final main Founder-launcher call for the Library Reader and the permanent Archive-room hotspot remain follow-on deployment/UI placement work.
+
+Scenes, widgets, readers, and workspaces do not actuate hardware directly. Presentation does not create knowledge trust, capability, Court authority, merge/deploy permission, or physical control.
 
 ## `velvet-receipts`
 
@@ -148,9 +161,16 @@ A public adjacent application/reference ecosystem. It can reuse Velvet doctrines
 
 ## Private / Experimental Repositories
 
-Private repositories such as Home, Medical Mobility, Persona Continuity, Cyberdeck, Retrofit Architecture, Module Lab, and interface/voice experiments remain outside the canonical public responsibility map until their own publication gates are met.
+Private repositories remain outside the canonical public responsibility map until their own publication gates are met.
 
-Their existence does not grant public support or physical deployment readiness.
+Current examples include:
+
+- **Persona Continuity**: private identity/persona continuity, memory-privacy, and Character Foundry backend work. The public Interface may present a Foundry client without making this private repository a public-supported organ.
+- **Cyberdeck**: private deployment/operator tooling for local vault format adapters, batch shelving, website-mirror integrity, and local Kiwix planning. It does not replace `velours_library` as the canonical knowledge owner.
+- **Navigation**: private navigation planning/prototyping. Its existence does not create route authority or driving authority.
+- **Home**, **Medical Mobility**, **Retrofit Architecture**, **Module Lab**, and interface/voice/showcase experiments: bounded private or experimental surfaces and deployment work.
+
+Their existence does not grant public support, trust, Runtime/Court authority, or physical deployment readiness.
 
 ## Dependency Direction
 
@@ -169,6 +189,15 @@ cross-body payload only when policy permits
   -> Communications
   -> carrier
   -> receiving body's own governed ingress
+```
+
+A useful knowledge/presentation subflow is:
+
+```text
+canonical source + provenance
+  -> Velour's Library catalog / retrieval evidence
+  -> read-only Interface presentation or Core retrieval
+  -> no automatic belief or authority
 ```
 
 No presentation, language, audio, communications, memory, library, or observation layer may reach around Runtime/Court to gain physical authority.

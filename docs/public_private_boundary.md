@@ -6,11 +6,19 @@ This repository-level public/private boundary is distinct from **owner data priv
 
 ## Public by default
 
-Doctrine, architecture maps, non-authoritative event schemas, receipt formats, read-only observations, synthetic fixtures, mock executors, display-only panels, continuity markers, contributor templates, and safe simulation guides may be public when tested and documented.
+Doctrine, architecture maps, non-authoritative event schemas, receipt formats, read-only observations, synthetic fixtures, mock executors, display-only panels, continuity markers, contributor templates, sanitized deployment guidance, and safe simulation guides may be public when tested and documented.
 
 ## Private until qualified
 
 Real actuator control, CAN transmission, emergency pull-over behavior, medical monitoring, installation wiring, credentials, signing keys, capability tokens, owner-only authority, private handmaiden internals, and sensitive live receipts remain private until deliberately reviewed and promoted.
+
+## Documenting private work without publishing it
+
+Public documentation may name a private repository or bounded private domain when doing so is useful to explain architecture, ownership, maturity, or an authority boundary. That documentation does **not** publish the repository, grant public support status, expose its implementation, or promote it into the machine-readable public responsibility map.
+
+A public description of a private capability should stay at the minimum useful level: purpose, non-purpose, authority boundary, maturity, and the explicit publication status. Sensitive implementation details remain private.
+
+Sanitized deployment snapshots may record facts such as service-facing path conventions, physical mount conventions, verified storage behavior, broad directory roles, or outstanding acceptance work. They should not publish credentials, signing material, owner-specific policy, secrets, or local identifiers that are not intentionally part of the public contract.
 
 ## Core rules
 

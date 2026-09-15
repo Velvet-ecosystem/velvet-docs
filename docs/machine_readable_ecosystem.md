@@ -55,6 +55,8 @@ Update `ecosystem.yaml` whenever any of the following materially changes:
 - a public/private publication boundary changes;
 - a responsibility split between Event Protocol, Communications, Language, Audio, Library, Runtime/Court, Receipts, Continuity, Interface, or Vehicle CAN changes.
 
+A public document may describe a private repository, deployment, role, or authority boundary without requiring a new public repository entry in `ecosystem.yaml`. If the private/public status and public ownership map have not changed, the structured map should remain unchanged rather than implying promotion by documentation alone.
+
 A change to the structured map should accompany the human documentation change that justifies it. Do not use the YAML as a back door for architecture redesign.
 
 ## Per-Repository Discovery

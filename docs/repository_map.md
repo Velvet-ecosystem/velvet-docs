@@ -110,6 +110,8 @@ Retrieval is not belief. Library evidence grants no Runtime/Court authority.
 
 See [Library, Vault, and Reader Path](library_vault_and_reader_path.md).
 
+For the current verified Founder installation state, see [Founder Vault Deployment Snapshot](founder_vault_deployment_snapshot.md).
+
 ## `velvet-vehicle-can`
 
 Owns receive-only CAN observation, vehicle fingerprints, local profiles, signal definitions, qualification evidence, Ghost replay, and conservative decoding.
@@ -167,7 +169,7 @@ Current examples include:
 
 - **Persona Continuity**: private identity/persona continuity, memory-privacy, and Character Foundry backend work. The public Interface may present a Foundry client without making this private repository a public-supported organ.
 - **Cyberdeck**: private deployment/operator tooling for local vault format adapters, batch shelving, website-mirror integrity, and local Kiwix planning. It does not replace `velours_library` as the canonical knowledge owner.
-- **Navigation**: private navigation planning/prototyping. Its existence does not create route authority or driving authority.
+- **Navigation**: private navigation planning/prototyping led by Nancy. See [Private Navigation Boundary](private_navigation_boundary.md). Its existence does not create route authority or driving authority.
 - **Home**, **Medical Mobility**, **Retrofit Architecture**, **Module Lab**, and interface/voice/showcase experiments: bounded private or experimental surfaces and deployment work.
 
 Their existence does not grant public support, trust, Runtime/Court authority, or physical deployment readiness.

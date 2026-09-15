@@ -138,6 +138,8 @@ to bind the Interface to the installation's real local vault and catalog.
 
 A removable disk may be mounted somewhere else and exposed to Velvet through an explicit bind/symlink/configuration choice. Documentation must not infer one installer's physical mount path from the service-facing default.
 
+The current UP Squared installation is recorded separately in [Founder Vault Deployment Snapshot](founder_vault_deployment_snapshot.md). That deployment evidence documents `/mnt/velvet-vault` without promoting the physical path to a portable software default.
+
 ## Current Founder Integration Status
 
 As of this documentation sync:

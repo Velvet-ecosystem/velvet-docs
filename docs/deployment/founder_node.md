@@ -36,6 +36,8 @@ See [Library, Vault, and Reader Path](../library_vault_and_reader_path.md).
 
 The Library Reader helper uses `/srv/velvet` as a service-facing default. That path is not a requirement for the physical mount location of a removable or installation-specific vault.
 
+The current UP Squared Founder has a verified physical ext4 vault mounted at `/mnt/velvet-vault`. That is deployment evidence for the present installation, not a portable software default and not proof that Runtime/Library UUID-bound acceptance or removable-storage recovery is complete. See [Founder Vault Deployment Snapshot](../founder_vault_deployment_snapshot.md).
+
 Deployments may bind the real local vault/catalog explicitly with:
 
 ```text

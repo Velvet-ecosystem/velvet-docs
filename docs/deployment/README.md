@@ -31,8 +31,11 @@ Raw host inventories remain local when they contain unnecessary machine, network
 ## Storage and knowledge presentation
 
 - [Library, Vault, and Reader Path](../library_vault_and_reader_path.md)
+- [Founder Vault Deployment Snapshot](../founder_vault_deployment_snapshot.md)
 
 The service-facing library root, physical storage mount, canonical catalog, and derived indexes/previews are separate deployment concepts. A host may use a local removable vault without mounting that device directly at the Interface's default service path.
+
+The current UP Squared Founder has a verified physical vault mounted at `/mnt/velvet-vault`. That installation fact does not make the path a universal default and does not by itself complete Runtime/Library filesystem-identity or removable-storage recovery acceptance.
 
 The Library Reader remains read-only presentation. Storage availability does not grant trust or authority, and derived text does not replace the original source payload.
 

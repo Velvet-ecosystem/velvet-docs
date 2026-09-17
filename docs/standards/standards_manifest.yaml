@@ -1,0 +1,105 @@
+version: 0.1
+reviewed: 2026-09-17
+status: engineering-reference
+claim_of_compliance: false
+owner:
+  primary: Eleanor
+  archive: Velour
+principles:
+  - preserve_oem_intent
+  - extend_oem_capability
+  - improve_where_justified
+  - prove_safety_relevant_deviations
+sources:
+  - id: EU-2018-858
+    kind: regulation
+    title: Approval and market surveillance of motor vehicles, systems, components and separate technical units
+    jurisdiction: EU
+    relevance: marketed_hardware_and_vehicle_systems
+    source: https://eur-lex.europa.eu/eli/reg/2018/858/2026-08-02/eng
+    velvet_status: tracked
+  - id: EU-2019-2144
+    kind: regulation
+    title: General Safety Regulation
+    jurisdiction: EU
+    relevance: safety_driver_monitoring_automation_event_data
+    source: https://eur-lex.europa.eu/eli/reg/2019/2144/2026-08-02/eng
+    velvet_status: tracked
+  - id: UN-R155
+    kind: regulation
+    title: Cyber Security and Cyber Security Management System
+    jurisdiction: UNECE
+    relevance: vehicle_cybersecurity_lifecycle
+    source: https://unece.org/transport/documents/2021/03/standards/un-regulation-no-155-cyber-security-and-cyber-security
+    velvet_status: tracked
+  - id: UN-R156
+    kind: regulation
+    title: Software Update and Software Update Management System
+    jurisdiction: UNECE
+    relevance: software_updates_configuration_identity
+    source: https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update
+    velvet_status: tracked
+  - id: ISO-SAE-21434-2021
+    kind: standard
+    title: Road vehicles - Cybersecurity engineering
+    relevance: cybersecurity_engineering
+    source: https://www.iso.org/standard/70918.html
+    velvet_status: engineering_reference
+    watch: systematic_review_in_2026
+  - id: ISO-26262-2018
+    kind: standard_series
+    title: Road vehicles - Functional safety
+    relevance: safety_related_electrical_electronic_systems
+    source: https://www.iso.org/standard/68383.html
+    velvet_status: engineering_reference
+  - id: ISO-21448-2022
+    kind: standard
+    title: Road vehicles - Safety of the intended functionality
+    relevance: perception_intervention_automation
+    source: https://www.iso.org/standard/77490.html
+    velvet_status: engineering_reference
+    watch: edition_2_working_draft_2026
+  - id: ISO-PAS-8800-2024
+    kind: publicly_available_specification
+    title: Road vehicles - Safety and artificial intelligence
+    relevance: safety_related_ai
+    source: https://www.iso.org/standard/83303.html
+    velvet_status: engineering_reference
+  - id: ISO-24089-2023
+    kind: standard
+    title: Road vehicles - Software update engineering
+    relevance: update_engineering
+    source: https://www.iso.org/standard/77796.html
+    amendment: ISO-24089-2023-Amd1-2024
+    velvet_status: engineering_reference
+  - id: EU-2024-1689
+    kind: regulation
+    title: Artificial Intelligence Act
+    jurisdiction: EU
+    relevance: product_ai_and_safety_components
+    source: https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng
+    velvet_status: applicability_watch
+  - id: EU-2024-2847
+    kind: regulation
+    title: Cyber Resilience Act
+    jurisdiction: EU
+    relevance: non_vehicle_products_with_digital_elements_and_scope_boundary
+    source: https://eur-lex.europa.eu/eli/reg/2024/2847/2024-11-20/eng
+    velvet_status: applicability_watch
+deployment_levels:
+  1: research_personal_prototype
+  2: non_safety_retrofit
+  3: connected_updateable_retrofit
+  4: marketed_hardware_retrofit_kit
+  5: safety_relevant_intervention
+  6: vehicle_dynamic_control_automation
+traceability_target:
+  chain:
+    - source_principle
+    - velvet_requirement
+    - subsystem
+    - implementation
+    - test
+    - evidence_receipt
+    - review_status
+history_policy: append_new_dated_snapshot_do_not_rewrite_prior_snapshots

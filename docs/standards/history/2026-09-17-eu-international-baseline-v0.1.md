@@ -39,6 +39,24 @@ At this date the documented ecosystem already included:
 
 These were recorded as architectural correspondences, not as proof of standards conformance.
 
+
+## Recovered historical pointers predating the formal standards map
+
+The v0.1 review also recovered earlier project decisions that show the design concerns existed before the September 2026 standards exercise.
+
+- **2025-04-24 to 2025-04-25:** OEM-only fallback and override theory preserved direct OEM operation for valet, mechanic, debugging, safe-mode and emergency use. Velvet was not intended to make basic OEM control dependent on the custom stack.
+- **2025-04-27:** OEM controls remained primary while Velvet enhancements operated in parallel. This became an early form of the later preserve-OEM-intent doctrine.
+- **2025-04-28:** actuator-interface theory already favoured opto-isolated/driver-separated control paths between general-purpose compute and vehicle loads.
+- **2025-05-06:** local-versus-LAN delegation separated critical/sensitive local action from bulk or passive network work.
+- **2025-05-10:** emergency-system theory included a slow/safe path, non-critical system stand-down and minimal-function posture.
+- **2025-05-15:** early CAN hardware selection was framed around observing and learning vehicle state first, with active control treated as a later and more consequential authority step.
+- **2025-10:** AGL/OEM integration theory explored non-intrusive extension, OEM-compatible trust mechanisms, local proofs, owner-held identity material, selective disclosure and temporary-session cleanup.
+- **2026 before this review:** Event Protocol/Court/Receipts, Riven, Ghost simulation boundaries, Charlotte/Temperance minimal-risk doctrine and Eleanor's engineering lifecycle made those older instincts explicit and testable.
+
+These are chronology anchors, not retrospective claims that the project had already implemented a named standard. They are retained so later standards work cannot accidentally rewrite the project's history as though the architecture was copied from a compliance checklist.
+
+Related repository lineage: `smart_stereo_origin_lineage.md`, `event_authority_receipt_lineage.md`, `medical_minimal_risk_lineage.md`, and `riven_continuity_lineage.md`.
+
 ## Standards and regulations placed on the initial watchlist
 
 The initial baseline tracks:

@@ -332,6 +332,92 @@ sources:
     relevance: automated_vehicle_public_road_testing_and_deployment
     source: https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/
     velvet_status: charlotte_future_watch
+  - id: ISO-9001-2026
+    kind: standard
+    title: Quality management systems - Requirements
+    relevance: organization_wide_quality_management
+    source: https://www.iso.org/standard/9001
+    velvet_status: business_quality_reference
+  - id: ISO-10012-2026
+    kind: standard
+    title: Quality management - Requirements for measurement management systems
+    relevance: measurement_and_test_equipment_control
+    source: https://www.iso.org/standard/10012
+    velvet_status: manufacturing_reference
+  - id: ISO-10007-2017
+    kind: standard
+    title: Quality management - Guidelines for configuration management
+    relevance: product_configuration_and_change_control
+    source: https://www.iso.org/standard/70400.html
+    velvet_status: engineering_reference
+    watch: fourth_edition_under_development
+  - id: ISO-19011-2026
+    kind: standard
+    title: Guidelines for auditing management systems
+    relevance: internal_quality_audit_program
+    source: https://www.iso.org/standard/19011
+    velvet_status: business_quality_reference
+  - id: IATF-16949-2016
+    kind: automotive_qms_standard
+    title: IATF 16949 automotive quality management system
+    relevance: oem_tier_automotive_supply_chain
+    source: https://www.iatfglobaloversight.org/iatf-169492016/about/
+    velvet_status: future_customer_requirement_watch
+    watch: second_edition_planned_mid_2027
+  - id: IATF-RULES-6
+    kind: certification_scheme_rules
+    title: Rules for achieving and maintaining IATF Recognition - 6th Edition
+    relevance: iatf_certification_scheme
+    source: https://www.iatfglobaloversight.org/news/1-april-2024-rules-6th-publication/
+    velvet_status: future_certification_watch
+  - id: AIAG-APQP-3
+    kind: industry_manual
+    title: Advanced Product Quality Planning - 3rd Edition
+    relevance: product_launch_sourcing_change_management_traceability
+    source: https://www.aiag.org/training-and-resources/manuals/details/APQP-3
+    velvet_status: manufacturing_reference
+  - id: AIAG-CONTROL-PLAN-1
+    kind: industry_manual
+    title: Control Plan - 1st Edition
+    relevance: manufacturing_process_control_and_safe_launch
+    source: https://www.aiag.org/training-and-resources/manuals/details/CP-1
+    velvet_status: manufacturing_reference
+  - id: AIAG-PPAP-4
+    kind: industry_manual
+    title: Production Part Approval Process - 4th Edition
+    relevance: oem_customer_production_part_approval
+    source: https://www.aiag.org/training-and-resources/manuals
+    velvet_status: future_customer_requirement_watch
+  - id: AIAG-VDA-FMEA
+    kind: industry_manual
+    title: AIAG and VDA FMEA Handbook
+    relevance: design_process_failure_mode_risk_analysis
+    source: https://www.aiag.org/training-and-resources/manuals/details/FMEAAV-1
+    velvet_status: engineering_reference
+  - id: IPC-J-STD-001J
+    kind: industry_standard
+    title: Requirements for Soldered Electrical and Electronic Assemblies
+    relevance: soldered_assembly_workmanship
+    source: https://www.ipc.org/ipc-document-revision-table
+    velvet_status: manufacturing_reference
+  - id: IPC-A-610J
+    kind: industry_standard
+    title: Acceptability of Electronic Assemblies
+    relevance: electronics_assembly_acceptance
+    source: https://www.ipc.org/ipc-document-revision-table
+    velvet_status: manufacturing_reference
+  - id: IPC-WHMA-A-620E
+    kind: industry_standard
+    title: Acceptability of Electronic Wire Harnesses and Cables
+    relevance: harness_manufacturing_acceptance
+    source: https://www.ipc.org/ipc-document-revision-table
+    velvet_status: manufacturing_reference
+  - id: IPC-6012F
+    kind: industry_standard
+    title: Qualification and Performance Specification for Rigid Printed Boards
+    relevance: rigid_pcb_fabrication_quality
+    source: https://www.ipc.org/ipc-document-revision-table
+    velvet_status: manufacturing_reference
 deployment_levels:
   1: research_personal_prototype
   2: non_safety_retrofit

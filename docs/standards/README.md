@@ -28,6 +28,7 @@ Standards are used here as engineering references, design constraints, gap detec
 - [`jurisdiction_product_watchlist.md`](jurisdiction_product_watchlist.md) — Canada, U.S., UK, Australia, EMC/RF, privacy, and product-market applicability watchlist.
 - [`canada_bc_deep_pass.md`](canada_bc_deep_pass.md) — first detailed Canada + British Columbia product, installation, cybersecurity, privacy, and in-use vehicle applicability pass.
 - [`emc_rf_electrical_qualification_plan.md`](emc_rf_electrical_qualification_plan.md) — automotive EMC, RF, power-transient, ESD, CAN physical-layer, pre-compliance, and formal-qualification path for official hardware.
+- [`united_states_deep_pass.md`](united_states_deep_pass.md) — U.S. NHTSA, commercial-installation, recall, EPA emissions, FCC, privacy, warranty/right-to-repair, OEM-access, and state-overlay pass.
 - [`standards_manifest.yaml`](standards_manifest.yaml) — machine-readable index of tracked regulations and standards.
 - [`history/`](history/) — dated, immutable snapshots of Velvet's regulatory/standards understanding. New reviews create new snapshots rather than rewriting old ones.
 

@@ -240,6 +240,98 @@ sources:
     relevance: can_physical_layer
     source: https://www.iso.org/standard/90697.html
     velvet_status: engineering_reference
+  - id: US-SAFETY-ACT-30102
+    kind: statute
+    title: Motor vehicle equipment definition
+    jurisdiction: US
+    relevance: aftermarket_accessory_and_equipment_classification
+    source: https://www.nhtsa.gov/document/motor-vehicle-safety-unrelated-unmodified-provisions
+    velvet_status: product_classification_watch
+  - id: US-49CFR-566
+    kind: regulation
+    title: Manufacturer Identification
+    jurisdiction: US
+    relevance: manufacturers_of_vehicles_and_fmvss_covered_equipment
+    source: https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-566
+    velvet_status: applicability_watch
+  - id: US-49CFR-567-7
+    kind: regulation
+    title: Requirements for persons who alter certified vehicles
+    jurisdiction: US
+    relevance: pre_first_retail_vehicle_alteration_certification
+    source: https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-567/section-567.7
+    velvet_status: business_model_watch
+  - id: US-SAFETY-ACT-30118-30120
+    kind: statute_rule_family
+    title: Safety defect notification and remedy
+    jurisdiction: US
+    relevance: motor_vehicle_equipment_recall_and_free_remedy
+    source: https://www.nhtsa.gov/interpretations/GF004887
+    velvet_status: production_readiness_requirement
+  - id: US-EPA-CAA-203-A3
+    kind: statute_policy_family
+    title: Clean Air Act vehicle emissions anti-tampering and defeat-device prohibition
+    jurisdiction: US
+    relevance: ecu_obd_emissions_related_aftermarket_products
+    source: https://www.epa.gov/enforcement/epa-tampering-policy-epa-enforcement-policy-vehicle-and-engine-tampering-and
+    velvet_status: high_priority_ruby_gate
+  - id: US-EPA-SEMA-SCE-2026
+    kind: federal_program_recognition
+    title: EPA recognition of SEMA Certified Emissions program
+    jurisdiction: US
+    relevance: aftermarket_emissions_compliance_path
+    source: https://www.epa.gov/newsreleases/epa-implements-new-freedom-fix-presidential-memorandum-gives-sema-greenlight-certify
+    velvet_status: current_path_watch
+  - id: US-FTC-GM-ONSTAR-2026
+    kind: enforcement_order
+    title: GM and OnStar connected vehicle data order
+    jurisdiction: US
+    relevance: connected_vehicle_geolocation_and_driver_behavior_privacy
+    source: https://www.ftc.gov/legal-library/browse/cases-proceedings/2423052-general-motors-llc-et-al-matter
+    velvet_status: privacy_engineering_reference
+  - id: US-MAGNUSON-MOSS
+    kind: statute_rule_family
+    title: Magnuson-Moss Warranty Act and FTC warranty rules
+    jurisdiction: US
+    relevance: consumer_product_warranty_and_repair_anti_tying
+    source: https://www.ftc.gov/business-guidance/resources/businesspersons-guide-federal-warranty-law
+    velvet_status: product_warranty_watch
+  - id: US-DMCA-1201-VEHICLE
+    kind: temporary_exemption
+    title: Vehicle software diagnosis repair lawful modification and operational data access exemption
+    jurisdiction: US
+    relevance: owner_authorized_oem_software_and_data_access
+    source: https://www.copyright.gov/title37/201/37cfr201-40.html
+    velvet_status: legal_access_watch
+    watch: triennial_renewal_process
+  - id: US-CA-CARB-AFTERMARKET
+    kind: state_regulatory_program
+    title: California aftermarket performance and add-on parts anti-tampering exemptions
+    jurisdiction: US-CA
+    relevance: emissions_related_aftermarket_parts_and_ecm_modification
+    source: https://ww2.arb.ca.gov/our-work/programs/aftermarket-performance-and-add-parts
+    velvet_status: ruby_california_watch
+  - id: US-CA-CCPA
+    kind: state_privacy_statute
+    title: California Consumer Privacy Act
+    jurisdiction: US-CA
+    relevance: qualifying_business_personal_and_sensitive_data
+    source: https://cppa.ca.gov/faq
+    velvet_status: scale_and_data_watch
+  - id: US-WA-MHMDA
+    kind: state_privacy_statute
+    title: Washington My Health My Data Act
+    jurisdiction: US-WA
+    relevance: consumer_health_vital_sign_biometric_location_and_inferred_health_data
+    source: https://app.leg.wa.gov/RCW/default.aspx?cite=19.373
+    velvet_status: high_priority_temperance_watch
+  - id: US-CA-AV-2026
+    kind: state_regulatory_program
+    title: California autonomous vehicle testing and deployment regulations
+    jurisdiction: US-CA
+    relevance: automated_vehicle_public_road_testing_and_deployment
+    source: https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/
+    velvet_status: charlotte_future_watch
 deployment_levels:
   1: research_personal_prototype
   2: non_safety_retrofit

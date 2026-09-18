@@ -35,6 +35,27 @@ Where practical, retain the original source or a durable reference to it. A summ
 
 The purpose of this archive is to preserve timing, rationale, evidence state, and later regulatory relevance. It is not intended to establish priority over OEMs, standards bodies, suppliers, researchers, or other projects.
 
+
+## 3.1 Business and IP evidentiary purpose
+
+This chronology may also support future business due diligence by showing that Velvet concepts, requirements, architecture, code, tests, and product decisions were independently developed over time and were not created retrospectively after a dispute or regulatory inquiry.
+
+That evidentiary purpose has limits:
+
+- repository history can support authorship, chronology, independent development, and design intent;
+- copyright protects original expression such as code, documentation, drawings, and other fixed works, not an abstract idea by itself;
+- trademarks protect source-identifying names, logos, and other brand indicators;
+- patents, industrial designs, and trade secrets have separate eligibility, filing, disclosure, ownership, and territorial rules;
+- public disclosure that is useful as provenance can also affect patent or trade-secret options, so potentially patentable or confidential commercial work should be reviewed before publication;
+- no chronology entry should be described as proving exclusive ownership of a general engineering concept unless the applicable IP right actually supports that statement.
+
+The goal is therefore twofold:
+
+1. preserve trustworthy evidence that Velvet was independently conceived, designed, implemented, and revised over time; and
+2. avoid overstating what that evidence legally protects.
+
+This archive should be useful to future counsel, investors, regulators, assessors, contributors, and maintainers without pretending to substitute for formal IP registration, contracts, or legal analysis.
+
 ### Internal chronology claim
 
 Safe form:

@@ -86,6 +86,97 @@ sources:
     relevance: non_vehicle_products_with_digital_elements_and_scope_boundary
     source: https://eur-lex.europa.eu/eli/reg/2024/2847/2024-11-20/eng
     velvet_status: applicability_watch
+  - id: UN-R10
+    kind: regulation
+    title: Electromagnetic compatibility
+    jurisdiction: UNECE
+    relevance: vehicle_electronic_components_emc
+    source: https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-0-20
+    velvet_status: high_priority_product_watch
+  - id: CA-MVSA
+    kind: statute
+    title: Motor Vehicle Safety Act
+    jurisdiction: Canada
+    relevance: vehicle_manufacture_import_prescribed_equipment_defects_records
+    source: https://laws-lois.justice.gc.ca/eng/acts/M-10.01/FullText.html
+    velvet_status: applicability_watch
+  - id: CA-ISED-ICES-003-7
+    kind: technical_regulatory_standard
+    title: Information Technology Equipment including Digital Apparatus
+    jurisdiction: Canada
+    relevance: digital_product_rf_emissions
+    source: https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/interference-causing-equipment-standards/ices/ices-003-information-technology-equipment-including-digital-apparatus
+    velvet_status: likely_product_requirement
+  - id: CA-ISED-RSS-GEN-6
+    kind: technical_regulatory_standard
+    title: General Requirements for Compliance of Radio Apparatus
+    jurisdiction: Canada
+    relevance: radio_equipment
+    source: https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/radio-equipment-standards/radio-standards-specifications-rss/rss-gen-general-requirements-compliance-radio-apparatus
+    velvet_status: radio_product_watch
+  - id: CA-BC-PIPA
+    kind: statute
+    title: Personal Information Protection Act
+    jurisdiction: Canada-BC
+    relevance: private_sector_personal_information
+    source: https://www.oipc.bc.ca/about/legislation/
+    velvet_status: business_privacy_watch
+  - id: US-SAFETY-ACT-30122
+    kind: statute_rule_family
+    title: Federal motor vehicle safety make-inoperative and defect responsibilities
+    jurisdiction: US
+    relevance: aftermarket_installation_oem_safety_preservation_defects
+    source: https://www.nhtsa.gov/interpretations/19-000881-30122-hestrin-interp-requestv3
+    velvet_status: applicability_watch
+  - id: US-NHTSA-CYBER-2022
+    kind: guidance
+    title: Cybersecurity Best Practices for the Safety of Modern Vehicles
+    jurisdiction: US
+    relevance: vehicle_cybersecurity
+    source: https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-09/cybersecurity-best-practices-safety-modern-vehicles-2022-tag.pdf
+    velvet_status: engineering_reference
+  - id: US-FCC-PART15
+    kind: regulatory_rule_family
+    title: RF equipment authorization / Part 15
+    jurisdiction: US
+    relevance: wireless_and_digital_products
+    source: https://opendata.fcc.gov/Engineering-Technology/EAS-Equipment-Authorization-Grantee-Registrations/3b3k-34jp
+    velvet_status: product_watch
+  - id: UK-GB-TYPE-APPROVAL
+    kind: regulatory_framework
+    title: GB vehicle type approval
+    jurisdiction: UK-GB
+    relevance: vehicles_systems_components_market_access
+    source: https://www.vehicle-certification-agency.gov.uk/vehicle-type-approval/gb-type-approval-scheme/
+    velvet_status: market_watch
+  - id: AU-RVSA-2018
+    kind: statute
+    title: Road Vehicle Standards Act 2018
+    jurisdiction: Australia
+    relevance: vehicles_and_certain_vehicle_components_market_access
+    source: https://www.legislation.gov.au/C2018A00163/latest/text
+    velvet_status: market_watch
+  - id: EU-RED-2014-53
+    kind: directive
+    title: Radio Equipment Directive
+    jurisdiction: EU
+    relevance: radio_products_and_market_access
+    source: https://eur-lex.europa.eu/eli/dir/2014/53/oj
+    velvet_status: product_scope_watch
+  - id: EU-ROHS-2011-65
+    kind: directive
+    title: Restriction of hazardous substances in electrical and electronic equipment
+    jurisdiction: EU
+    relevance: electronic_product_materials
+    source: https://eur-lex.europa.eu/eli/dir/2011/65/oj
+    velvet_status: product_scope_watch
+  - id: EU-WEEE-2012-19
+    kind: directive
+    title: Waste electrical and electronic equipment
+    jurisdiction: EU
+    relevance: electronic_product_end_of_life
+    source: https://eur-lex.europa.eu/eli/dir/2012/19/oj
+    velvet_status: product_scope_watch
 deployment_levels:
   1: research_personal_prototype
   2: non_safety_retrofit

@@ -26,7 +26,7 @@ A future U.S. Velvet product can encounter several independent layers:
 
 The practical U.S. question is:
 
-> **What is the product, who installs it, when in the vehicle lifecycle is it installed, what OEM/FM VSS/emissions systems can it affect, what data does it process, and in which state is it used?**
+> **What is the product, who installs it, when in the vehicle lifecycle is it installed, what OEM/FMVSS/emissions systems can it affect, what data does it process, and in which state is it used?**
 
 ## 2. Motor-vehicle-equipment classification is broader than Canada
 

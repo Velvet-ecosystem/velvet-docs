@@ -24,6 +24,7 @@ Standards are used here as engineering references, design constraints, gap detec
 ## Files
 
 - [`velvet_regulatory_scope.md`](velvet_regulatory_scope.md) — living scope map, present architecture correspondence, gaps, and future goals.
+- [`decision_provenance.md`](decision_provenance.md) — dated internal decision chronology, evidence classes, and external-comparison discipline for due-diligence history.
 - [`standards_manifest.yaml`](standards_manifest.yaml) — machine-readable index of tracked regulations and standards.
 - [`history/`](history/) — dated, immutable snapshots of Velvet's regulatory/standards understanding. New reviews create new snapshots rather than rewriting old ones.
 
@@ -63,7 +64,8 @@ Every substantive standards review should:
 4. preserve prior snapshots unchanged;
 5. record primary sources and the review date;
 6. avoid reproducing copyrighted standards text beyond what is necessary for identification or a short quotation;
-7. distinguish legal requirements from voluntary engineering standards and from Velvet's own internal doctrine.
+7. distinguish legal requirements from voluntary engineering standards and from Velvet's own internal doctrine;
+8. update the decision-provenance ledger when a historical source, implementation artifact, or external comparison is recovered.
 
 ## Current baseline
 

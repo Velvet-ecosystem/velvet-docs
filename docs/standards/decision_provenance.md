@@ -31,7 +31,9 @@ Use the strongest available class for each historical statement.
 
 Where practical, retain the original source or a durable reference to it. A summary of a chat is weaker evidence than the original exported conversation.
 
-## 3. Claim discipline
+## 3. Chronology discipline
+
+The purpose of this archive is to preserve timing, rationale, evidence state, and later regulatory relevance. It is not intended to establish priority over OEMs, standards bodies, suppliers, researchers, or other projects.
 
 ### Internal chronology claim
 
@@ -49,23 +51,20 @@ Safe form:
 
 This records correspondence without pretending the standard caused the design.
 
-### Industry-priority claim
+### External chronology reference
 
-Do **not** say:
+When an external regulation, standard, OEM publication, supplier design, paper, or public system later becomes relevant, record its publication/effective date only as context for the Velvet decision history.
 
-> Velvet invented this before OEMs.
+Where useful, record:
 
-unless separately researched evidence supports both sides.
+- the dated Velvet requirement, proposal, implementation, or test;
+- the reason for the Velvet decision at that time;
+- the external publication/effective date;
+- the narrow concept that later became relevant;
+- what changed in Velvet, if anything, after the formal review;
+- uncertainty or missing evidence.
 
-Instead, where useful, record:
-
-- **first known Velvet evidence date**;
-- **first known external/public evidence date**;
-- exact external source;
-- whether the concepts are actually comparable;
-- uncertainty.
-
-This protects the archive from accidental priority or novelty claims while still allowing genuine early Velvet work to be demonstrated.
+The objective is to show the project’s contemporaneous reasoning and evolution so a future regulatory review can distinguish pre-existing engineering decisions from controls added specifically because a later requirement applied.
 
 ## 4. Recovered chronology anchors
 
@@ -105,22 +104,23 @@ P1 implementation
 
 A later implementation date does not erase an earlier requirement date. Keep both.
 
-## 6. External comparison ledger
+## 6. External regulatory/reference ledger
 
-When an external standard, OEM publication, supplier design, academic paper, regulation, or public product appears comparable to earlier Velvet work, create a comparison entry containing:
+When an external standard, regulation, OEM publication, supplier design, academic paper, or public product becomes relevant to an earlier Velvet decision, create a reference entry containing:
 
 - external source title;
 - publisher / OEM / standards body;
 - publication or effective date;
 - exact source URL or archive reference;
-- first-known Velvet evidence date;
-- the narrow concept being compared;
-- similarities;
-- material differences;
-- whether the comparison is direct, convergent, or uncertain;
+- dated Velvet evidence and provenance class;
+- the original Velvet rationale or problem being solved;
+- external publication/effective date;
+- the narrow concept that became relevant;
+- similarities and material differences;
+- whether the external material caused a design change, confirmed an existing approach, or revealed a gap;
 - reviewer/date.
 
-The purpose is historical accuracy and due diligence, not scorekeeping.
+The purpose is historical accuracy, regulatory due diligence, and reconstructing design intent.
 
 ## 7. Regulatory applicability decisions
 

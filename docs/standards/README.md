@@ -27,6 +27,7 @@ Standards are used here as engineering references, design constraints, gap detec
 - [`decision_provenance.md`](decision_provenance.md) — dated internal decision chronology, evidence classes, and external-reference discipline for due-diligence history.
 - [`jurisdiction_product_watchlist.md`](jurisdiction_product_watchlist.md) — Canada, U.S., UK, Australia, EMC/RF, privacy, and product-market applicability watchlist.
 - [`canada_bc_deep_pass.md`](canada_bc_deep_pass.md) — first detailed Canada + British Columbia product, installation, cybersecurity, privacy, and in-use vehicle applicability pass.
+- [`emc_rf_electrical_qualification_plan.md`](emc_rf_electrical_qualification_plan.md) — automotive EMC, RF, power-transient, ESD, CAN physical-layer, pre-compliance, and formal-qualification path for official hardware.
 - [`standards_manifest.yaml`](standards_manifest.yaml) — machine-readable index of tracked regulations and standards.
 - [`history/`](history/) — dated, immutable snapshots of Velvet's regulatory/standards understanding. New reviews create new snapshots rather than rewriting old ones.
 

@@ -177,6 +177,69 @@ sources:
     relevance: electronic_product_end_of_life
     source: https://eur-lex.europa.eu/eli/dir/2012/19/oj
     velvet_status: product_scope_watch
+  - id: CISPR-25-2021
+    kind: international_standard
+    title: Vehicles, boats and internal combustion engines - Radio disturbance characteristics - Limits and methods of measurement for protection of on-board receivers
+    relevance: automotive_component_conducted_radiated_emissions
+    source: https://webstore.iec.ch/en/publication/64645
+    velvet_status: engineering_reference
+  - id: ISO-11452-2-2019
+    kind: standard
+    title: Road vehicles - Component test methods for electrical disturbances from narrowband radiated electromagnetic energy - Part 2
+    relevance: automotive_component_radiated_rf_immunity
+    source: https://www.iso.org/standard/68557.html
+    velvet_status: engineering_reference
+    watch: edition_4_under_development_2026
+  - id: ISO-7637-2-2011
+    kind: standard
+    title: Road vehicles - Electrical disturbances from conduction and coupling - Part 2
+    relevance: automotive_supply_line_transient_immunity
+    source: https://www.iso.org/standard/50925.html
+    velvet_status: engineering_reference
+    watch: amendment_under_development
+  - id: ISO-7637-3-2016
+    kind: standard
+    title: Road vehicles - Electrical disturbances from conduction and coupling - Part 3
+    relevance: automotive_signal_line_transient_immunity
+    source: https://www.iso.org/standard/59603.html
+    velvet_status: engineering_reference
+  - id: ISO-10605-2023
+    kind: standard
+    title: Road vehicles - Test methods for electrical disturbances from electrostatic discharge
+    relevance: automotive_esd
+    source: https://www.iso.org/standard/79094.html
+    velvet_status: engineering_reference
+    watch: amendment_under_development
+  - id: ISO-16750-2-2023
+    kind: standard
+    title: Road vehicles - Environmental conditions and testing for electrical and electronic equipment - Part 2 Electrical loads
+    relevance: automotive_electrical_loads
+    source: https://www.iso.org/standard/76119.html
+    velvet_status: engineering_reference
+  - id: ISO-16750-3-2023
+    kind: standard
+    title: Road vehicles - Environmental conditions and testing for electrical and electronic equipment - Part 3 Mechanical loads
+    relevance: automotive_mechanical_environment
+    source: https://www.iso.org/standard/77579.html
+    velvet_status: engineering_reference
+  - id: ISO-16750-4-2023
+    kind: standard
+    title: Road vehicles - Environmental conditions and testing for electrical and electronic equipment - Part 4 Climatic loads
+    relevance: automotive_climatic_environment
+    source: https://www.iso.org/standard/77580.html
+    velvet_status: engineering_reference
+  - id: ISO-16750-5-2023
+    kind: standard
+    title: Road vehicles - Environmental conditions and testing for electrical and electronic equipment - Part 5 Chemical loads
+    relevance: automotive_chemical_environment
+    source: https://www.iso.org/standard/77581.html
+    velvet_status: engineering_reference
+  - id: ISO-11898-2-2026
+    kind: standard
+    title: Road vehicles - Controller area network CAN - Part 2 High-speed physical medium attachment sublayer
+    relevance: can_physical_layer
+    source: https://www.iso.org/standard/90697.html
+    velvet_status: engineering_reference
 deployment_levels:
   1: research_personal_prototype
   2: non_safety_retrofit

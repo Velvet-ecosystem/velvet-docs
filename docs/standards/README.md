@@ -24,7 +24,8 @@ Standards are used here as engineering references, design constraints, gap detec
 ## Files
 
 - [`velvet_regulatory_scope.md`](velvet_regulatory_scope.md) — living scope map, present architecture correspondence, gaps, and future goals.
-- [`decision_provenance.md`](decision_provenance.md) — dated internal decision chronology, evidence classes, and external-comparison discipline for due-diligence history.
+- [`decision_provenance.md`](decision_provenance.md) — dated internal decision chronology, evidence classes, and external-reference discipline for due-diligence history.
+- [`jurisdiction_product_watchlist.md`](jurisdiction_product_watchlist.md) — Canada, U.S., UK, Australia, EMC/RF, privacy, and product-market applicability watchlist.
 - [`standards_manifest.yaml`](standards_manifest.yaml) — machine-readable index of tracked regulations and standards.
 - [`history/`](history/) — dated, immutable snapshots of Velvet's regulatory/standards understanding. New reviews create new snapshots rather than rewriting old ones.
 

@@ -36,7 +36,9 @@ See [Library, Vault, and Reader Path](../library_vault_and_reader_path.md).
 
 The Library Reader helper uses `/srv/velvet` as a service-facing default. That path is not a requirement for the physical mount location of a removable or installation-specific vault.
 
-The current UP Squared Founder has a verified physical ext4 vault mounted at `/mnt/velvet-vault`. That is deployment evidence for the present installation, not a portable software default and not proof that Runtime/Library UUID-bound acceptance or removable-storage recovery is complete. See [Founder Vault Deployment Snapshot](../founder_vault_deployment_snapshot.md).
+The current UP Squared Founder has a verified physical ext4 vault mounted at `/mnt/velvet-vault`. During the 2026-09-18 commissioning pass, the Library-side expected-filesystem identity boundary was tested against the real volume: the configured identity was accepted and a deliberately wrong identity was rejected fail-closed. The actual filesystem UUID remains local deployment configuration and is not recorded in this public role document.
+
+Runtime attached-storage advertisement is a separate contract. Founder must not treat successful Library identity verification as proof that Runtime `storage_paths[].expected_filesystem_uuid`, withdrawal, or recovery behavior has also been accepted. See [Founder Vault Deployment Snapshot](../founder_vault_deployment_snapshot.md).
 
 Deployments may bind the real local vault/catalog explicitly with:
 
@@ -53,6 +55,12 @@ The deployment must preserve the distinction between:
 - derived search/preview material.
 
 A source preview or extracted text is not a replacement for the canonical source payload.
+
+## Commissioning posture
+
+Founder commissioning should preserve deployment-specific state outside portable repository defaults. Host-local mount identities, physical paths, generated state, caches, and local service wiring are not automatically candidates for upstream commits.
+
+When commissioning exposes a portable software defect or stale public contract, the correction belongs in its owning repository. When it exposes only Founder-local configuration, the public repositories should instead record the deployment boundary and leave the local value local.
 
 ## Boundary
 

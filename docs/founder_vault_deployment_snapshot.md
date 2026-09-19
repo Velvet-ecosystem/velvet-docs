@@ -74,7 +74,7 @@ Large offline website archives are retained as ZIM files under:
 
 This matches the `velours_library` contract that large ZIM archives remain on the external Kiwix shelf instead of being duplicated into the bounded per-document canonical archive.
 
-The Founder deployment has begun populating this shelf with offline reference collections. This proves storage and acquisition activity only. It does **not** yet prove final `velour-zim` inventory, Kiwix serving, search behavior, Interface handoff, or long-running removable-storage recovery.
+The Founder deployment has begun populating this shelf with offline reference collections. This proves storage and acquisition activity only. It does **not** by itself prove final `velour-zim` inventory, Kiwix serving, search behavior, Interface handoff, or long-running removable-storage recovery.
 
 The intended deployment-side acceptance remains:
 
@@ -101,7 +101,9 @@ physical mount path
   != Runtime/Court authority
 ```
 
-The current physical vault has been identified and mounted successfully at the OS level. Runtime and Library UUID-bound acceptance still require local configuration and negative-path testing against wrong/missing storage before that software boundary can be called deployment-accepted.
+As of the 2026-09-18 commissioning pass, the **Library vault boundary** has been verified against the real mounted filesystem using the locally configured expected UUID. The correct identity was accepted and an intentionally wrong UUID was rejected fail-closed. The local canonical deployment environment is installed at `/etc/velvet/vault.env`; the actual UUID remains local and is intentionally omitted from this public snapshot.
+
+This Library acceptance does not imply that Runtime attached-storage advertisement is complete. Runtime `storage_paths[].expected_filesystem_uuid` remains a separate boundary and must be configured and tested independently before Runtime may advertise the vault as an attached resource.
 
 ## Service-facing path versus physical mount
 
@@ -110,6 +112,8 @@ Public software documentation commonly uses `/srv/velvet` as a service-facing de
 The Founder currently uses `/mnt/velvet-vault` as the physical mount. Components may be pointed at the physical path directly through documented configuration or exposed through an explicit service-facing bind/configuration layer.
 
 Documentation must not silently rewrite one path into the other or assume that a directory existing at `/srv/velvet` proves the expected removable filesystem is present.
+
+The generic `velours_library` systemd examples still use `/srv/velvet`. They are deployment templates, not evidence that those units or that path are installed on Founder.
 
 ## Receipt boundary
 
@@ -125,6 +129,19 @@ The deployment currently keeps two intentionally different receipt/evidence area
 The top-level `evidence/` tree is the deployment area reserved for broader Velvet evidence such as canonical receipts, continuity records, manifests, and security/audit records.
 
 A path name alone grants no trust or authority. Repository contracts remain authoritative about the meaning of the records stored there.
+
+## Guarded Library intake acceptance
+
+The 2026-09-18 commissioning pass exercised the existing `velours_library` checkout directly from source with `PYTHONPATH=src`; no global CLI installation was required.
+
+A harmless commissioning file was placed in the local drop staging directory and processed in two steps:
+
+1. a dry run identified exactly one candidate and reported a planned staging action without writing Library state;
+2. the same input was then ingested without `--publish`, producing a staged candidate with `authority: none`, `reference_only: true`, and `canonical_receipt: false`.
+
+The observed write set was limited to the Library catalog and Library-local provenance/event ledger. The source file remained in the drop directory, and no automatic publish or authority escalation occurred.
+
+This proves the guarded staging path and provenance write path on the real vault. It does **not** yet approve unattended intake automation or a systemd watcher on Founder.
 
 ## Local operational records
 
@@ -152,19 +169,23 @@ Observed and verified on the Founder deployment:
 - the mount survives reboot through the configured system mount path;
 - the broad vault and Library directory trees exist;
 - local health/status/layout manifest tooling runs;
-- the external ZIM shelf exists and has been populated with offline reference material.
+- the external ZIM shelf exists and has been populated with offline reference material;
+- the Library vault root and expected filesystem identity are configured locally;
+- the correct Library vault identity is accepted;
+- an intentionally wrong Library vault identity is rejected fail-closed;
+- guarded Library intake dry-run works against the real Library root;
+- guarded non-publishing stage creates a candidate and Library-local provenance/event record without granting authority or auto-publishing.
 
-Still requiring explicit on-device acceptance:
+Still requiring explicit on-device acceptance or deployment work:
 
-- Runtime `expected_filesystem_uuid` configuration and withdrawal/recovery behavior;
-- matching Library vault filesystem-identity configuration;
-- wrong-volume and missing-volume negative-path tests;
-- `velour-zim` status/inventory against the real shelf;
-- local `kiwix-serve` availability and loopback serving;
-- catalog scan/ingestion against the real Library tree;
+- Runtime `storage_paths[].expected_filesystem_uuid` configuration for the real vault;
+- Runtime withdrawal/recovery behavior for missing or replaced attached storage;
+- `velour-zim` status/inventory re-check against the real shelf after current repository synchronization;
+- local `kiwix-serve` availability and loopback serving re-check;
 - Interface binding to the real Library root/catalog;
 - removable-volume disconnect/reconnect recovery;
-- complete Founder Library Reader navigation and Archive-room hotspot validation.
+- complete Founder Library Reader navigation and Archive-room hotspot validation;
+- deliberate deployment, if desired, of unattended Library intake automation. The generic `/srv/velvet` systemd example is not currently installed as a Founder service.
 
 ## Authority statement
 

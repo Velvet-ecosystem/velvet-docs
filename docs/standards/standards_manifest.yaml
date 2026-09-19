@@ -1,0 +1,437 @@
+version: 0.1
+reviewed: 2026-09-17
+status: engineering-reference
+claim_of_compliance: false
+owner:
+  primary: Eleanor
+  archive: Velour
+principles:
+  - preserve_oem_intent
+  - extend_oem_capability
+  - improve_where_justified
+  - prove_safety_relevant_deviations
+sources:
+  - id: EU-2018-858
+    kind: regulation
+    title: Approval and market surveillance of motor vehicles, systems, components and separate technical units
+    jurisdiction: EU
+    relevance: marketed_hardware_and_vehicle_systems
+    source: https://eur-lex.europa.eu/eli/reg/2018/858/2026-08-02/eng
+    velvet_status: tracked
+  - id: EU-2019-2144
+    kind: regulation
+    title: General Safety Regulation
+    jurisdiction: EU
+    relevance: safety_driver_monitoring_automation_event_data
+    source: https://eur-lex.europa.eu/eli/reg/2019/2144/2026-08-02/eng
+    velvet_status: tracked
+  - id: UN-R155
+    kind: regulation
+    title: Cyber Security and Cyber Security Management System
+    jurisdiction: UNECE
+    relevance: vehicle_cybersecurity_lifecycle
+    source: https://unece.org/transport/documents/2021/03/standards/un-regulation-no-155-cyber-security-and-cyber-security
+    velvet_status: tracked
+  - id: UN-R156
+    kind: regulation
+    title: Software Update and Software Update Management System
+    jurisdiction: UNECE
+    relevance: software_updates_configuration_identity
+    source: https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update
+    velvet_status: tracked
+  - id: ISO-SAE-21434-2021
+    kind: standard
+    title: Road vehicles - Cybersecurity engineering
+    relevance: cybersecurity_engineering
+    source: https://www.iso.org/standard/70918.html
+    velvet_status: engineering_reference
+    watch: systematic_review_in_2026
+  - id: ISO-26262-2018
+    kind: standard_series
+    title: Road vehicles - Functional safety
+    relevance: safety_related_electrical_electronic_systems
+    source: https://www.iso.org/standard/68383.html
+    velvet_status: engineering_reference
+  - id: ISO-21448-2022
+    kind: standard
+    title: Road vehicles - Safety of the intended functionality
+    relevance: perception_intervention_automation
+    source: https://www.iso.org/standard/77490.html
+    velvet_status: engineering_reference
+    watch: edition_2_working_draft_2026
+  - id: ISO-PAS-8800-2024
+    kind: publicly_available_specification
+    title: Road vehicles - Safety and artificial intelligence
+    relevance: safety_related_ai
+    source: https://www.iso.org/standard/83303.html
+    velvet_status: engineering_reference
+  - id: ISO-24089-2023
+    kind: standard
+    title: Road vehicles - Software update engineering
+    relevance: update_engineering
+    source: https://www.iso.org/standard/77796.html
+    amendment: ISO-24089-2023-Amd1-2024
+    velvet_status: engineering_reference
+  - id: EU-2024-1689
+    kind: regulation
+    title: Artificial Intelligence Act
+    jurisdiction: EU
+    relevance: product_ai_and_safety_components
+    source: https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng
+    velvet_status: applicability_watch
+  - id: EU-2024-2847
+    kind: regulation
+    title: Cyber Resilience Act
+    jurisdiction: EU
+    relevance: non_vehicle_products_with_digital_elements_and_scope_boundary
+    source: https://eur-lex.europa.eu/eli/reg/2024/2847/2024-11-20/eng
+    velvet_status: applicability_watch
+  - id: UN-R10
+    kind: regulation
+    title: Electromagnetic compatibility
+    jurisdiction: UNECE
+    relevance: vehicle_electronic_components_emc
+    source: https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-0-20
+    velvet_status: high_priority_product_watch
+  - id: CA-MVSA
+    kind: statute
+    title: Motor Vehicle Safety Act
+    jurisdiction: Canada
+    relevance: vehicle_manufacture_import_prescribed_equipment_defects_records
+    source: https://laws-lois.justice.gc.ca/eng/acts/M-10.01/FullText.html
+    velvet_status: applicability_watch
+  - id: CA-ISED-ICES-003-7
+    kind: technical_regulatory_standard
+    title: Information Technology Equipment including Digital Apparatus
+    jurisdiction: Canada
+    relevance: digital_product_rf_emissions
+    source: https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/interference-causing-equipment-standards/ices/ices-003-information-technology-equipment-including-digital-apparatus
+    velvet_status: likely_product_requirement
+  - id: CA-ISED-RSS-GEN-6
+    kind: technical_regulatory_standard
+    title: General Requirements for Compliance of Radio Apparatus
+    jurisdiction: Canada
+    relevance: radio_equipment
+    source: https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/radio-equipment-standards/radio-standards-specifications-rss/rss-gen-general-requirements-compliance-radio-apparatus
+    velvet_status: radio_product_watch
+  - id: CA-BC-PIPA
+    kind: statute
+    title: Personal Information Protection Act
+    jurisdiction: Canada-BC
+    relevance: private_sector_personal_information
+    source: https://www.oipc.bc.ca/about/legislation/
+    velvet_status: business_privacy_watch
+  - id: US-SAFETY-ACT-30122
+    kind: statute_rule_family
+    title: Federal motor vehicle safety make-inoperative and defect responsibilities
+    jurisdiction: US
+    relevance: aftermarket_installation_oem_safety_preservation_defects
+    source: https://www.nhtsa.gov/interpretations/19-000881-30122-hestrin-interp-requestv3
+    velvet_status: applicability_watch
+  - id: US-NHTSA-CYBER-2022
+    kind: guidance
+    title: Cybersecurity Best Practices for the Safety of Modern Vehicles
+    jurisdiction: US
+    relevance: vehicle_cybersecurity
+    source: https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-09/cybersecurity-best-practices-safety-modern-vehicles-2022-tag.pdf
+    velvet_status: engineering_reference
+  - id: US-FCC-PART15
+    kind: regulatory_rule_family
+    title: RF equipment authorization / Part 15
+    jurisdiction: US
+    relevance: wireless_and_digital_products
+    source: https://opendata.fcc.gov/Engineering-Technology/EAS-Equipment-Authorization-Grantee-Registrations/3b3k-34jp
+    velvet_status: product_watch
+  - id: UK-GB-TYPE-APPROVAL
+    kind: regulatory_framework
+    title: GB vehicle type approval
+    jurisdiction: UK-GB
+    relevance: vehicles_systems_components_market_access
+    source: https://www.vehicle-certification-agency.gov.uk/vehicle-type-approval/gb-type-approval-scheme/
+    velvet_status: market_watch
+  - id: AU-RVSA-2018
+    kind: statute
+    title: Road Vehicle Standards Act 2018
+    jurisdiction: Australia
+    relevance: vehicles_and_certain_vehicle_components_market_access
+    source: https://www.legislation.gov.au/C2018A00163/latest/text
+    velvet_status: market_watch
+  - id: EU-RED-2014-53
+    kind: directive
+    title: Radio Equipment Directive
+    jurisdiction: EU
+    relevance: radio_products_and_market_access
+    source: https://eur-lex.europa.eu/eli/dir/2014/53/oj
+    velvet_status: product_scope_watch
+  - id: EU-ROHS-2011-65
+    kind: directive
+    title: Restriction of hazardous substances in electrical and electronic equipment
+    jurisdiction: EU
+    relevance: electronic_product_materials
+    source: https://eur-lex.europa.eu/eli/dir/2011/65/oj
+    velvet_status: product_scope_watch
+  - id: EU-WEEE-2012-19
+    kind: directive
+    title: Waste electrical and electronic equipment
+    jurisdiction: EU
+    relevance: electronic_product_end_of_life
+    source: https://eur-lex.europa.eu/eli/dir/2012/19/oj
+    velvet_status: product_scope_watch
+  - id: CISPR-25-2021
+    kind: international_standard
+    title: Vehicles, boats and internal combustion engines - Radio disturbance characteristics - Limits and methods of measurement for protection of on-board receivers
+    relevance: automotive_component_conducted_radiated_emissions
+    source: https://webstore.iec.ch/en/publication/64645
+    velvet_status: engineering_reference
+  - id: ISO-11452-2-2019
+    kind: standard
+    title: Road vehicles - Component test methods for electrical disturbances from narrowband radiated electromagnetic energy - Part 2
+    relevance: automotive_component_radiated_rf_immunity
+    source: https://www.iso.org/standard/68557.html
+    velvet_status: engineering_reference
+    watch: edition_4_under_development_2026
+  - id: ISO-7637-2-2011
+    kind: standard
+    title: Road vehicles - Electrical disturbances from conduction and coupling - Part 2
+    relevance: automotive_supply_line_transient_immunity
+    source: https://www.iso.org/standard/50925.html
+    velvet_status: engineering_reference
+    watch: amendment_under_development
+  - id: ISO-7637-3-2016
+    kind: standard
+    title: Road vehicles - Electrical disturbances from conduction and coupling - Part 3
+    relevance: automotive_signal_line_transient_immunity
+    source: https://www.iso.org/standard/59603.html
+    velvet_status: engineering_reference
+  - id: ISO-10605-2023
+    kind: standard
+    title: Road vehicles - Test methods for electrical disturbances from electrostatic discharge
+    relevance: automotive_esd
+    source: https://www.iso.org/standard/79094.html
+    velvet_status: engineering_reference
+    watch: amendment_under_development
+  - id: ISO-16750-2-2023
+    kind: standard
+    title: Road vehicles - Environmental conditions and testing for electrical and electronic equipment - Part 2 Electrical loads
+    relevance: automotive_electrical_loads
+    source: https://www.iso.org/standard/76119.html
+    velvet_status: engineering_reference
+  - id: ISO-16750-3-2023
+    kind: standard
+    title: Road vehicles - Environmental conditions and testing for electrical and electronic equipment - Part 3 Mechanical loads
+    relevance: automotive_mechanical_environment
+    source: https://www.iso.org/standard/77579.html
+    velvet_status: engineering_reference
+  - id: ISO-16750-4-2023
+    kind: standard
+    title: Road vehicles - Environmental conditions and testing for electrical and electronic equipment - Part 4 Climatic loads
+    relevance: automotive_climatic_environment
+    source: https://www.iso.org/standard/77580.html
+    velvet_status: engineering_reference
+  - id: ISO-16750-5-2023
+    kind: standard
+    title: Road vehicles - Environmental conditions and testing for electrical and electronic equipment - Part 5 Chemical loads
+    relevance: automotive_chemical_environment
+    source: https://www.iso.org/standard/77581.html
+    velvet_status: engineering_reference
+  - id: ISO-11898-2-2026
+    kind: standard
+    title: Road vehicles - Controller area network CAN - Part 2 High-speed physical medium attachment sublayer
+    relevance: can_physical_layer
+    source: https://www.iso.org/standard/90697.html
+    velvet_status: engineering_reference
+  - id: US-SAFETY-ACT-30102
+    kind: statute
+    title: Motor vehicle equipment definition
+    jurisdiction: US
+    relevance: aftermarket_accessory_and_equipment_classification
+    source: https://www.nhtsa.gov/document/motor-vehicle-safety-unrelated-unmodified-provisions
+    velvet_status: product_classification_watch
+  - id: US-49CFR-566
+    kind: regulation
+    title: Manufacturer Identification
+    jurisdiction: US
+    relevance: manufacturers_of_vehicles_and_fmvss_covered_equipment
+    source: https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-566
+    velvet_status: applicability_watch
+  - id: US-49CFR-567-7
+    kind: regulation
+    title: Requirements for persons who alter certified vehicles
+    jurisdiction: US
+    relevance: pre_first_retail_vehicle_alteration_certification
+    source: https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-567/section-567.7
+    velvet_status: business_model_watch
+  - id: US-SAFETY-ACT-30118-30120
+    kind: statute_rule_family
+    title: Safety defect notification and remedy
+    jurisdiction: US
+    relevance: motor_vehicle_equipment_recall_and_free_remedy
+    source: https://www.nhtsa.gov/interpretations/GF004887
+    velvet_status: production_readiness_requirement
+  - id: US-EPA-CAA-203-A3
+    kind: statute_policy_family
+    title: Clean Air Act vehicle emissions anti-tampering and defeat-device prohibition
+    jurisdiction: US
+    relevance: ecu_obd_emissions_related_aftermarket_products
+    source: https://www.epa.gov/enforcement/epa-tampering-policy-epa-enforcement-policy-vehicle-and-engine-tampering-and
+    velvet_status: high_priority_ruby_gate
+  - id: US-EPA-SEMA-SCE-2026
+    kind: federal_program_recognition
+    title: EPA recognition of SEMA Certified Emissions program
+    jurisdiction: US
+    relevance: aftermarket_emissions_compliance_path
+    source: https://www.epa.gov/newsreleases/epa-implements-new-freedom-fix-presidential-memorandum-gives-sema-greenlight-certify
+    velvet_status: current_path_watch
+  - id: US-FTC-GM-ONSTAR-2026
+    kind: enforcement_order
+    title: GM and OnStar connected vehicle data order
+    jurisdiction: US
+    relevance: connected_vehicle_geolocation_and_driver_behavior_privacy
+    source: https://www.ftc.gov/legal-library/browse/cases-proceedings/2423052-general-motors-llc-et-al-matter
+    velvet_status: privacy_engineering_reference
+  - id: US-MAGNUSON-MOSS
+    kind: statute_rule_family
+    title: Magnuson-Moss Warranty Act and FTC warranty rules
+    jurisdiction: US
+    relevance: consumer_product_warranty_and_repair_anti_tying
+    source: https://www.ftc.gov/business-guidance/resources/businesspersons-guide-federal-warranty-law
+    velvet_status: product_warranty_watch
+  - id: US-DMCA-1201-VEHICLE
+    kind: temporary_exemption
+    title: Vehicle software diagnosis repair lawful modification and operational data access exemption
+    jurisdiction: US
+    relevance: owner_authorized_oem_software_and_data_access
+    source: https://www.copyright.gov/title37/201/37cfr201-40.html
+    velvet_status: legal_access_watch
+    watch: triennial_renewal_process
+  - id: US-CA-CARB-AFTERMARKET
+    kind: state_regulatory_program
+    title: California aftermarket performance and add-on parts anti-tampering exemptions
+    jurisdiction: US-CA
+    relevance: emissions_related_aftermarket_parts_and_ecm_modification
+    source: https://ww2.arb.ca.gov/our-work/programs/aftermarket-performance-and-add-parts
+    velvet_status: ruby_california_watch
+  - id: US-CA-CCPA
+    kind: state_privacy_statute
+    title: California Consumer Privacy Act
+    jurisdiction: US-CA
+    relevance: qualifying_business_personal_and_sensitive_data
+    source: https://cppa.ca.gov/faq
+    velvet_status: scale_and_data_watch
+  - id: US-WA-MHMDA
+    kind: state_privacy_statute
+    title: Washington My Health My Data Act
+    jurisdiction: US-WA
+    relevance: consumer_health_vital_sign_biometric_location_and_inferred_health_data
+    source: https://app.leg.wa.gov/RCW/default.aspx?cite=19.373
+    velvet_status: high_priority_temperance_watch
+  - id: US-CA-AV-2026
+    kind: state_regulatory_program
+    title: California autonomous vehicle testing and deployment regulations
+    jurisdiction: US-CA
+    relevance: automated_vehicle_public_road_testing_and_deployment
+    source: https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/
+    velvet_status: charlotte_future_watch
+  - id: ISO-9001-2026
+    kind: standard
+    title: Quality management systems - Requirements
+    relevance: organization_wide_quality_management
+    source: https://www.iso.org/standard/9001
+    velvet_status: business_quality_reference
+  - id: ISO-10012-2026
+    kind: standard
+    title: Quality management - Requirements for measurement management systems
+    relevance: measurement_and_test_equipment_control
+    source: https://www.iso.org/standard/10012
+    velvet_status: manufacturing_reference
+  - id: ISO-10007-2017
+    kind: standard
+    title: Quality management - Guidelines for configuration management
+    relevance: product_configuration_and_change_control
+    source: https://www.iso.org/standard/70400.html
+    velvet_status: engineering_reference
+    watch: fourth_edition_under_development
+  - id: ISO-19011-2026
+    kind: standard
+    title: Guidelines for auditing management systems
+    relevance: internal_quality_audit_program
+    source: https://www.iso.org/standard/19011
+    velvet_status: business_quality_reference
+  - id: IATF-16949-2016
+    kind: automotive_qms_standard
+    title: IATF 16949 automotive quality management system
+    relevance: oem_tier_automotive_supply_chain
+    source: https://www.iatfglobaloversight.org/iatf-169492016/about/
+    velvet_status: future_customer_requirement_watch
+    watch: second_edition_planned_mid_2027
+  - id: IATF-RULES-6
+    kind: certification_scheme_rules
+    title: Rules for achieving and maintaining IATF Recognition - 6th Edition
+    relevance: iatf_certification_scheme
+    source: https://www.iatfglobaloversight.org/news/1-april-2024-rules-6th-publication/
+    velvet_status: future_certification_watch
+  - id: AIAG-APQP-3
+    kind: industry_manual
+    title: Advanced Product Quality Planning - 3rd Edition
+    relevance: product_launch_sourcing_change_management_traceability
+    source: https://www.aiag.org/training-and-resources/manuals/details/APQP-3
+    velvet_status: manufacturing_reference
+  - id: AIAG-CONTROL-PLAN-1
+    kind: industry_manual
+    title: Control Plan - 1st Edition
+    relevance: manufacturing_process_control_and_safe_launch
+    source: https://www.aiag.org/training-and-resources/manuals/details/CP-1
+    velvet_status: manufacturing_reference
+  - id: AIAG-PPAP-4
+    kind: industry_manual
+    title: Production Part Approval Process - 4th Edition
+    relevance: oem_customer_production_part_approval
+    source: https://www.aiag.org/training-and-resources/manuals
+    velvet_status: future_customer_requirement_watch
+  - id: AIAG-VDA-FMEA
+    kind: industry_manual
+    title: AIAG and VDA FMEA Handbook
+    relevance: design_process_failure_mode_risk_analysis
+    source: https://www.aiag.org/training-and-resources/manuals/details/FMEAAV-1
+    velvet_status: engineering_reference
+  - id: IPC-J-STD-001J
+    kind: industry_standard
+    title: Requirements for Soldered Electrical and Electronic Assemblies
+    relevance: soldered_assembly_workmanship
+    source: https://www.ipc.org/ipc-document-revision-table
+    velvet_status: manufacturing_reference
+  - id: IPC-A-610J
+    kind: industry_standard
+    title: Acceptability of Electronic Assemblies
+    relevance: electronics_assembly_acceptance
+    source: https://www.ipc.org/ipc-document-revision-table
+    velvet_status: manufacturing_reference
+  - id: IPC-WHMA-A-620E
+    kind: industry_standard
+    title: Acceptability of Electronic Wire Harnesses and Cables
+    relevance: harness_manufacturing_acceptance
+    source: https://www.ipc.org/ipc-document-revision-table
+    velvet_status: manufacturing_reference
+  - id: IPC-6012F
+    kind: industry_standard
+    title: Qualification and Performance Specification for Rigid Printed Boards
+    relevance: rigid_pcb_fabrication_quality
+    source: https://www.ipc.org/ipc-document-revision-table
+    velvet_status: manufacturing_reference
+deployment_levels:
+  1: research_personal_prototype
+  2: non_safety_retrofit
+  3: connected_updateable_retrofit
+  4: marketed_hardware_retrofit_kit
+  5: safety_relevant_intervention
+  6: vehicle_dynamic_control_automation
+traceability_target:
+  chain:
+    - source_principle
+    - velvet_requirement
+    - subsystem
+    - implementation
+    - test
+    - evidence_receipt
+    - review_status
+history_policy: append_new_dated_snapshot_do_not_rewrite_prior_snapshots

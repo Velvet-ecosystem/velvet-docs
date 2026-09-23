@@ -17,11 +17,11 @@ It is a recovery and ownership map. It does not create a new authority model.
 
 ## Historical placement
 
-Learning Mode belongs in Velvet's maintenance/back-room architecture, historically described as the Legs, rather than in the front-facing interface.
+Learning Mode belongs in Velvet's protected owner-maintenance/back-room architecture rather than in the front-facing interface.
 
 The durable placement remains:
 
-> Web Surface at the front. Learning machinery down in the Legs. White Room behind the door. Dream Layer deeper still.
+> Web Surface at the front. Learning machinery in protected owner maintenance. White Room behind the door. Dream Layer deeper still.
 
 The front may expose controls, status, results, Library material, and optional web content. The orchestrator remains internal maintenance machinery.
 

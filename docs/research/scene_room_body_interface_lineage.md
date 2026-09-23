@@ -160,7 +160,7 @@ The correct current statement is:
 ## Remaining Archive Questions
 
 - Which image or interface prototype first established the room-body concept?
-- What inspired the main, legs, and radionics scenes?
+- What inspired the main, protected-maintenance, and radionics scenes?
 - Were any games, virtual assistants, smart-home dashboards, or automotive HMIs explicitly referenced?
 - When did hidden widgets such as the candle, fireplace, mirror, and chair appear?
 - When was the glow or orb first used as Velvet’s minimal presence?

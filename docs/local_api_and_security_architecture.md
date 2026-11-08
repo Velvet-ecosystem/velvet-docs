@@ -43,6 +43,10 @@ Security is concentrated at a few hard boundaries:
 - replay protection
 - receipts
 
+## Human-Legible Capability Boundaries
+
+Every new interface route must observe the canonical [Door, Lock & Window Principle](door_lock_window_principle.md): a named capability door, enforceable lock, safe preview window, explicit scoped handle, and honest closing/revocation state with receipts. These terms describe usability, **not** a second authorization mechanism. An offered route or available transport never grants authority.
+
 ## Remote Access
 
 Tailscale or another transport may carry requests securely, but transport is not authority.

@@ -54,6 +54,7 @@ Read the complete trail in [Smart Stereo Origin Lineage](docs/research/smart_ste
 - [Machine-Readable Ecosystem Guide](docs/machine_readable_ecosystem.md)
 - [Ecosystem JSON Schema](schemas/velvet-ecosystem.schema.json)
 - [Authority and Execution Path](docs/authority_and_execution_path.md)
+- [Door, Lock & Window Principle](docs/door_lock_window_principle.md)
 - [Ghost System v0](docs/ghost_system_v0.md)
 - [Compatibility Ledger](docs/compatibility_ledger.md)
 - [Module Lab Contribution Pathway](docs/contributing/module_lab_pathway.md)

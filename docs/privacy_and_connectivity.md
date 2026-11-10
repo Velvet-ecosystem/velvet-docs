@@ -26,6 +26,8 @@ Velvet does not require the following as a default operating posture:
 
 Owners may deliberately opt into remote capabilities. Those choices should be understandable, scoped, inspectable, and revocable rather than hidden behind one blanket connected-services assumption.
 
+The canonical [Door, Lock & Window Principle](door_lock_window_principle.md) describes the human-facing experience of that choice: show the capability's purpose and destination without exposing secrets, request bounded permission, and explain what revocation can and cannot undo. Connectivity alone is not an open door.
+
 ## Emergency disclosure
 
 A real life-safety incident may justify disclosure that would be inappropriate during ordinary use. That is an **incident-scoped exception**, not a permanent privacy mode change.
